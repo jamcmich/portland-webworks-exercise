@@ -21,10 +21,6 @@ import HelloWorld from './components/HelloWorld.vue'
   height: 6em;
   padding: 1.5em;
   will-change: filter;
-
-  .test {
-    background-color: red;
-  }
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
