@@ -1,0 +1,105 @@
+@use '_variables' as *;
+
+/* Global Classes */
+/* Text Styles */
+.__text {
+  font-family: $font-family__text;
+  font-weight: $font-weight__text;
+  font-size: $font-size__text;
+  line-height: $line-height__text;
+}
+
+/* Header Styles */
+.__header-style-1 {
+  font-family: $font-family__header-style-1;
+  font-weight: $font-weight__header-style-1;
+  font-size: $font-size__header-style-1;
+}
+
+.__header-style-2 {
+  font-family: $font-family__header-style-2;
+  font-weight: $font-weight__header-style-2;
+  font-size: $font-size__header-style-2;
+}
+
+.__header-style-3 {
+  font-family: $font-family__header-style-3;
+  font-weight: $font-weight__header-style-3;
+  font-size: $font-size__header-style-3;
+  text-transform: uppercase;
+}
+
+.__header-style-4 {
+  font-family: $font-family__header-style-4;
+  font-weight: $font-weight__header-style-4;
+  font-size: $font-size__header-style-4;
+  text-transform: uppercase;
+}
+
+.__header-style-5 {
+  font-family: $font-family__header-style-5;
+  font-weight: $font-weight__header-style-5;
+  font-size: $font-size__header-style-5;
+}
+
+.__h1 {
+  font-family: $font-family__h1;
+  font-weight: $font-weight__h1;
+  font-size: $font-size__h1;
+  letter-spacing: $letter-spacing__h1;
+}
+
+.__h2 {
+  font-family: $font-family__h2;
+  font-weight: $font-weight__h2;
+  font-size: $font-size__h2;
+}
+
+.__h3 {
+  font-family: $font-family__h3;
+  font-weight: $font-weight__h3;
+  font-size: $font-size__h3;
+  letter-spacing: $letter-spacing__h3;
+}
+
+.__h4 {
+  font-family: $font-family__h4;
+  font-weight: $font-weight__h4;
+  font-size: $font-size__h4;
+}
+
+.__h5 {
+  font-family: $font-family__h5;
+  font-weight: $font-weight__h5;
+  font-size: $font-size__h5;
+  letter-spacing: $letter-spacing__h5;
+}
+
+.__card-header {
+  font-family: $font-family__card-header;
+  font-weight: $font-weight__card-header;
+  font-size: $font-size__card-header;
+  text-decoration: none;
+}
+
+/* Link Styles */
+.__link-style-1 {
+  font-family: $font-family__link-style-1;
+  font-weight: $font-weight__link-style-1;
+  font-size: $font-size__link-style-1;
+  text-decoration: underline;
+}
+
+.__link-styles-2 {
+  font-family: $font-family__link-style-2;
+  font-weight: $font-weight__link-style-2;
+  font-size: $font-size__link-style-2;
+  text-decoration: underline;
+}
+
+/* Stat Block */
+.__stat-block-title {
+  font-family: $font-family__stat-block;
+  font-weight: $font-weight__stat-block;
+  font-size: $font-size__stat-block;
+}
