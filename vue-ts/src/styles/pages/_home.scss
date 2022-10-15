@@ -8,9 +8,15 @@
   gap: 45px;
 
   height: 378px;
+
   background-image: url("../assets/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   p {
+    width: 100%;
+    max-width: 725px;
+
     color: white;
     font-weight: 400;
     text-align: center;
@@ -24,8 +30,11 @@
     align-items: center;
     gap: 10px;
 
+    width: 50%;
+
     input {
-      width: 401px;
+      width: 100%;
+      max-width: 500px;
       height: 48px;
 
       padding: 0 16px;
@@ -41,6 +50,48 @@
         border-radius: 2px;
         box-shadow: 0 0 0 3px rgba(48, 104, 173, 0.5);
       }
+    }
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  padding: 50px;
+
+  background-color: rgb(225, 228, 235);
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    width: 300px;
+    height: 250px;
+
+    background-color: white;
+    box-shadow: rgb(195, 195, 195) 0 1px 4px 0;
+
+    img {
+      width: 125px;
+    }
+
+    p {
+      max-width: 200px;
+
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: $color__navy-peony;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-align: center;
     }
   }
 }
