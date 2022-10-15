@@ -1,105 +1,106 @@
 @use '_variables' as *;
 
 /* Global Classes */
+// TODO: Change font sizes to REM units
 /* Text Styles */
 .__text {
-  font-family: $font-family__text;
-  font-weight: $font-weight__text;
-  font-size: $font-size__text;
-  line-height: $line-height__text;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 /* Header Styles */
 .__header-style-1 {
-  font-family: $font-family__header-style-1;
-  font-weight: $font-weight__header-style-1;
-  font-size: $font-size__header-style-1;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 42px;
 }
 
 .__header-style-2 {
-  font-family: $font-family__header-style-2;
-  font-weight: $font-weight__header-style-2;
-  font-size: $font-size__header-style-2;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 .__header-style-3 {
-  font-family: $font-family__header-style-3;
-  font-weight: $font-weight__header-style-3;
-  font-size: $font-size__header-style-3;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
   text-transform: uppercase;
 }
 
 .__header-style-4 {
-  font-family: $font-family__header-style-4;
-  font-weight: $font-weight__header-style-4;
-  font-size: $font-size__header-style-4;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 28px;
   text-transform: uppercase;
 }
 
 .__header-style-5 {
-  font-family: $font-family__header-style-5;
-  font-weight: $font-weight__header-style-5;
-  font-size: $font-size__header-style-5;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
 }
 
 .__h1 {
-  font-family: $font-family__h1;
-  font-weight: $font-weight__h1;
-  font-size: $font-size__h1;
-  letter-spacing: $letter-spacing__h1;
+  font-family: 'Open Sans', sans-serif;;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 .__h2 {
-  font-family: $font-family__h2;
-  font-weight: $font-weight__h2;
-  font-size: $font-size__h2;
+  font-family: 'Open Sans', sans-serif;;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .__h3 {
-  font-family: $font-family__h3;
-  font-weight: $font-weight__h3;
-  font-size: $font-size__h3;
-  letter-spacing: $letter-spacing__h3;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 .__h4 {
-  font-family: $font-family__h4;
-  font-weight: $font-weight__h4;
-  font-size: $font-size__h4;
+  font-family: 'Open Sans', sans-serif;;
+  font-weight: 700;
+  font-size: 13px;
 }
 
 .__h5 {
-  font-family: $font-family__h5;
-  font-weight: $font-weight__h5;
-  font-size: $font-size__h5;
-  letter-spacing: $letter-spacing__h5;
+  font-family: 'Open Sans', sans-serif;;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.5px;
 }
 
 .__card-header {
-  font-family: $font-family__card-header;
-  font-weight: $font-weight__card-header;
-  font-size: $font-size__card-header;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
   text-decoration: none;
 }
 
 /* Link Styles */
 .__link-style-1 {
-  font-family: $font-family__link-style-1;
-  font-weight: $font-weight__link-style-1;
-  font-size: $font-size__link-style-1;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
   text-decoration: underline;
 }
 
 .__link-styles-2 {
-  font-family: $font-family__link-style-2;
-  font-weight: $font-weight__link-style-2;
-  font-size: $font-size__link-style-2;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   text-decoration: underline;
 }
 
 /* Stat Block */
 .__stat-block-title {
-  font-family: $font-family__stat-block;
-  font-weight: $font-weight__stat-block;
-  font-size: $font-size__stat-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 54px;
 }
