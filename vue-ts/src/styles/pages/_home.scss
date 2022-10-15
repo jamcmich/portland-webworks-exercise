@@ -1,0 +1,46 @@
+@use "../../styles/_variables.scss" as *;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+
+  height: 378px;
+  background-image: url("../assets/hero.jpg");
+
+  p {
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    text-transform: none;
+  }
+
+  .search-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    input {
+      width: 401px;
+      height: 48px;
+
+      padding: 0 16px;
+
+      &::placeholder {
+        color: rgb(117, 117, 117);
+        opacity: 1;
+      }
+
+      &:focus {
+        outline: none;
+        border: none;
+        border-radius: 2px;
+        box-shadow: 0 0 0 3px rgba(48, 104, 173, 0.5);
+      }
+    }
+  }
+}

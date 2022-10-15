@@ -1,8 +1,8 @@
 @use "../_variables" as *;
-@use "../_classes" as *;
+@use "../typography" as *;
 
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
 

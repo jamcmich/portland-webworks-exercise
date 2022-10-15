@@ -1,4 +1,5 @@
-/* Global Classes */
+/* Global Typography Classes */
+
 // TODO: Change font sizes to REM units
 /* Text Styles */
 .__text {
@@ -101,4 +102,13 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 54px;
+}
+
+/* Button */
+.__button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
