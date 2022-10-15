@@ -1,0 +1,99 @@
+@use "../_variables" as *;
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  width: 100%;
+  height: 118px;
+
+  background-color: white;
+  border-bottom: 8px solid $color__navy-peony;
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    gap: 8px;
+
+    background-color: $color__dover-straits;
+
+    svg {
+      width: 36px;
+
+      * {
+        fill: white;
+      }
+    }
+
+    span {
+      width: 36px;
+
+      font-family: $font-family__text;
+      font-weight: $font-weight__text;
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      line-height: 10px;
+      text-align: center;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    margin: 0 20px;
+
+    .site-details-group {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      gap: 20px;
+
+      img {
+        width: 85px;
+        height: 85px;
+
+        align-self: center;
+      }
+
+      .site-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        color: red;
+
+        text-align: left;
+      }
+    }
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid $color__dover-straits;
+    border-radius: 2px;
+
+    svg {
+      width: 24px;
+
+      * {
+        fill: $color__dover-straits;
+      }
+    }
+  }
+}
