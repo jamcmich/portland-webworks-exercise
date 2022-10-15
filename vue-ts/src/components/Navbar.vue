@@ -1,8 +1,9 @@
 <template>
+  <!-- TODO: Add active menu and search icon logic -->
   <nav class="navbar">
     <div class="menu">
       <Menu />
-      <span>MENU</span>
+      <span class="__text">MENU</span>
     </div>
 
     <div class="row">
@@ -10,8 +11,8 @@
         <img src="../assets/scrfao-logo.png" alt="South Carolina Revenue and Fiscal Affairs Office" />
 
         <div class="site-details">
-          <p>South Carolina<br>Revenue and Fiscal Affairs Office</p>
-          <p>Transforming data into solutions for South Carolina</p>
+          <p class="__header-style-4">South Carolina<br>Revenue and Fiscal Affairs Office</p>
+          <p class="__h3"><i>Transforming data into solutions for South Carolina</i></p>
         </div>
       </div>
 

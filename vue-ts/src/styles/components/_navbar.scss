@@ -1,4 +1,5 @@
 @use "../_variables" as *;
+@use "../_classes" as *;
 
 .navbar {
   position: fixed;
@@ -33,8 +34,7 @@
     span {
       width: 36px;
 
-      font-family: $font-family__text;
-      font-weight: $font-weight__text;
+      color: white;
       font-size: 10px;
       letter-spacing: 2.5px;
       line-height: 10px;
@@ -69,10 +69,26 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        gap: 2px;
 
         color: red;
 
         text-align: left;
+
+        p {
+          color: $color__navy-peony;
+        }
+
+        p:nth-child(1) {
+          font-size: 18px;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+        }
+
+        p:nth-child(2) {
+          opacity: 0.75;
+          letter-spacing: normal;
+        }
       }
     }
   }
