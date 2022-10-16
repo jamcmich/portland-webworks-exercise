@@ -7,7 +7,7 @@
     </div>
 
     <div class="row">
-      <div class="site-details-group">
+      <div class="site-details-container">
         <img src="../assets/scrfao-logo.png" alt="South Carolina Revenue and Fiscal Affairs Office" />
 
         <div class="site-details">
