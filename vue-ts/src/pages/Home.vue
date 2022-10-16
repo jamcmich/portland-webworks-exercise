@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <section class="hero">
     <p class="__header-style-4">Providing insightful research, analysis, and resources to facilitate informed
                                 policy decisions and administration of services</p>
 
@@ -8,14 +8,18 @@
       <input class="__text" placeholder="Search rfa.sc.gov" />
       <button class="__button __solid" form="search-form" type="submit">Apply</button>
     </form>
-  </div>
+  </section>
 
-  <div class="cards">
+  <section class="cards">
     <div class="card" v-for="(card, index) in cardItems.hero" :key="index">
       <img :src="card.img" :alt="card.alt" />
       <p>{{ card.title }}</p>
     </div>
-  </div>
+  </section>
+
+  <section class="public-dashboard">
+    <h2 class="__header-style-2">RFA Analytics - Public Dashboard</h2>
+  </section>
 </template>
 
 <script lang="ts">
