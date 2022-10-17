@@ -1,9 +1,11 @@
 name: Deploy
 
 on:
-  push:
+  merge:
     branches:
-      - jamcmich/test-merge
+      - main
+    types:
+      - closed
 
 jobs:
   build:
@@ -38,7 +40,7 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/jamcmich/test-merge'
+    if: github.ref == 'refs/heads/main'
 
     steps:
       - name: Download artifact
