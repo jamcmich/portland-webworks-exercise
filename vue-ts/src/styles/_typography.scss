@@ -111,6 +111,7 @@ a.__link-style-1, a.__link-style-1:link, a.__link-style-1:visited {
 
   &:hover {
     text-decoration: none;
+    cursor: pointer;
   }
 }
 
@@ -124,6 +125,7 @@ a.__link-style-2, a.__link-style-2, a.__link-style-2:link, a.__link-style-2:visi
 
   &:hover {
     text-decoration: none;
+    cursor: pointer;
   }
 }
 

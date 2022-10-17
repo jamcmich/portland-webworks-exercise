@@ -3,7 +3,7 @@ import vue from "@vitejs/plugin-vue";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: "/portland-webworks-exercise/",
+    base: `${import.meta.env?.PROD ? "/portland-webworks-exercise/" : ""}`,
     plugins: [vue()],
     css: {
         preprocessorOptions: {
