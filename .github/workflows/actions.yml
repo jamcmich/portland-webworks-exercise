@@ -25,6 +25,7 @@ jobs:
       - name: Build project
         run: |
           cd ./vue-ts
+          npm install
           npm run build
 
       - name: Upload production-ready build files
