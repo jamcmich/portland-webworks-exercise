@@ -208,7 +208,9 @@
           </div>
 
           <div class="right">
-            <h2 class="__h2">Board of Economic Advisors Meeting and Annual Regional Advisory Meeting</h2>
+            <div class="group">
+              <h2 class="__h2">Board of Economic Advisors Meeting and Annual Regional Advisory Meeting</h2>
+            </div>
 
             <p class="with-icon">
               <a class="__link-style-2"
@@ -248,6 +250,79 @@
                  title="BEA Agenda - 10-18-22_0.pdf"
                  target="_blank">Agenda</a>
             </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="left">
+            <span>Oct</span>
+            <span>18</span>
+            <span>2022</span>
+          </div>
+
+          <div class="right">
+            <div class="group">
+              <span class="__h4 __badge __red">Cancelled</span>
+              <h2 class="__h2">911 Advisory Committee</h2>
+            </div>
+
+            <div class="group">
+              <p class="with-icon">
+                <Icon icon="mdi:map-marker-outline" width="24" color="rgb(140, 105, 16)" />
+                <span class="__text">
+                Revenue and Fiscal Affairs Office
+              </span>
+              </p>
+
+              <p class="with-icon">
+                <Icon icon="mdi:clock-outline" width="24" color="rgb(140, 105, 16)" />
+                <span class="__text">
+                10:00 AM
+              </span>
+              </p>
+
+              <p class="with-icon">
+                <Icon icon="mdi:phone" width="24" color="rgb(140, 105, 16)" />
+                <a class="__link-style-2"
+                   href="tel:8037343793"
+                   target="_blank">
+                  803-734-3793
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="left">
+            <span>Oct</span>
+            <span>18</span>
+            <span>2022</span>
+          </div>
+
+          <div class="right">
+            <div class="group">
+              <span class="__h4 __badge __red">Cancelled</span>
+              <h2 class="__h2">Revenue and Fiscal Affairs Board Meeting</h2>
+            </div>
+
+            <div class="group">
+              <p class="with-icon">
+                <Icon icon="mdi:clock-outline" width="24" color="rgb(140, 105, 16)" />
+                <span class="__text">
+                Upon adjournment of BEA Meeting
+              </span>
+              </p>
+
+              <p class="with-icon">
+                <Icon icon="mdi:phone" width="24" color="rgb(140, 105, 16)" />
+                <a class="__link-style-2"
+                   href="tel:8037343793"
+                   target="_blank">
+                  803-734-3793
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>

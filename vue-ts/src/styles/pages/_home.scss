@@ -275,6 +275,8 @@ p.with-icon {
 
         padding: 40px 0;
 
+        border-bottom: 1px solid $color__grey;
+
         .left {
           display: flex;
           flex-direction: column;
@@ -305,6 +307,14 @@ p.with-icon {
           gap: 16px;
 
           max-width: 500px;
+
+          .group {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 8px;
+          }
 
           p {
             &.__text {
