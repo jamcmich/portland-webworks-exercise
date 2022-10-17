@@ -5,6 +5,9 @@ set -e
 
 cd ./vue-ts
 
+# install modules
+npm install
+
 # build
 npm run build
 
