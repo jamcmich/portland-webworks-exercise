@@ -15,6 +15,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run deployment script
         run: |
-          chmod +x ../../deploy.sh
-          ../../deploy.sh
+          chmod +x ./vue-ts/deploy.sh
+          ./vue-ts/deploy.sh
           shell: bash
