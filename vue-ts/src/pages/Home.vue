@@ -34,15 +34,14 @@
             Our latest dashboards include population counts from the 2020 Census used for the redistricting process.
             Please note that gender and age are not included in this release.
             <a class="__link-style-2"
-               href="https://rfa.sc.gov/data-research/population-demographics/census-state-data-center/decennial-census-data"
-               target="_blank">Click here for population tables, downloadable files, and dashboards.</a>
+               href="https://rfa.sc.gov/data-research/population-demographics/census-state-data-center/decennial-census-data">
+              Click here for population tables, downloadable files, and dashboards.</a>
           </p>
 
           <p class="__text">
             Read more about RFA Online Analytics
             <a class="__link-style-2"
-               href="https://rfa.sc.gov/data-services/online-analytics"
-               target="_blank">here</a>.
+               href="https://rfa.sc.gov/data-services/online-analytics">here</a>.
           </p>
         </div>
       </div>
@@ -58,6 +57,28 @@
   <section class="additional-links">
     <div class="flex-container">
       <h3 class="__header-style-3">Popular Services and Links</h3>
+
+      <div class="row">
+        <div class="column">
+          <p><a class="__link-style-1" href="">Board of Economic Advisors (meeting documents and other information)</a>
+          </p>
+          <p><a class="__link-style-1" href="">General Fund Revenue Reports</a></p>
+          <p><a class="__link-style-1" href="">Presentations</a></p>
+        </div>
+
+        <div class="column">
+          <p><a class="__link-style-1" href="">Decennial Census Data</a></p>
+          <p><a class="__link-style-1" href="">Inflation Adjustments for Legal Proceedings</a></p>
+          <p><a class="__link-style-1" href="">Real Time Network</a></p>
+        </div>
+
+        <div class="column">
+          <p><a class="__link-style-1" href="">Estimated Tax Savings FY 2020-21</a></p>
+          <p><a class="__link-style-1" href="">Local Business License Renewal Center (links to an external website)</a>
+          </p>
+          <p><a class="__link-style-1" href="">Sales and Use Tax Exemptions</a></p>
+        </div>
+      </div>
     </div>
   </section>
 </template>
