@@ -1,13 +1,18 @@
 name: Build Site
 run-name: Rebuilding the site 🚀
 on:
+  #  pull_request:
+  #    branches:
+  #      - main
+  #    types:
+  #      - closed
   push:
     branches:
       - jamcmich/test-merge
 
 jobs:
-  if_merged:
-    if: github.event.pull_request.merged == true
+  build:
+    #    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
