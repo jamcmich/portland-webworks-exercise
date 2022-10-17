@@ -3,6 +3,8 @@
 # abort on errors
 set -e
 
+cd ./vue-ts
+
 # build
 npm run build
 
@@ -17,6 +19,6 @@ git checkout -B main
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
+git push -f git@github.com:jamcmich/portland-webworks-exercise.git main:gh-pages
 
 cd -
