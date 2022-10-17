@@ -1,8 +1,5 @@
-@use "../_variables" as *;
-@use "../_classes" as *;
-
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
 
@@ -51,7 +48,7 @@
 
     margin: 0 20px;
 
-    .site-details-group {
+    .site-details-container {
       display: flex;
       flex-direction: row;
       height: 100%;

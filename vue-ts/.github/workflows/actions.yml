@@ -1,0 +1,21 @@
+name: Build Site
+run-name: Rebuilding the site 🚀
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
+
+
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run deployment script
+        run: |
+          chmod +x ../../deploy.sh
+          ../../deploy.sh
+          shell: bash
