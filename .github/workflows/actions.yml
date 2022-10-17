@@ -1,11 +1,9 @@
 name: Build Site
 run-name: Rebuilding the site 🚀
 on:
-  pull_request:
+  push:
     branches:
-      - main
-    types:
-      - closed
+      - jamcmich/test-merge
 
 jobs:
   if_merged:
