@@ -1,3 +1,12 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 75%;
+  height: 100%;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -99,56 +108,67 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 40px;
 
+  width: 100%;
   height: 500px;
 
-  h2 {
-    color: $color__navy-peony;
-  }
+  .flex-container {
+    flex-direction: row;
+    gap: 40px;
 
-  .left-column {
-    h2 {
-      margin-bottom: 50px;
-    }
+    .left-column {
+      h2 {
+        color: $color__navy-peony;
+        margin-bottom: 50px;
+      }
 
-    .text-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 15px;
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 15px;
 
-      p {
-        width: 560px;
-
-        color: $color__carbon;
+        p {
+          color: $color__carbon;
+        }
       }
     }
-  }
 
-  .right-column {
-    padding: 30px 0;
-    height: 100%;
-
-    .image-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      width: 560px;
+    .right-column {
+      padding: 40px 0;
       height: 100%;
 
-      background-image: url("../assets/census-preview.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+      .image-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-      button {
-        width: 250px;
-        text-transform: none;
+        width: 560px;
+        height: 100%;
+
+        background-image: url("../assets/census-preview.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+
+        button {
+          width: 250px;
+          text-transform: none;
+        }
       }
     }
+  }
+}
+
+.additional-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    width: 100%;
   }
 }
