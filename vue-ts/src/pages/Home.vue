@@ -73,7 +73,11 @@
         </div>
 
         <div class="column">
-          <p><a class="__link-style-1" href="">Estimated Tax Savings FY 2020-21</a></p>
+          <p><a class="__link-style-1"
+                href="/provisions.pdf"
+                title="Provisions Affecting GF Revenue (Tax Savings) FY21 9.7.21.pdf"
+                target="_blank">Estimated Tax Savings FY
+                                2020-21</a></p>
           <p><a class="__link-style-1" href="">Local Business License Renewal Center (links to an external website)</a>
           </p>
           <p><a class="__link-style-1" href="">Sales and Use Tax Exemptions</a></p>
