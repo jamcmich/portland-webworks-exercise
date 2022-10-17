@@ -11,9 +11,11 @@
   </section>
 
   <section class="cards">
-    <div class="card" v-for="(card, index) in cardItems.hero" :key="index">
-      <img :src="card.img" :alt="card.alt" />
-      <p>{{ card.title }}</p>
+    <div class="flex-container">
+      <div class="card" v-for="(card, index) in cardItems.hero" :key="index">
+        <img :src="card.img" :alt="card.alt" />
+        <p>{{ card.title }}</p>
+      </div>
     </div>
   </section>
 
