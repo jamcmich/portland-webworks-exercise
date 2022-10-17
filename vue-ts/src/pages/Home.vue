@@ -113,14 +113,19 @@
           </p>
 
           <p class="with-icon">
-            <a class="__link-style-1" href="https://www.localblrenewal.com/">
+            <a class="__link-style-1"
+               href="https://www.localblrenewal.com/"
+               target="_blank">
               Local Business License Renewal Center (links to an external website)
             </a>
             <Icon icon="mdi:open-in-new" width="20" color="rgb(117, 117, 117)" />
           </p>
 
           <p class="with-icon">
-            <a class="__link-style-1" href="">
+            <a class="__link-style-1"
+               href="/sales.pdf"
+               title="Sales and Use Tax Exemptions - FY2019-20.pdf"
+               target="_blank">
               Sales and Use Tax Exemptions
             </a>
             <Icon icon="mdi:file-document-outline" width="20" color="rgb(117, 117, 117)" />
