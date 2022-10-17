@@ -60,27 +60,71 @@
 
       <div class="row">
         <div class="column">
-          <p><a class="__link-style-1" href="">Board of Economic Advisors (meeting documents and other information)</a>
+          <p>
+            <a class="__link-style-1" href="https://rfa.sc.gov/boards-committees/bea">
+              Board of Economic Advisors (meeting documents and other information)
+            </a>
           </p>
-          <p><a class="__link-style-1" href="">General Fund Revenue Reports</a></p>
-          <p><a class="__link-style-1" href="">Presentations</a></p>
+
+          <p>
+            <a class="__link-style-1" href="https://rfa.sc.gov/data-research/state-finances/monthly-general">
+              General Fund Revenue Reports
+            </a>
+          </p>
+
+          <p>
+            <a class="__link-style-1" href="https://rfa.sc.gov/data-research/presentations">
+              Presentations
+            </a>
+          </p>
         </div>
 
         <div class="column">
-          <p><a class="__link-style-1" href="">Decennial Census Data</a></p>
-          <p><a class="__link-style-1" href="">Inflation Adjustments for Legal Proceedings</a></p>
-          <p><a class="__link-style-1" href="">Real Time Network</a></p>
+          <p>
+            <a class="__link-style-1"
+               href="https://rfa.sc.gov/data-research/population-demographics/census-state-data-center/decennial-census-data">
+              Decennial Census Data
+            </a>
+          </p>
+
+          <p>
+            <a class="__link-style-1"
+               href="https://rfa.sc.gov/page/data-research/inflation-adjustments-legal-proceedings">
+              Inflation Adjustments for Legal Proceedings
+            </a>
+          </p>
+
+          <p>
+            <a class="__link-style-1" href="https://rfa.sc.gov/programs-services/geodetic/rtnstatus">
+              Real Time Network
+            </a>
+          </p>
         </div>
 
         <div class="column">
-          <p><a class="__link-style-1"
-                href="/provisions.pdf"
-                title="Provisions Affecting GF Revenue (Tax Savings) FY21 9.7.21.pdf"
-                target="_blank">Estimated Tax Savings FY
-                                2020-21</a></p>
-          <p><a class="__link-style-1" href="">Local Business License Renewal Center (links to an external website)</a>
+          <p class="with-icon">
+            <a class="__link-style-1"
+               href="/provisions.pdf"
+               title="Provisions Affecting GF Revenue (Tax Savings) FY21 9.7.21.pdf"
+               target="_blank">
+              Estimated Tax Savings FY 2020-21
+            </a>
+            <Icon icon="mdi:file-document-outline" width="20" color="rgb(117, 117, 117)" />
           </p>
-          <p><a class="__link-style-1" href="">Sales and Use Tax Exemptions</a></p>
+
+          <p class="with-icon">
+            <a class="__link-style-1" href="https://www.localblrenewal.com/">
+              Local Business License Renewal Center (links to an external website)
+            </a>
+            <Icon icon="mdi:open-in-new" width="20" color="rgb(117, 117, 117)" />
+          </p>
+
+          <p class="with-icon">
+            <a class="__link-style-1" href="">
+              Sales and Use Tax Exemptions
+            </a>
+            <Icon icon="mdi:file-document-outline" width="20" color="rgb(117, 117, 117)" />
+          </p>
         </div>
       </div>
     </div>
@@ -88,6 +132,8 @@
 </template>
 
 <script lang="ts">
+import { Icon } from "@iconify/vue";
+
 import Research from "../assets/research.svg";
 import Geography from "../assets/geography.svg";
 import Programs from "../assets/programs.svg";
@@ -95,6 +141,9 @@ import Legislative from "../assets/legislative.svg";
 
 export default {
   name: "Home",
+  components: {
+    Icon,
+  },
   data() {
     return {
       cardItems: {

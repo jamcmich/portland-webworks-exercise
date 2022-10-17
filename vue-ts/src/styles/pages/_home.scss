@@ -195,6 +195,17 @@
         gap: 40px;
 
         width: 100%;
+
+        p.with-icon {
+          a {
+            margin-right: 16px;
+          }
+
+          svg {
+            display: inline-flex;
+            vertical-align: bottom;
+          }
+        }
       }
     }
   }
