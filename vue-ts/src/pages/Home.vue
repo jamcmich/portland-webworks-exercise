@@ -104,7 +104,7 @@
         <div class="column">
           <p class="with-icon">
             <a class="__link-style-1"
-               href="/portland-webworks-exercise/provisions.pdf"
+               href="../assets/documents/provisions.pdf"
                title="Provisions Affecting GF Revenue (Tax Savings) FY21 9.7.21.pdf"
                target="_blank">
               Estimated Tax Savings FY 2020-21
@@ -123,7 +123,7 @@
 
           <p class="with-icon">
             <a class="__link-style-1"
-               href="/portland-webworks-exercise/sales.pdf"
+               href="../assets/documents/sales.pdf"
                title="Sales and Use Tax Exemptions - FY2019-20.pdf"
                target="_blank">
               Sales and Use Tax Exemptions
@@ -198,135 +198,7 @@
         </ul>
       </div>
 
-      <div class="upcoming-events">
-        <h3 class="__header-style-2">Upcoming Events</h3>
-
-        <div class="row">
-          <div class="left">
-            <span>Oct</span>
-            <span>18</span>
-            <span>2022</span>
-          </div>
-
-          <div class="right">
-            <div class="group">
-              <h2 class="__h2">Board of Economic Advisors Meeting and Annual Regional Advisory Meeting</h2>
-            </div>
-
-            <p class="with-icon">
-              <a class="__link-style-2"
-                 href="https://us06web.zoom.us/j/86022440281"
-                 target="_blank">
-                https://us06web.zoom.us/j/86022440281
-              </a>
-              <Icon icon="mdi:open-in-new" width="20" color="rgb(117, 117, 117)" />
-            </p>
-
-            <p class="__text">
-              Access by Phone:
-              <a class="__link-style-2" href="tel:13126266799">1-312-626-6799</a>
-              , Webinar ID:
-              <a class="__link-style-2"
-                 href="https://us06web.zoom.us/j/86022440281"
-                 target="_blank">860 2244 0281</a>
-              <br>
-              Board of Economic Advisors Meeting begins at 10:30 a.m.
-              <br>
-              Annual Regional Advisory Meeting begins at 12:45 p.m.
-            </p>
-
-            <p class="with-icon">
-              <Icon icon="mdi:phone" width="24" color="rgb(140, 105, 16)" />
-              <a class="__link-style-2"
-                 href="tel:8037343793"
-                 target="_blank">
-                803-734-3793
-              </a>
-            </p>
-
-            <p class="with-icon agenda">
-              <Icon icon="mdi:format-list-bulleted" width="24" color="rgba(51, 51, 51, 0.5)" />
-              <a class="__link-style-1"
-                 href="/agenda.pdf"
-                 title="BEA Agenda - 10-18-22_0.pdf"
-                 target="_blank">Agenda</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="left">
-            <span>Oct</span>
-            <span>18</span>
-            <span>2022</span>
-          </div>
-
-          <div class="right">
-            <div class="group">
-              <span class="__h4 __badge __red">Cancelled</span>
-              <h2 class="__h2">911 Advisory Committee</h2>
-            </div>
-
-            <div class="group">
-              <p class="with-icon">
-                <Icon icon="mdi:map-marker-outline" width="24" color="rgb(140, 105, 16)" />
-                <span class="__text">
-                Revenue and Fiscal Affairs Office
-              </span>
-              </p>
-
-              <p class="with-icon">
-                <Icon icon="mdi:clock-outline" width="24" color="rgb(140, 105, 16)" />
-                <span class="__text">
-                10:00 AM
-              </span>
-              </p>
-
-              <p class="with-icon">
-                <Icon icon="mdi:phone" width="24" color="rgb(140, 105, 16)" />
-                <a class="__link-style-2"
-                   href="tel:8037343793"
-                   target="_blank">
-                  803-734-3793
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="left">
-            <span>Oct</span>
-            <span>18</span>
-            <span>2022</span>
-          </div>
-
-          <div class="right">
-            <div class="group">
-              <span class="__h4 __badge __red">Cancelled</span>
-              <h2 class="__h2">Revenue and Fiscal Affairs Board Meeting</h2>
-            </div>
-
-            <div class="group">
-              <p class="with-icon">
-                <Icon icon="mdi:clock-outline" width="24" color="rgb(140, 105, 16)" />
-                <span class="__text">
-                Upon adjournment of BEA Meeting
-              </span>
-              </p>
-
-              <p class="with-icon">
-                <Icon icon="mdi:phone" width="24" color="rgb(140, 105, 16)" />
-                <a class="__link-style-2"
-                   href="tel:8037343793"
-                   target="_blank">
-                  803-734-3793
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <EventsCards />
     </div>
   </section>
 </template>
@@ -334,6 +206,7 @@
 <script lang="ts">
 import { Icon } from "@iconify/vue";
 
+import EventsCards from "../components/EventsCards.vue";
 import Research from "../assets/icons/research.svg";
 import Geography from "../assets/icons/geography.svg";
 import Programs from "../assets/icons/programs.svg";
@@ -343,6 +216,7 @@ export default {
   name: "Home",
   components: {
     Icon,
+    EventsCards,
   },
   data() {
     return {

@@ -1,0 +1,88 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "status": "",
+      "date": {
+        "month": "Oct",
+        "day": "18",
+        "year": "2022"
+      },
+      "title": "Board of Economic Advisors Meeting and Annual Regional Advisory Meeting",
+      "description": "Access by phone or video. Board of Economic Advisors Meeting begins at 10:30 AM. Annual Regional Advisory Meeting begins at 12:45 PM.",
+      "location": "",
+      "time": "",
+      "info": {
+        "time": "",
+        "location": ""
+      },
+      "links": {
+        "phone": "803-734-3793",
+        "video": "https://us06web.zoom.us/j/86022440281"
+      },
+      "attachments": [
+        {
+          "id": 1,
+          "name": "Agenda",
+          "file": "https://rfa.sc.gov/sites/default/files/2022-10/BEA%20Agenda%20-%2010-18-22_0.pdf"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "status": "Cancelled",
+      "date": {
+        "month": "Oct",
+        "day": "18",
+        "year": "2022"
+      },
+      "title": "911 Advisory Committee",
+      "description": "",
+      "location": "",
+      "time": "",
+      "info": {
+        "time": "10:00 AM",
+        "location": "Revenue and Fiscal Affairs Office"
+      },
+      "links": {
+        "phone": "803-734-3793",
+        "video": ""
+      },
+      "attachments": [
+        {
+          "id": 1,
+          "name": "",
+          "file": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "status": "Cancelled",
+      "date": {
+        "month": "Oct",
+        "day": "18",
+        "year": "2022"
+      },
+      "title": "Revenue and Fiscal Affairs Board Meeting",
+      "description": "",
+      "location": "",
+      "time": "",
+      "info": {
+        "time": "Upon adjournment of BEA Meeting",
+        "location": "Revenue and Fiscal Affairs Office"
+      },
+      "links": {
+        "phone": "803-734-3793",
+        "video": ""
+      },
+      "attachments": [
+        {
+          "id": 1,
+          "name": "",
+          "file": ""
+        }
+      ]
+    }
+  ]
+}
