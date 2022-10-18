@@ -104,7 +104,7 @@
         <div class="column">
           <p class="with-icon">
             <a class="__link-style-1"
-               href="/provisions.pdf"
+               href="../../src/assets/documents/provisions.pdf"
                title="Provisions Affecting GF Revenue (Tax Savings) FY21 9.7.21.pdf"
                target="_blank">
               Estimated Tax Savings FY 2020-21
@@ -123,7 +123,7 @@
 
           <p class="with-icon">
             <a class="__link-style-1"
-               href="/sales.pdf"
+               href="../../src/assets/documents/sales.pdf"
                title="Sales and Use Tax Exemptions - FY2019-20.pdf"
                target="_blank">
               Sales and Use Tax Exemptions
@@ -142,7 +142,7 @@
 
         <ul>
           <li>
-            <a class="__link-style-1">
+            <a class="__link-style-1" href="https://rfa.sc.gov/data-research/state-finances/motor-fuel">
               Motor Fuel Information
             </a>
             <p>
@@ -151,7 +151,7 @@
           </li>
 
           <li>
-            <a class="__link-style-1">
+            <a class="__link-style-1" href="https://rfa.sc.gov/data-research/state-finances">
               State Finances and Economy
             </a>
             <p>
@@ -160,7 +160,7 @@
           </li>
 
           <li>
-            <a class="__link-style-1">
+            <a class="__link-style-1" href="https://rfa.sc.gov/teacher-salary-projections">
               Teacher Salary Projections
             </a>
             <p>
@@ -169,7 +169,7 @@
           </li>
 
           <li>
-            <a class="__link-style-1">
+            <a class="__link-style-1" href="https://rfa.sc.gov/programs-services/fiscal-analysis/economic-analyses">
               Economic Analyses
             </a>
             <p>
@@ -178,7 +178,7 @@
           </li>
 
           <li>
-            <a class="__link-style-1">
+            <a class="__link-style-1" href="https://rfa.sc.gov/data-services/online-analytics">
               Online Analytics
             </a>
             <p>
@@ -187,7 +187,8 @@
           </li>
 
           <li>
-            <a class="__link-style-1">
+            <a class="__link-style-1"
+               href="https://rfa.sc.gov/programs-services/precinct-demographics/jurisdictional-mapping">
               Jurisdictional Mapping
             </a>
             <p>
@@ -333,10 +334,10 @@
 <script lang="ts">
 import { Icon } from "@iconify/vue";
 
-import Research from "../assets/research.svg";
-import Geography from "../assets/geography.svg";
-import Programs from "../assets/programs.svg";
-import Legislative from "../assets/legislative.svg";
+import Research from "../assets/icons/research.svg";
+import Geography from "../assets/icons/geography.svg";
+import Programs from "../assets/icons/programs.svg";
+import Legislative from "../assets/icons/legislative.svg";
 
 export default {
   name: "Home",
