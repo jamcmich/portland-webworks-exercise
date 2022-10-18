@@ -104,7 +104,7 @@
         <div class="column">
           <p class="with-icon">
             <a class="__link-style-1"
-               href="../../src/assets/documents/provisions.pdf"
+               href="/portland-webworks-exercise/provisions.pdf"
                title="Provisions Affecting GF Revenue (Tax Savings) FY21 9.7.21.pdf"
                target="_blank">
               Estimated Tax Savings FY 2020-21
@@ -123,7 +123,7 @@
 
           <p class="with-icon">
             <a class="__link-style-1"
-               href="../../src/assets/documents/sales.pdf"
+               href="/portland-webworks-exercise/sales.pdf"
                title="Sales and Use Tax Exemptions - FY2019-20.pdf"
                target="_blank">
               Sales and Use Tax Exemptions
