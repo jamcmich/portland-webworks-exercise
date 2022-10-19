@@ -43,9 +43,22 @@
       <HomeNews />
     </div>
   </section>
+
+  <div class="top-return">
+    <div class="flex-container">
+      <a class="__link-style-2" v-on:click="handleReturnTop">
+        Back to Top
+        <span class="icon-background">
+          <Icon icon="mdi:chevron-up" width="28" color="rgb(0, 116, 193)" />
+        </span>
+      </a>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
+import { Icon } from "@iconify/vue";
+
 import HomeAnalytics from "../components/HomeAnalytics.vue";
 import HomeServices from "../components/HomeServices.vue";
 import HomeUpdates from "../components/HomeUpdates.vue";
@@ -59,6 +72,7 @@ import Legislative from "../assets/icons/legislative.svg";
 export default {
   name: "Home",
   components: {
+    Icon,
     HomeAnalytics,
     HomeServices,
     HomeUpdates,
@@ -92,6 +106,11 @@ export default {
         ],
       },
     };
+  },
+  methods: {
+    handleReturnTop() {
+      window.scrollTo({top: 0, behavior: "smooth"});
+    },
   },
 };
 </script>
