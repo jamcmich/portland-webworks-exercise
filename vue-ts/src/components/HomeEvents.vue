@@ -68,7 +68,7 @@ import { Icon } from "@iconify/vue";
 import json from "../../data/events.json";
 
 export default defineComponent({
-  name: "EventsCards.vue",
+  name: "HomeEvents",
   components: {
     Icon,
   },
@@ -81,5 +81,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-@import "../styles/components/_eventscards";
+@import "../styles/components/_home-events";
 </style>

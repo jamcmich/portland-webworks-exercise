@@ -137,68 +137,8 @@
 
   <section class="updates-and-events">
     <div class="flex-container">
-      <div class="recent-updates">
-        <h3 class="__header-style-2">Recent Updates</h3>
-
-        <ul>
-          <li>
-            <a class="__link-style-1" href="https://rfa.sc.gov/data-research/state-finances/motor-fuel">
-              Motor Fuel Information
-            </a>
-            <p>
-              <span>Updated:</span> Thu, 09/22/2022 - 13:15
-            </p>
-          </li>
-
-          <li>
-            <a class="__link-style-1" href="https://rfa.sc.gov/data-research/state-finances">
-              State Finances and Economy
-            </a>
-            <p>
-              <span>Updated:</span> Thu, 09/01/2022 - 15:10
-            </p>
-          </li>
-
-          <li>
-            <a class="__link-style-1" href="https://rfa.sc.gov/teacher-salary-projections">
-              Teacher Salary Projections
-            </a>
-            <p>
-              <span>Updated:</span> Thu, 09/22/2022 - 13:15
-            </p>
-          </li>
-
-          <li>
-            <a class="__link-style-1" href="https://rfa.sc.gov/programs-services/fiscal-analysis/economic-analyses">
-              Economic Analyses
-            </a>
-            <p>
-              <span>Updated:</span> Tue, 08/16/2022 - 09:49
-            </p>
-          </li>
-
-          <li>
-            <a class="__link-style-1" href="https://rfa.sc.gov/data-services/online-analytics">
-              Online Analytics
-            </a>
-            <p>
-              <span>Updated:</span> Tue, 08/02/2022 - 10:09
-            </p>
-          </li>
-
-          <li>
-            <a class="__link-style-1"
-               href="https://rfa.sc.gov/programs-services/precinct-demographics/jurisdictional-mapping">
-              Jurisdictional Mapping
-            </a>
-            <p>
-              <span>Updated:</span> Fri, 07/22/2022 - 11:32
-            </p>
-          </li>
-        </ul>
-      </div>
-
-      <EventsCards />
+      <HomeUpdates />
+      <HomeEvents />
     </div>
   </section>
 </template>
@@ -206,7 +146,8 @@
 <script lang="ts">
 import { Icon } from "@iconify/vue";
 
-import EventsCards from "../components/EventsCards.vue";
+import HomeUpdates from "../components/HomeUpdates.vue";
+import HomeEvents from "../components/HomeEvents.vue";
 import Research from "../assets/icons/research.svg";
 import Geography from "../assets/icons/geography.svg";
 import Programs from "../assets/icons/programs.svg";
@@ -216,7 +157,8 @@ export default {
   name: "Home",
   components: {
     Icon,
-    EventsCards,
+    HomeUpdates,
+    HomeEvents,
   },
   data() {
     return {
@@ -250,5 +192,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/pages/_home.scss";
+@import "../styles/pages/home-page";
 </style>
