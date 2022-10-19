@@ -3,7 +3,7 @@
 
   <div class="cards-container">
     <div class="__card card" v-for="item in news" :key="item.id">
-      <a class="__link-style-1" :href="news.link"><h3 class="__card-header">{{ item.title }}</h3></a>
+      <a class="__link-style-1" :href="item.link"><h3 class="__card-header">{{ item.title }}</h3></a>
       <span class="__h4">{{ item.date }}</span>
       <p class="__text">{{ item.description }}</p>
     </div>
