@@ -31,7 +31,7 @@
     text-transform: none;
   }
 
-  .search-form {
+  #search-form {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -40,6 +40,15 @@
 
     width: 50%;
 
+    &:focus-within {
+      input {
+        outline: none;
+        border: 2px solid transparent;
+        border-radius: 2px;
+        box-shadow: 0 0 0 3px rgba(48, 104, 173, 0.5);
+      }
+    }
+
     input {
       width: 100%;
       max-width: 500px;
@@ -47,16 +56,11 @@
 
       padding: 0 16px;
 
+      transition: box-shadow 0.1s ease;
+
       &::placeholder {
         color: rgb(117, 117, 117);
         opacity: 1;
-      }
-
-      &:focus {
-        outline: none;
-        border: none;
-        border-radius: 2px;
-        box-shadow: 0 0 0 3px rgba(48, 104, 173, 0.5);
       }
     }
 

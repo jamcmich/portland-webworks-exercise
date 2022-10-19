@@ -20,12 +20,8 @@
     color: white;
     background-color: $color__ocean-blue;
 
-    transition: background-color 0.2s ease;
+    transition: background-color 0.1s ease;
 
-    &:hover, &:active {
-      transition: background-color 0.2s ease;
-    }
-    
     &:hover {
       background-color: $color__ocean;
     }

@@ -3,10 +3,9 @@
     <p class="__header-style-4">Providing insightful research, analysis, and resources to facilitate informed
                                 policy decisions and administration of services</p>
 
-    <form id="search-form" class="search-form">
-      <label></label>
+    <form id="search-form" action="">
       <input class="__text" placeholder="Search rfa.sc.gov" />
-      <button class="__button __solid" form="search-form" type="submit">
+      <button class="__button __solid" form="search-form" type="submit" value="submit">
         Search
         <Icon icon="mdi:magnify" width="24" />
       </button>

@@ -1,17 +1,20 @@
 <template>
-  <Navbar />
+  <AppNavbar />
   <Home />
+  <AppFooter />
 </template>
 
 <script lang="ts">
-import Navbar from "./components/AppNavbar.vue";
+import AppNavbar from "./components/AppNavbar.vue";
 import Home from "./pages/HomePage.vue";
+import AppFooter from "./components/AppFooter.vue";
 
 export default {
   name: "App",
   components: {
-    Navbar,
+    AppNavbar,
     Home,
+    AppFooter,
   },
 };
 </script>
