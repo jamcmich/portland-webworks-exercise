@@ -1,5 +1,5 @@
 <template>
-  <section class="events">
+  <div class="events">
     <h3 class="__header-style-2">Upcoming Events</h3>
 
     <div class="card" v-for="event in events" :key="event.id">
@@ -58,7 +58,7 @@
         </template>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script lang="ts">

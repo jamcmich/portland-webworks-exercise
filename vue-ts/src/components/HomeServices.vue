@@ -1,8 +1,9 @@
 <template>
   <div class="services">
+    <h3 class="__header-style-3">Popular Services and Links</h3>
 
-    <template v-for="service in services" :key="service.id">
-      <p class="item">
+    <div class="column">
+      <p class="item" v-for="service in services" :key="service.id">
         <a class="__link-style-1" :href="service.link">
           {{ service.title }}
         </a>
@@ -11,7 +12,7 @@
         <Icon v-if="service.link.includes('.pdf')" icon="mdi:file-document-outline" width="20"
               color="rgb(117, 117, 117)" />
       </p>
-    </template>
+    </div>
   </div>
 </template>
 
