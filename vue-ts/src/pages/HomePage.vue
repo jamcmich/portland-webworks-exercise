@@ -10,12 +10,9 @@
     </form>
   </section>
 
-  <section class="card-section">
+  <section class="featured-section">
     <div class="flex-container">
-      <div class="card" v-for="(card, index) in cardItems.hero" :key="index">
-        <img :src="card.img" :alt="card.alt" />
-        <p>{{ card.title }}</p>
-      </div>
+      <HomeFeatured />
     </div>
   </section>
 
@@ -59,53 +56,23 @@
 <script lang="ts">
 import { Icon } from "@iconify/vue";
 
+import HomeFeatured from "../components/HomeFeatured.vue";
 import HomeAnalytics from "../components/HomeAnalytics.vue";
 import HomeServices from "../components/HomeServices.vue";
 import HomeUpdates from "../components/HomeUpdates.vue";
 import HomeEvents from "../components/HomeEvents.vue";
 import HomeNews from "../components/HomeNews.vue";
-import Research from "../assets/icons/research.svg";
-import Geography from "../assets/icons/geography.svg";
-import Programs from "../assets/icons/programs.svg";
-import Legislative from "../assets/icons/legislative.svg";
 
 export default {
   name: "Home",
   components: {
     Icon,
+    HomeFeatured,
     HomeAnalytics,
     HomeServices,
     HomeUpdates,
     HomeEvents,
     HomeNews,
-  },
-  data() {
-    return {
-      cardItems: {
-        hero: [
-          {
-            title: "Data & Research",
-            img: Research,
-            alt: "Data & Research",
-          },
-          {
-            title: "Geography & Mapping",
-            img: Geography,
-            alt: "Geography & Mapping",
-          },
-          {
-            title: "Programs & Services",
-            img: Programs,
-            alt: "Programs & Services",
-          },
-          {
-            title: "Legislative Fiscal Impacts",
-            img: Legislative,
-            alt: "Legislative Fiscal Impacts",
-          },
-        ],
-      },
-    };
   },
   methods: {
     handleReturnTop() {

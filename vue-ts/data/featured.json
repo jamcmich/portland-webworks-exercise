@@ -1,0 +1,28 @@
+{
+  "featured": [
+    {
+      "id": 1,
+      "title": "Data & Research",
+      "img": "../src/assets/icons/research.svg",
+      "alt": "Data & Research"
+    },
+    {
+      "id": 2,
+      "title": "Geography & Mapping",
+      "img": "../src/assets/icons/geography.svg",
+      "alt": "Geography & Mapping"
+    },
+    {
+      "id": 3,
+      "title": "Programs & Services",
+      "img": "../src/assets/icons/programs.svg",
+      "alt": "Programs & Services"
+    },
+    {
+      "id": 4,
+      "title": "Legislative Fiscal Impacts",
+      "img": "../src/assets/icons/legislative.svg",
+      "alt": "Legislative Fiscal Impacts"
+    }
+  ]
+}
