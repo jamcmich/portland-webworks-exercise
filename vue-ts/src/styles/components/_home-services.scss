@@ -1,0 +1,30 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 20px;
+
+  width: 100%;
+  max-height: 200px;
+
+  p.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+
+    svg {
+      flex-shrink: 0;
+      align-self: stretch;
+    }
+  }
+
+  .item {
+    flex: 0 32%;
+    width: 30%;
+    min-height: 50px;
+  }
+}

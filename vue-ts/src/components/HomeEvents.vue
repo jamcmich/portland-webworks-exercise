@@ -20,24 +20,24 @@
         </p>
 
         <div class="group">
-          <p class="with-icon" v-if="event.info.location">
+          <p class="item" v-if="event.info.location">
             <Icon icon="mdi:map-marker-outline" width="24" color="rgb(140, 105, 16)" />
             <span class="__text">{{ event.info.location }}</span>
           </p>
 
-          <p class="with-icon" v-if="event.info.time">
+          <p class="item" v-if="event.info.time">
             <Icon icon="mdi:clock-outline" width="24" color="rgb(140, 105, 16)" />
             <span class="__text">{{ event.info.time }}</span>
           </p>
 
-          <p class="with-icon" v-if="event.links.phone">
+          <p class="item" v-if="event.links.phone">
             <Icon icon="mdi:phone" width="24" color="rgb(140, 105, 16)" />
             <a class="__link-style-2" :href="`tel:${event.links.phone}`">
               {{ event.links.phone }}
             </a>
           </p>
 
-          <p class="with-icon" v-if="event.links.video">
+          <p class="item" v-if="event.links.video">
             <Icon icon="mdi:laptop-account" width="24" color="rgb(140, 105, 16)" />
             <a class="__link-style-2"
                :href="event.links.video"
@@ -48,7 +48,7 @@
         </div>
 
         <template v-for="attachment in event.attachments" :key="attachment.id">
-          <p class="with-icon agenda" v-if="attachment.name">
+          <p class="item agenda" v-if="attachment.name">
             <Icon icon="mdi:format-list-bulleted" width="24" color="rgba(51, 51, 51, 0.5)" />
             <a class="__link-style-1"
                :href="attachment.file"
@@ -80,6 +80,6 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../styles/components/_home-events";
 </style>

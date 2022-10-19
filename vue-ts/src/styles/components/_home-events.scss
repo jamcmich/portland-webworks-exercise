@@ -1,4 +1,17 @@
 .events {
+  p.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+
+    svg {
+      flex-shrink: 0;
+      align-self: stretch;
+    }
+  }
+
   .card {
     display: flex;
     flex-direction: row;
