@@ -4,8 +4,8 @@
 </template>
 
 <script lang="ts">
-import Navbar from "./components/Navbar.vue";
-import Home from "./pages/Home.vue";
+import Navbar from "./components/AppNavbar.vue";
+import Home from "./pages/HomePage.vue";
 
 export default {
   name: "App",

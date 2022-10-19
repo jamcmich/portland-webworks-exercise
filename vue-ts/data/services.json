@@ -1,0 +1,49 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Board of Economic Advisors (meeting documents and other information)",
+      "link": "https://rfa.sc.gov/boards-committees/bea"
+    },
+    {
+      "id": 2,
+      "title": "General Fund Revenue Reports",
+      "link": "https://rfa.sc.gov/data-research/state-finances/monthly-general"
+    },
+    {
+      "id": 3,
+      "title": "Presentations",
+      "link": "https://rfa.sc.gov/data-research/presentations"
+    },
+    {
+      "id": 4,
+      "title": "Decennial Census Data",
+      "link": "https://rfa.sc.gov/data-research/population-demographics/census-state-data-center/decennial-census-data"
+    },
+    {
+      "id": 5,
+      "title": "Inflation Adjustments for Legal Proceedings",
+      "link": "https://rfa.sc.gov/page/data-research/inflation-adjustments-legal-proceedings"
+    },
+    {
+      "id": 6,
+      "title": "Real Time Network",
+      "link": "https://rfa.sc.gov/programs-services/geodetic/rtnstatus"
+    },
+    {
+      "id": 7,
+      "title": "Estimated Tax Savings FY 2020-21",
+      "link": "https://rfa.sc.gov/sites/default/files/2021-09/Provisions%20Affecting%20GF%20Revenue%20%28Tax%20Savings%29%20FY21%209.7.21.pdf"
+    },
+    {
+      "id": 8,
+      "title": "Local Business License Renewal Center (links to an external website)",
+      "link": "https://www.localblrenewal.com/"
+    },
+    {
+      "id": 9,
+      "title": "Sales and Use Tax Exemptions",
+      "link": "https://rfa.sc.gov/sites/default/files/Sales%20and%20Use%20Tax%20Exemptions%20-%20FY2019-20.pdf"
+    }
+  ]
+}

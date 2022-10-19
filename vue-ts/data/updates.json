@@ -1,0 +1,40 @@
+{
+  "updates": [
+    {
+      "id": 1,
+      "title": "Motor Fuel Information",
+      "date": "Thu, 09/22/2022 - 13:15",
+      "link": "https://rfa.sc.gov/data-research/state-finances/motor-fuel"
+    },
+    {
+      "id": 2,
+      "title": "State Finances and Economy",
+      "date": "Thu, 09/01/2022 - 15:10",
+      "link": "https://rfa.sc.gov/data-research/state-finances"
+    },
+    {
+      "id": 3,
+      "title": "Teacher Salary Projections",
+      "date": "Mon, 08/29/2022 - 11:14",
+      "link": "https://rfa.sc.gov/teacher-salary-projections"
+    },
+    {
+      "id": 4,
+      "title": "Economic Analyses",
+      "date": "Tue, 08/16/2022 - 09:49",
+      "link": "https://rfa.sc.gov/programs-services/fiscal-analysis/economic-analyses"
+    },
+    {
+      "id": 5,
+      "title": "Online Analytics",
+      "date": "Tue, 08/02/2022 - 10:09",
+      "link": "https://rfa.sc.gov/data-services/online-analytics"
+    },
+    {
+      "id": 6,
+      "title": "Jurisdictional Mapping",
+      "date": "Fri, 07/22/2022 - 11:32",
+      "link": "https://rfa.sc.gov/programs-services/precinct-demographics/jurisdictional-mapping"
+    }
+  ]
+}
