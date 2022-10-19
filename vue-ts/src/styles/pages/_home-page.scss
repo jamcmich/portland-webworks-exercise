@@ -31,7 +31,7 @@
     text-transform: none;
   }
 
-  .search-form {
+  #search-form {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -40,6 +40,15 @@
 
     width: 50%;
 
+    &:focus-within {
+      input {
+        outline: none;
+        border: 2px solid transparent;
+        border-radius: 2px;
+        box-shadow: 0 0 0 3px rgba(48, 104, 173, 0.5);
+      }
+    }
+
     input {
       width: 100%;
       max-width: 500px;
@@ -47,22 +56,21 @@
 
       padding: 0 16px;
 
+      transition: box-shadow 0.1s ease;
+
       &::placeholder {
         color: rgb(117, 117, 117);
         opacity: 1;
       }
+    }
 
-      &:focus {
-        outline: none;
-        border: none;
-        border-radius: 2px;
-        box-shadow: 0 0 0 3px rgba(48, 104, 173, 0.5);
-      }
+    button {
+      font-size: 14px;
     }
   }
 }
 
-.cards {
+.featured-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -73,40 +81,10 @@
   .flex-container {
     gap: 40px;
     padding: 50px 0;
-
-    .card {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-
-      width: 100%;
-      height: 250px;
-
-      background-color: white;
-      box-shadow: rgb(195, 195, 195) 0 1px 4px 0;
-
-      img {
-        width: 125px;
-      }
-
-      p {
-        max-width: 200px;
-
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
-        font-size: 16px;
-        color: $color__navy-peony;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        text-align: center;
-      }
-    }
   }
 }
 
-.public-dashboard {
+.dashboard-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -119,56 +97,10 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 40px;
-
-    .left-column {
-      max-width: 600px;
-
-      h2 {
-        color: $color__navy-peony;
-        margin-bottom: 50px;
-      }
-
-      .text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 15px;
-
-        p {
-          color: $color__carbon;
-        }
-      }
-    }
-
-    .right-column {
-      padding: 40px 0;
-      height: 100%;
-
-      .image-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        width: 560px;
-        height: 100%;
-
-        background-image: url("../assets/images/census-preview.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
-
-        button {
-          width: 250px;
-          text-transform: none;
-        }
-      }
-    }
   }
 }
 
-.popular-services {
+.services-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -187,7 +119,7 @@
   }
 }
 
-.updates-and-events {
+.updates-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,6 +134,51 @@
 
     h3 {
       color: $color__navy-peony;
+    }
+  }
+}
+
+.news-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 0;
+
+  .flex-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+
+    width: 100%;
+  }
+}
+
+.top-return {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  padding-bottom: 40px;
+
+  .flex-container {
+    justify-content: flex-end;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+
+      background-color: transparent;
+      border: none;
+
+      .icon-background {
+        padding: 6px;
+        background-color: rgba(0, 116, 193, 0.25);
+        border-radius: 100%;
+      }
     }
   }
 }

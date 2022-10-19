@@ -1,0 +1,18 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "date": "May 24, 2022",
+      "title": "The BEA Revises FY 2021-22 and FY 2022-23 Forecasts Upward",
+      "description": "COLUMBIA – In light of the exceptional collections during tax filing season in April 2022, the South Carolina Board of Economic Advisors (BEA) met today to review the revenue estimates for this fiscal year, FY 2021-22 (FY22), and next fiscal year, FY 2022-23 (FY 23). Given that double-digit revenue growth has continued longer than expected, the BEA adopted a revised forecast for both fiscal years, adding to both the recurring base and the expected surplus and providing lawmakers with a total of $5.98 billion in additional funds to appropriate in the FY 2022-23 budget process.",
+      "link": "https://rfa.sc.gov/sites/default/files/2022-05/May%2024%202022%20Press%20Release%20Final_1.pdf"
+    },
+    {
+      "id": 2,
+      "date": "February 15, 2022",
+      "title": "The BEA Revises FY 2021-22 and FY 2022-23 Forecasts Upward",
+      "description": "COLUMBIA – At today’s meeting, the South Carolina Board of Economic Advisors (BEA) increased the revenue estimates for this fiscal year, FY 2021-22 (FY22), and next fiscal year, FY 2022-23 (FY 23), in anticipation of higher revenue collections than previously forecasted, resulting in an unprecedented additional $4.628 billion in forecasted recurring and nonrecurring revenues this budget cycle.",
+      "link": "https://rfa.sc.gov/sites/default/files/2022-02/BEA%20Press%20Release%20Feb%202022%20Final_2.pdf"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.__card {
+  border: 2px solid transparent;
+
+  &:hover {
+    cursor: pointer;
+    border: 2px solid $color__dover-straits;
+
+    a {
+      text-decoration: underline !important;
+    }
+  }
+}

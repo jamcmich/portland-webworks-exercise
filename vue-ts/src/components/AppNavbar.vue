@@ -38,5 +38,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/components/_navbar";
+@import "../styles/components/_app-navbar";
 </style>
