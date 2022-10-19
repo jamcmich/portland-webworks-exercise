@@ -37,9 +37,13 @@
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
 
-    button {
-      width: 250px;
-      text-transform: none;
+    a {
+      text-decoration: none;
+      
+      button {
+        width: 250px;
+        text-transform: none;
+      }
     }
   }
 }

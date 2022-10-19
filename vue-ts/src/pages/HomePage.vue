@@ -6,7 +6,10 @@
     <form id="search-form" class="search-form">
       <label></label>
       <input class="__text" placeholder="Search rfa.sc.gov" />
-      <button class="__button __solid" form="search-form" type="submit">Apply</button>
+      <button class="__button __solid" form="search-form" type="submit">
+        Search
+        <Icon icon="mdi:magnify" width="24" />
+      </button>
     </form>
   </section>
 
@@ -18,7 +21,7 @@
 
   <section class="dashboard-section">
     <div class="flex-container">
-      <HomeAnalytics />
+      <HomeDashboard />
     </div>
   </section>
 
@@ -57,7 +60,7 @@
 import { Icon } from "@iconify/vue";
 
 import HomeFeatured from "../components/HomeFeatured.vue";
-import HomeAnalytics from "../components/HomeAnalytics.vue";
+import HomeDashboard from "../components/HomeDashboard.vue";
 import HomeServices from "../components/HomeServices.vue";
 import HomeUpdates from "../components/HomeUpdates.vue";
 import HomeEvents from "../components/HomeEvents.vue";
@@ -68,7 +71,7 @@ export default {
   components: {
     Icon,
     HomeFeatured,
-    HomeAnalytics,
+    HomeDashboard,
     HomeServices,
     HomeUpdates,
     HomeEvents,

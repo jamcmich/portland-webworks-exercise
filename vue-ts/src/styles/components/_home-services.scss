@@ -16,23 +16,21 @@
     width: 100%;
     max-height: 200px;
 
-    p.item {
+    .item {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
+      flex: 0 32%;
       gap: 8px;
+
+      width: 30%;
+      min-height: 50px;
 
       svg {
         flex-shrink: 0;
         align-self: stretch;
       }
-    }
-
-    .item {
-      flex: 0 32%;
-      width: 30%;
-      min-height: 50px;
     }
   }
 }
