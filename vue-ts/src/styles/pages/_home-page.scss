@@ -62,7 +62,7 @@
   }
 }
 
-.cards {
+.card-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -106,7 +106,7 @@
   }
 }
 
-.public-dashboard {
+.dashboard-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -122,7 +122,7 @@
   }
 }
 
-.popular-services {
+.services-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -141,7 +141,7 @@
   }
 }
 
-.updates-and-events {
+.updates-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,4 +158,8 @@
       color: $color__navy-peony;
     }
   }
+}
+
+.news-section {
+
 }

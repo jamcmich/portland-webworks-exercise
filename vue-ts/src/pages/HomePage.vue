@@ -10,7 +10,7 @@
     </form>
   </section>
 
-  <section class="cards">
+  <section class="card-section">
     <div class="flex-container">
       <div class="card" v-for="(card, index) in cardItems.hero" :key="index">
         <img :src="card.img" :alt="card.alt" />
@@ -19,33 +19,38 @@
     </div>
   </section>
 
-  <section class="public-dashboard">
+  <section class="dashboard-section">
     <div class="flex-container">
       <HomeAnalytics />
     </div>
   </section>
 
-  <section class="popular-services">
+  <section class="services-section">
     <div class="flex-container">
       <HomeServices />
     </div>
   </section>
 
-  <section class="updates-and-events">
+  <section class="updates-section">
     <div class="flex-container">
       <HomeUpdates />
       <HomeEvents />
     </div>
   </section>
+
+  <section class="news-section">
+    <div class="flex-container">
+      <HomeNews />
+    </div>
+  </section>
 </template>
 
 <script lang="ts">
-import { Icon } from "@iconify/vue";
-
 import HomeAnalytics from "../components/HomeAnalytics.vue";
 import HomeServices from "../components/HomeServices.vue";
 import HomeUpdates from "../components/HomeUpdates.vue";
 import HomeEvents from "../components/HomeEvents.vue";
+import HomeNews from "../components/HomeNews.vue";
 import Research from "../assets/icons/research.svg";
 import Geography from "../assets/icons/geography.svg";
 import Programs from "../assets/icons/programs.svg";
@@ -54,11 +59,11 @@ import Legislative from "../assets/icons/legislative.svg";
 export default {
   name: "Home",
   components: {
-    Icon,
     HomeAnalytics,
     HomeServices,
     HomeUpdates,
     HomeEvents,
+    HomeNews,
   },
   data() {
     return {
