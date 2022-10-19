@@ -2,7 +2,8 @@
   <footer>
     <div class="column">
       <h1 class="__h1">South Carolina<br>Revenue and Fiscal Affairs Office</h1>
-      <img src="../assets/scrfao-logo-transparent.png" alt="South Carolina Revenue and Fiscal Affairs Office logo" />
+      <img src="/assets/scrfao-logo-transparent.png"
+           alt="South Carolina Revenue and Fiscal Affairs Office logo" />
     </div>
 
     <div class="column">
