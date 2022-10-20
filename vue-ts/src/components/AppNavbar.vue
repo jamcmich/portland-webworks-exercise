@@ -9,7 +9,7 @@
       </div>
 
       <div class="right">
-        <a class="site-details-container" href="/">
+        <a class="site-details-container" href="https://jamcmich.github.io/portland-webworks-exercise/">
           <img src="/assets/scrfao-logo.png" alt="South Carolina Revenue and Fiscal Affairs Office" />
 
           <div class="site-details">
@@ -20,16 +20,24 @@
 
         <ul>
           <li>
-            <a class="__link-style-2" href="https://rfa.sc.gov/">Home</a>
+            <a class="__link-style-2" href="https://rfa.sc.gov/">
+              Home
+            </a>
           </li>
           <li>
-            <a class="__link-style-2" href="https://rfa.sc.gov/about">About Us</a>
+            <a class="__link-style-2" href="https://rfa.sc.gov/about">
+              About Us
+            </a>
           </li>
           <li>
-            <a class="__link-style-2" href="https://rfa.sc.gov/calendar">Events</a>
+            <a class="__link-style-2" href="https://rfa.sc.gov/calendar">
+              Events
+            </a>
           </li>
           <li>
-            <a class="__link-style-2" href="https://rfa.sc.gov/boards-committees">Boards & Committees</a>
+            <a class="__link-style-2" href="https://rfa.sc.gov/boards-committees">
+              Boards & Committees
+            </a>
           </li>
         </ul>
 
@@ -43,111 +51,188 @@
       <div class="left">
         <ul>
           <li>
-            <a class="__link-style-2" href="https://rfa.sc.gov/">Home</a>
+            <a class="__link-style-2" href="https://rfa.sc.gov/">
+              Home
+            </a>
           </li>
           <li>
-            <a class="__link-style-2" href="https://rfa.sc.gov/about">About Us</a>
+            <a class="__link-style-2" href="https://rfa.sc.gov/about">
+              About Us
+            </a>
           </li>
           <li>
-            <a class="__link-style-2" href="https://rfa.sc.gov/calendar">Events</a>
+            <a class="__link-style-2" href="https://rfa.sc.gov/calendar">
+              Events
+            </a>
           </li>
           <li>
-            <a class="__link-style-2" href="https://rfa.sc.gov/boards-committees">Boards & Committees</a>
+            <a class="__link-style-2" href="https://rfa.sc.gov/boards-committees">
+              Boards & Committees
+            </a>
           </li>
         </ul>
       </div>
 
       <div class="right">
         <div class="column">
-          <h2 class="__header-style-2">Data & Research</h2>
+          <h2 class="__header-style-2">
+            <a href="https://rfa.sc.gov/data-research">
+              Data & Research
+            </a>
+          </h2>
 
           <ul>
             <li>
-              <a class="__link-style-2 __text" href="">Education</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/data-research/education">
+                Education
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">Healthcare</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/data-research/healthcare">
+                Healthcare
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">Local Government</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/data-research/local-government">
+                Local Government</a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">Population & Demographics</a>
+              <a class="__link-style-2 __text"
+                 href="https://rfa.sc.gov/data-research/population-demographics/census-state-data-center">
+                Population & Demographics
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">Presentations</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/data-research/presentations">
+                Presentations
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">State Finances and Economy</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/data-research/state-finances">
+                State Finances and Economy
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">Inflation Adjustments for Legal Proceedings</a>
+              <a class="__link-style-2 __text"
+                 href="https://rfa.sc.gov/page/data-research/inflation-adjustments-legal-proceedings">
+                Inflation Adjustments for Legal Proceedings
+              </a>
             </li>
           </ul>
         </div>
+
         <div class="column">
-          <h2 class="__header-style-2">Geography & Mapping</h2>
+          <h2 class="__header-style-2">
+            <a href="https://rfa.sc.gov/mapping">
+              Geography & Mapping
+            </a>
+          </h2>
 
           <ul>
             <li>
-              <a class="__link-style-2 __text" href="">Analytic Mapping Services</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/data-services/mapping">
+                Analytic Mapping Services
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">County Boundary Program</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/programs-services/geodetic/county">
+                County Boundary Program
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">Jurisdictional Mapping</a>
+              <a class="__link-style-2 __text"
+                 href="https://rfa.sc.gov/programs-services/precinct-demographics/jurisdictional-mapping">
+                Jurisdictional Mapping
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">NC/SC Boundary</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/programs-services/geodetic/NC-SC-Boundary">
+                NC/SC Boundary
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">SC Real Time Network (RTN)</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/programs-services/geodetic/rtnstatus">
+                SC Real Time Network (RTN)
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">Statewide Aerial Imagery</a>
+              <a class="__link-style-2 __text"
+                 href="https://rfa.sc.gov/programs-services/geodetic/statewide-aerial-imagery">
+                Statewide Aerial Imagery
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">Transportation Network Carrier Maps</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/mapping/tcn">
+                Transportation Network Carrier Maps
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">LocateMe</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/mapping/locate-me">
+                LocateMe
+              </a>
             </li>
           </ul>
         </div>
+
         <div class="column">
-          <h2 class="__header-style-2">Programs & Services</h2>
+          <h2 class="__header-style-2">
+            <a href="https://rfa.sc.gov/programs-services">
+              Programs & Services
+            </a>
+          </h2>
 
           <ul>
             <li>
-              <a class="__link-style-2 __text" href="">Data Services & Online Solutions</a>
+              <a class="__link-style-2 __text"
+                 href="https://rfa.sc.gov/programs-services/data-services-online-solutions">
+                Data Services & Online Solutions
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">Fiscal Analysis</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/programs-services/fiscal-analysis">
+                Fiscal Analysis
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">Geodetic Survey</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/programs-services/geodetic">
+                Geodetic Survey
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">Precint Demographics & Redistricting</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/programs-services/precinct-demographics">
+                Precinct Demographics & Redistricting
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">State 9-1-1 Program</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/programs-services/state-9-1-1-program">
+                State 9-1-1 Program
+              </a>
             </li>
           </ul>
         </div>
+
         <div class="column">
-          <h2 class="__header-style-2">Legislative Fiscal Impacts</h2>
+          <h2 class="__header-style-2">
+            <a href="https://rfa.sc.gov/impacts">
+              Legislative Fiscal Impacts
+            </a>
+          </h2>
 
           <ul>
             <li>
-              <a class="__link-style-2 __text" href="">Current General Assembly Session</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/impacts">
+                Current General Assembly Session
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">Previous General Assembly Session</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/impacts">
+                Previous General Assembly Session
+              </a>
             </li>
             <li>
-              <a class="__link-style-2 __text" href="">Forms</a>
+              <a class="__link-style-2 __text" href="https://rfa.sc.gov/impacts">
+                Forms
+              </a>
             </li>
           </ul>
         </div>
