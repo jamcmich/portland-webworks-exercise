@@ -4,25 +4,29 @@
       "id": 1,
       "title": "Data & Research",
       "img": "/assets/icons/research.svg",
-      "alt": "Data & Research"
+      "alt": "Data & Research",
+      "link": "https://rfa.sc.gov/data-research"
     },
     {
       "id": 2,
       "title": "Geography & Mapping",
       "img": "/assets/icons/geography.svg",
-      "alt": "Geography & Mapping"
+      "alt": "Geography & Mapping",
+      "link": "https://rfa.sc.gov/mapping"
     },
     {
       "id": 3,
       "title": "Programs & Services",
       "img": "/assets/icons/programs.svg",
-      "alt": "Programs & Services"
+      "alt": "Programs & Services",
+      "link": "https://rfa.sc.gov/programs-services"
     },
     {
       "id": 4,
       "title": "Legislative Fiscal Impacts",
       "img": "/assets/icons/legislative.svg",
-      "alt": "Legislative Fiscal Impacts"
+      "alt": "Legislative Fiscal Impacts",
+      "link": "https://rfa.sc.gov/impacts"
     }
   ]
 }

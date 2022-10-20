@@ -20,7 +20,7 @@
 
         <ul>
           <li>
-            <a class="__link-style-2" href="https://rfa.sc.gov/">
+            <a class="__link-style-2" href="https://jamcmich.github.io/portland-webworks-exercise/">
               Home
             </a>
           </li>
@@ -51,7 +51,7 @@
       <div class="left">
         <ul>
           <li>
-            <a class="__link-style-2" href="https://rfa.sc.gov/">
+            <a class="__link-style-2" href="https://jamcmich.github.io/portland-webworks-exercise/">
               Home
             </a>
           </li>
