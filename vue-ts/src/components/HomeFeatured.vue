@@ -1,6 +1,6 @@
 <template>
   <div class="__card card" v-for="item in featured" :key="item.id">
-    <img :src="item.img" :alt="item.alt" />
+    <img :src="`${url + item.img}`" :alt="item.alt" />
     <p>{{ item.title }}</p>
   </div>
 </template>
@@ -15,6 +15,7 @@ export default defineComponent({
   data() {
     return {
       featured: json.featured,
+      url: import.meta.url,
     };
   },
 });
