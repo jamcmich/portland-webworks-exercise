@@ -19,10 +19,18 @@
         </a>
 
         <ul>
-          <li><a class="__link-style-2" href="">Home</a></li>
-          <li><a class="__link-style-2" href="">About Us</a></li>
-          <li><a class="__link-style-2" href="">Events</a></li>
-          <li><a class="__link-style-2" href="">Boards & Committees</a></li>
+          <li>
+            <a class="__link-style-2" href="https://rfa.sc.gov/">Home</a>
+          </li>
+          <li>
+            <a class="__link-style-2" href="https://rfa.sc.gov/about">About Us</a>
+          </li>
+          <li>
+            <a class="__link-style-2" href="https://rfa.sc.gov/calendar">Events</a>
+          </li>
+          <li>
+            <a class="__link-style-2" href="https://rfa.sc.gov/boards-committees">Boards & Committees</a>
+          </li>
         </ul>
 
         <div class="search-container">
@@ -32,8 +40,117 @@
     </div>
 
     <div class="bottom" :class="{ extended: showMenu }">
-      <div class="menu-extended">
+      <div class="left">
+        <ul>
+          <li>
+            <a class="__link-style-2" href="https://rfa.sc.gov/">Home</a>
+          </li>
+          <li>
+            <a class="__link-style-2" href="https://rfa.sc.gov/about">About Us</a>
+          </li>
+          <li>
+            <a class="__link-style-2" href="https://rfa.sc.gov/calendar">Events</a>
+          </li>
+          <li>
+            <a class="__link-style-2" href="https://rfa.sc.gov/boards-committees">Boards & Committees</a>
+          </li>
+        </ul>
+      </div>
 
+      <div class="right">
+        <div class="column">
+          <h2 class="__header-style-2">Data & Research</h2>
+
+          <ul>
+            <li>
+              <a class="__link-style-2 __text" href="">Education</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">Healthcare</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">Local Government</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">Population & Demographics</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">Presentations</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">State Finances and Economy</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">Inflation Adjustments for Legal Proceedings</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2 class="__header-style-2">Geography & Mapping</h2>
+
+          <ul>
+            <li>
+              <a class="__link-style-2 __text" href="">Analytic Mapping Services</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">County Boundary Program</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">Jurisdictional Mapping</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">NC/SC Boundary</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">SC Real Time Network (RTN)</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">Statewide Aerial Imagery</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">Transportation Network Carrier Maps</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">LocateMe</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2 class="__header-style-2">Programs & Services</h2>
+
+          <ul>
+            <li>
+              <a class="__link-style-2 __text" href="">Data Services & Online Solutions</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">Fiscal Analysis</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">Geodetic Survey</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">Precint Demographics & Redistricting</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">State 9-1-1 Program</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <h2 class="__header-style-2">Legislative Fiscal Impacts</h2>
+
+          <ul>
+            <li>
+              <a class="__link-style-2 __text" href="">Current General Assembly Session</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">Previous General Assembly Session</a>
+            </li>
+            <li>
+              <a class="__link-style-2 __text" href="">Forms</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
