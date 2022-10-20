@@ -2,8 +2,8 @@
   <nav class="navbar">
     <div class="top" :class="{ shrink: scrollPosition > 0 }">
       <div class="left" v-on:click="showMenu = !showMenu">
-        <Icon v-if="!showMenu" icon="mdi:menu" width="48" />
-        <Icon v-if="showMenu" icon="mdi:close" width="48" />
+        <Icon v-if="!showMenu" icon="mdi:menu" width="48" color="white" />
+        <Icon v-if="showMenu" icon="mdi:close" width="48" color="white" />
         <span v-if="!showMenu" class="__text">MENU</span>
         <span v-if="showMenu" class="__text">CLOSE</span>
       </div>
@@ -41,8 +41,15 @@
           </li>
         </ul>
 
-        <div class="search-container">
-          <Icon icon="mdi:magnify" width="100%" />
+        <div class="search-container" v-on:click="showForm = !showForm" :class="{ extended: showForm }">
+          <Icon icon="mdi:magnify" width="100%" :color="!showForm ? 'rgb(0, 116, 193)' : 'white'" />
+
+          <form v-if="showForm" id="search-form" action="">
+            <input class="__text" placeholder="Search rfa.sc.gov" v-on:click.stop />
+            <button class="__button __stroke" form="search-form" type="submit" value="submit">
+              Search
+            </button>
+          </form>
         </div>
       </div>
     </div>
@@ -254,6 +261,7 @@ export default defineComponent({
     return {
       scrollPosition: 0,
       showMenu: false,
+      showForm: false,
     };
   },
   methods: {
@@ -270,6 +278,6 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../styles/components/_app-navbar";
 </style>
