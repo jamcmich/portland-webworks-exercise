@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 74px;
+
+  background-color: $color__dover-straits;
+  cursor: pointer;
+
+  span {
+    width: max-content;
+    margin-bottom: 8px;
+    margin-left: 1px;
+
+    color: white;
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    line-height: 10px;
+    text-align: center;
+  }
+}

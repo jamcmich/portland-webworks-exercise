@@ -1,12 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="top" :class="{ shrink: scrollPosition > 0 }">
-      <div class="left" v-on:click="showMenu = !showMenu">
-        <Icon v-if="!showMenu" icon="mdi:menu" width="48" color="white" />
-        <Icon v-if="showMenu" icon="mdi:close" width="48" color="white" />
-        <span v-if="!showMenu" class="__text">MENU</span>
-        <span v-if="showMenu" class="__text">CLOSE</span>
-      </div>
+      <AppNavbarMenu v-on:handleShowMenu="getShowMenu" />
 
       <div class="right">
         <a class="site-details-container" href="https://jamcmich.github.io/portland-webworks-exercise/">
@@ -252,10 +247,13 @@
 import { defineComponent } from "vue";
 import { Icon } from "@iconify/vue";
 
+import AppNavbarMenu from "./AppNavbarMenu.vue";
+
 export default defineComponent({
   name: "Navbar",
   components: {
     Icon,
+    AppNavbarMenu,
   },
   data() {
     return {
@@ -267,6 +265,9 @@ export default defineComponent({
   methods: {
     handleScroll() {
       this.scrollPosition = window.scrollY;
+    },
+    getShowMenu(value: boolean) {
+      this.showMenu = value;
     },
   },
   mounted() {
