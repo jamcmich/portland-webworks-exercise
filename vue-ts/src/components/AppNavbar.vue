@@ -1,6 +1,6 @@
 <template>
-  <nav class="navbar" :class="{shrink: scrollPosition > 0}">
-    <div class="top">
+  <nav class="navbar">
+    <div class="top" :class="{ shrink: scrollPosition > 0 }">
       <div class="left" v-on:click="this.showMenu = !this.showMenu">
         <Icon v-if="!this.showMenu" icon="mdi:menu" width="48" />
         <Icon v-if="this.showMenu" icon="mdi:close" width="48" />
@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <div class="bottom" v-if="this.showMenu">
+    <div class="bottom" :class="{ extended: this.showMenu }">
       <div class="menu-extended">
 
       </div>
