@@ -10,6 +10,22 @@
   background-color: white;
   border-bottom: 8px solid $color__navy-peony;
 
+  transition: height 0.4s ease;
+
+  &.shrink {
+    height: 90px;
+
+    .site-details {
+      p:nth-child(1) {
+        font-size: 14px !important;
+      }
+
+      p:nth-child(2) {
+        font-size: 12px !important;
+      }
+    }
+  }
+
   .menu {
     display: flex;
     flex-direction: column;
@@ -54,9 +70,11 @@
       height: 100%;
       gap: 20px;
 
+      padding: 8px 0;
+
       img {
-        width: 85px;
-        height: 85px;
+        max-width: 85px;
+        max-height: 100%;
 
         align-self: center;
       }
@@ -69,7 +87,6 @@
         gap: 2px;
 
         color: red;
-
         text-align: left;
 
         p {
@@ -80,11 +97,13 @@
           font-size: 18px;
           font-weight: 500;
           letter-spacing: 0.5px;
+          transition: font-size 0.4s ease;
         }
 
         p:nth-child(2) {
           opacity: 0.75;
           letter-spacing: normal;
+          transition: font-size 0.4s ease;
         }
       }
     }
