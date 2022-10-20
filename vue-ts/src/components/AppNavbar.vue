@@ -1,11 +1,11 @@
 <template>
   <nav class="navbar">
     <div class="top" :class="{ shrink: scrollPosition > 0 }">
-      <div class="left" v-on:click="this.showMenu = !this.showMenu">
-        <Icon v-if="!this.showMenu" icon="mdi:menu" width="48" />
-        <Icon v-if="this.showMenu" icon="mdi:close" width="48" />
-        <span v-if="!this.showMenu" class="__text">MENU</span>
-        <span v-if="this.showMenu" class="__text">CLOSE</span>
+      <div class="left" v-on:click="showMenu = !showMenu">
+        <Icon v-if="!showMenu" icon="mdi:menu" width="48" />
+        <Icon v-if="showMenu" icon="mdi:close" width="48" />
+        <span v-if="!showMenu" class="__text">MENU</span>
+        <span v-if="showMenu" class="__text">CLOSE</span>
       </div>
 
       <div class="right">
@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <div class="bottom" :class="{ extended: this.showMenu }">
+    <div class="bottom" :class="{ extended: showMenu }">
       <div class="menu-extended">
 
       </div>

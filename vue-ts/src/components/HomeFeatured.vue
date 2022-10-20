@@ -1,6 +1,6 @@
 <template>
   <div class="__card card" v-for="item in featured" :key="item.id">
-    <img :src="`${this.url + item.img}`" :alt="item.alt" />
+    <img :src="`${url + item.img}`" :alt="item.alt" />
     <p>{{ item.title }}</p>
   </div>
 </template>
