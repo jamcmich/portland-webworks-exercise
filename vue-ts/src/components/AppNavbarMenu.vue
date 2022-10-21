@@ -1,10 +1,10 @@
 <template>
-  <div class="menu" v-on:click="emitShowMenu">
+  <button class="menu" v-on:click="emitShowMenu">
     <Icon v-if="!showMenu" icon="mdi:menu" width="48" color="white" />
     <Icon v-if="showMenu" icon="mdi:close" width="48" color="white" />
     <span v-if="!showMenu" class="__text">MENU</span>
     <span v-if="showMenu" class="__text">CLOSE</span>
-  </div>
+  </button>
 </template>
 
 <script lang="ts">

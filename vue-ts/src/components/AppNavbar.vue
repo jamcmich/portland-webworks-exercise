@@ -72,6 +72,8 @@
             <a href="https://rfa.sc.gov/data-research">
               Data & Research
             </a>
+
+            <AppNavbarChevron />
           </h2>
 
           <ul>
@@ -240,6 +242,7 @@ import { Icon } from "@iconify/vue";
 
 import AppNavbarMenu from "./AppNavbarMenu.vue";
 import AppNavbarSearch from "./AppNavbarSearch.vue";
+import AppNavbarChevron from "./icons/AppNavbarChevron.vue";
 
 export default defineComponent({
   name: "Navbar",
@@ -247,6 +250,7 @@ export default defineComponent({
     Icon,
     AppNavbarMenu,
     AppNavbarSearch,
+    AppNavbarChevron,
   },
   data() {
     return {

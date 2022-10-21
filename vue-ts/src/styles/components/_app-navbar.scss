@@ -241,6 +241,10 @@
             }
           }
 
+          button {
+            display: none;
+          }
+
           @media screen and (max-width: map.get($breakpoints, "desktop")) {
             display: flex;
             justify-content: flex-start;
@@ -255,6 +259,17 @@
 
             &::after {
               content: none;
+            }
+          }
+
+          @media screen and (max-width: map.get($breakpoints, "desktop")) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            button {
+              display: flex;
             }
           }
         }

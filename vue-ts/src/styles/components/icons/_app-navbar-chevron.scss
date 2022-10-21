@@ -1,0 +1,14 @@
+@use "sass:map";
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50px;
+  height: 100%;
+
+  border: none;
+  background-color: $color__dover-straits;
+  cursor: pointer;
+}
