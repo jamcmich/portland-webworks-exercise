@@ -77,6 +77,56 @@
           "url": "https://rfa.sc.gov/mapping/locate-me"
         }
       ]
+    },
+    {
+      "id": 3,
+      "heading": {
+        "title": "Programs & Services",
+        "url": "https://rfa.sc.gov/programs-services/data-services-online-solutions"
+      },
+      "items": [
+        {
+          "title": "Data Services & Online Solutions",
+          "url": "https://rfa.sc.gov/programs-services/data-services-online-solutions"
+        },
+        {
+          "title": "Fiscal Analysis",
+          "url": "https://rfa.sc.gov/programs-services/fiscal-analysis"
+        },
+        {
+          "title": "Geodetic Survey",
+          "url": "https://rfa.sc.gov/programs-services/geodetic"
+        },
+        {
+          "title": "Precinct Demographics & Redistricting",
+          "url": "https://rfa.sc.gov/programs-services/precinct-demographics"
+        },
+        {
+          "title": "State 9-1-1 Program",
+          "url": "https://rfa.sc.gov/programs-services/state-9-1-1-program"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "heading": {
+        "title": "Legislative Fiscal Impacts",
+        "url": "https://rfa.sc.gov/impacts"
+      },
+      "items": [
+        {
+          "title": "Current General Assembly Session",
+          "url": "https://rfa.sc.gov/impacts"
+        },
+        {
+          "title": "Previous General Assembly Session",
+          "url": "https://rfa.sc.gov/impacts"
+        },
+        {
+          "title": "Forms",
+          "url": "https://rfa.sc.gov/impacts"
+        }
+      ]
     }
   ]
 }

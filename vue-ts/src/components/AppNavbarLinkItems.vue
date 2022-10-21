@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="links-container">
     <div class="row">
       <h2 class="__header-style-2">
         <a :href="link.heading.url">

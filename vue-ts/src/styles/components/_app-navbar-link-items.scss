@@ -1,29 +1,59 @@
 @use "sass:map";
 
-.row {
+.links-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
+  flex-direction: column;
+  width: 300px;
 
-  h2 {
-    color: $color__navy-peony;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 0.75px;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
 
-    &.__header-style-2 {
-      &::after {
-        margin-top: 10px;
+    h2 {
+      color: $color__navy-peony;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.75px;
+
+      &.__header-style-2 {
+        &::after {
+          margin-top: 10px;
+        }
       }
-    }
 
-    a, a:link, a:visited {
-      color: inherit;
-      text-decoration: none;
+      a, a:link, a:visited {
+        color: inherit;
+        text-decoration: none;
 
-      &:hover {
-        text-decoration: underline;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      @media screen and (max-width: map.get($breakpoints, "desktop")) {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-shrink: 1;
+
+        height: 50px;
+        padding-left: 20px;
+
+        border-bottom: 1px solid $color__mist;
+        background-color: white;
+
+        &::after {
+          content: none;
+        }
+      }
+
+      @media screen and (max-width: map.get($breakpoints, "desktop")) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
       }
     }
 
@@ -31,82 +61,76 @@
       display: none;
     }
 
+    /* .row */
+    @media screen and (max-width: map.get($breakpoints, "desktop")) {
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 50px;
+        height: 100%;
+        padding: 0;
+
+        border: none;
+        background-color: $color__dover-straits;
+        cursor: pointer;
+      }
+    }
+  }
+
+  ul {
+    max-height: fit-content;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+
+    transition: max-height 0.4s ease, padding 0.4s ease;
+
+    li {
+      width: fit-content;
+
+      a.item, a.item:link, a.item:visited {
+        display: inline-block;
+        padding: 5px 0;
+
+        color: $color__carbon;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        /* a */
+        @media screen and (max-width: map.get($breakpoints, "desktop")) {
+          width: 100%;
+        }
+      }
+
+      /* li */
+      @media screen and (max-width: map.get($breakpoints, "desktop")) {
+        width: 100%;
+        padding: 0 20px;
+      }
+    }
+
+    /* ul */
     @media screen and (max-width: map.get($breakpoints, "desktop")) {
       display: flex;
-      justify-content: flex-start;
-      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
       flex-shrink: 1;
+      max-height: 0;
 
-      height: 50px;
-      padding-left: 20px;
-
-      border-bottom: 1px solid $color__mist;
-      background-color: white;
-
-      &::after {
-        content: none;
+      &.extended {
+        max-height: 400px;
+        padding: 20px 0;
       }
     }
-
-    @media screen and (max-width: map.get($breakpoints, "desktop")) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-    }
   }
 
+  /* .links-container */
   @media screen and (max-width: map.get($breakpoints, "desktop")) {
-    button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      width: 50px;
-      height: 100%;
-      padding: 0;
-
-      border: none;
-      background-color: $color__dover-straits;
-      cursor: pointer;
-    }
-  }
-}
-
-ul {
-  display: flex;
-  flex-direction: column;
-
-  max-height: 0;
-  padding: 0;
-  list-style-type: none;
-  overflow: hidden;
-
-  li {
     width: 100%;
-
-    .item, .item:link, .item:visited {
-      display: inline-block;
-      width: 100%;
-      padding: 5px 20px;
-
-      color: $color__carbon;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-
-  @media screen and (max-width: map.get($breakpoints, "desktop")) {
-    display: flex;
-    align-items: flex-start;
-    flex-shrink: 1;
-
-    &.extended {
-      max-height: fit-content;
-      padding: 20px 0;
-    }
   }
 }
