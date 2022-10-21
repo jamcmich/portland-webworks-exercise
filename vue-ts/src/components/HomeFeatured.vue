@@ -1,8 +1,8 @@
 <template>
-  <div class="__card card" v-for="item in featured" :key="item.id">
+  <a class="__card card" v-for="item in featured" :key="item.id" :href="item.link">
     <img :src="`https://jamcmich.github.io/portland-webworks-exercise${item.img}`" :alt="item.alt" />
     <p>{{ item.title }}</p>
-  </div>
+  </a>
 </template>
 
 <script lang="ts">

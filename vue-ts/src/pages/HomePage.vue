@@ -3,13 +3,7 @@
     <p class="__header-style-4">Providing insightful research, analysis, and resources to facilitate informed
                                 policy decisions and administration of services</p>
 
-    <form id="search-form" action="">
-      <input class="__text" placeholder="Search rfa.sc.gov" />
-      <button class="__button __solid" form="search-form" type="submit" value="submit">
-        Search
-        <Icon icon="mdi:magnify" width="24" />
-      </button>
-    </form>
+    <SearchForm v-bind:showIcon="true" />
   </section>
 
   <section class="featured-section">
@@ -58,6 +52,7 @@
 <script lang="ts">
 import { Icon } from "@iconify/vue";
 
+import SearchForm from "../components/forms/SearchForm.vue";
 import HomeFeatured from "../components/HomeFeatured.vue";
 import HomeDashboard from "../components/HomeDashboard.vue";
 import HomeServices from "../components/HomeServices.vue";
@@ -69,6 +64,7 @@ export default {
   name: "Home",
   components: {
     Icon,
+    SearchForm,
     HomeFeatured,
     HomeDashboard,
     HomeServices,

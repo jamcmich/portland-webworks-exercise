@@ -13,6 +13,19 @@
 
   /* Stroke Button States */
   &.__stroke {
+    color: white;
+    background-color: $color__ocean-blue;
+    border: 2px solid white;
+
+    transition: background-color 0.1s ease;
+
+    &:hover {
+      background-color: $color__ocean;
+    }
+
+    &:active {
+      background-color: $color__kolibri-blue;
+    }
   }
 
   /* Solid Button States */
