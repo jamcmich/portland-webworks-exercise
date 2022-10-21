@@ -3,6 +3,7 @@
 .links-container {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   width: 300px;
 
   .row {
@@ -92,7 +93,7 @@
 
       a.item, a.item:link, a.item:visited {
         display: inline-block;
-        padding: 5px 0;
+        padding: 6px 0;
 
         color: $color__carbon;
         text-decoration: none;
@@ -131,6 +132,7 @@
 
   /* .links-container */
   @media screen and (max-width: map.get($breakpoints, "desktop")) {
+    gap: 0;
     width: 100%;
   }
 }
