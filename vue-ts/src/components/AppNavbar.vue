@@ -36,16 +36,7 @@
           </li>
         </ul>
 
-        <div class="search-container" v-on:click="showForm = !showForm" :class="{ extended: showForm }">
-          <Icon icon="mdi:magnify" width="100%" :color="!showForm ? 'rgb(0, 116, 193)' : 'white'" />
-
-          <form v-if="showForm" id="search-form" action="">
-            <input class="__text" placeholder="Search rfa.sc.gov" v-on:click.stop />
-            <button class="__button __stroke" form="search-form" type="submit" value="submit">
-              Search
-            </button>
-          </form>
-        </div>
+        <AppNavbarSearch />
       </div>
     </div>
 
@@ -248,18 +239,19 @@ import { defineComponent } from "vue";
 import { Icon } from "@iconify/vue";
 
 import AppNavbarMenu from "./AppNavbarMenu.vue";
+import AppNavbarSearch from "./AppNavbarSearch.vue";
 
 export default defineComponent({
   name: "Navbar",
   components: {
     Icon,
     AppNavbarMenu,
+    AppNavbarSearch,
   },
   data() {
     return {
       scrollPosition: 0,
       showMenu: false,
-      showForm: false,
     };
   },
   methods: {
