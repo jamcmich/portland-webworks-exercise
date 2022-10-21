@@ -69,7 +69,7 @@
       <div class="right">
         <div class="column">
           <template v-for="link in links" :key="link.id">
-            <AppNavbarLinkExpansion :links="link" />
+            <AppNavbarLinkItems :link="link" />
           </template>
         </div>
       </div>
@@ -80,11 +80,11 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { Icon } from "@iconify/vue";
-
 import json from "../../data/links.json";
+
 import AppNavbarMenu from "./AppNavbarMenu.vue";
 import AppNavbarSearch from "./AppNavbarSearch.vue";
-import AppNavbarLinkExpansion from "./AppNavbarLinkExpansion.vue";
+import AppNavbarLinkItems from "./AppNavbarLinkItems.vue";
 
 export default defineComponent({
   name: "Navbar",
@@ -92,7 +92,7 @@ export default defineComponent({
     Icon,
     AppNavbarMenu,
     AppNavbarSearch,
-    AppNavbarLinkExpansion,
+    AppNavbarLinkItems,
   },
   data() {
     return {

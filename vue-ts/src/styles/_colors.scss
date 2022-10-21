@@ -1,6 +1,3 @@
-/* Global Variables */
-
-/* Colors */
 $color__dark-blue: rgb(20, 43, 71);
 $color__navy-peony: rgb(27, 58, 97);
 $color__frank-blue: rgb(34, 80, 137);
@@ -28,10 +25,3 @@ $color__grey: rgb(195, 195, 195);
 $color__mist: rgb(204, 204, 204);
 $color__winter: rgb(225, 229, 234);
 $color__marble: rgb(243, 246, 249);
-
-/* Breakpoints */
-$breakpoints: (
-        'phone': 320px,
-        'tablet': 768px,
-        'desktop': 1024px
-) !default;

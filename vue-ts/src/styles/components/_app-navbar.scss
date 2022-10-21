@@ -187,8 +187,6 @@
 
               width: 100%;
               height: 100%;
-
-              background-color: white;
             }
           }
         }
@@ -198,9 +196,14 @@
         }
       }
 
+      /* left */
       @media screen and (max-width: map.get($breakpoints, "desktop")) {
         width: 50%;
         padding: 0;
+      }
+
+      @media screen and (max-width: map.get($breakpoints, "tablet")) {
+        width: 100%;
       }
     }
 
@@ -228,13 +231,19 @@
         }
       }
 
+      /* .right */
       @media screen and (max-width: map.get($breakpoints, "desktop")) {
         width: 50%;
         padding: 0;
         gap: 0;
       }
+
+      @media screen and (max-width: map.get($breakpoints, "tablet")) {
+        width: 100%;
+      }
     }
 
+    /* .bottom */
     @media screen and (max-width: map.get($breakpoints, "desktop")) {
       height: fit-content;
       max-height: 0;
@@ -243,6 +252,12 @@
         width: 100%;
         max-height: fit-content;
         background-color: $color__marble;
+      }
+    }
+
+    @media screen and (max-width: map.get($breakpoints, "tablet")) {
+      &.extended {
+        flex-direction: column;
       }
     }
   }

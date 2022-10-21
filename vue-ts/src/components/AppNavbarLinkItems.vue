@@ -1,5 +1,5 @@
 <template>
-  <div v-for="link in links" :key="link.id">
+  <div>
     <div class="row">
       <h2 class="__header-style-2">
         <a :href="link.heading.url">
@@ -7,14 +7,14 @@
         </a>
       </h2>
 
-      <button v-on:click="handleToggleIcon(link.id)">
-        <Icon :icon="toggleIcon && link.id === componentId ? 'mdi:chevron-down' : 'mdi:chevron-up'"
+      <button v-on:click="handleClick(link.id)">
+        <Icon :icon="toggleClass ? 'mdi:chevron-up' : 'mdi:chevron-down'"
               color="white"
               width="32" />
       </button>
     </div>
 
-    <ul :class="toggleIcon ? 'extended' : ''">
+    <ul :class="toggleClass ? 'extended' : ''">
       <li v-for="item in link.items">
         <a class="__link-style-2 __text item" :href="item.url">
           {{ item.title }}
@@ -28,32 +28,27 @@
 import { defineComponent } from "vue";
 import { Icon } from "@iconify/vue";
 
-import json from "../../data/links.json";
-
 export default defineComponent({
-  name: "AppNavbarLinkExpansion",
+  name: "AppNavbarLinkItems",
   props: {
-    links: Object,
+    link: Object,
   },
   components: {
     Icon,
   },
   data() {
     return {
-      links: json.links,
-      componentId: 0,
-      toggleIcon: false,
+      toggleClass: false,
     };
   },
   methods: {
-    handleToggleIcon(id: number) {
-      this.componentId = id;
-      this.toggleIcon = !this.toggleIcon;
+    handleClick(id: number) {
+      this.toggleClass = !this.toggleClass;
     },
   },
 });
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/components/_app-navbar-link-expansion";
+@import "../styles/components/_app-navbar-link-items";
 </style>
