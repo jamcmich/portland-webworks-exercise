@@ -28,3 +28,10 @@ $color__grey: rgb(195, 195, 195);
 $color__mist: rgb(204, 204, 204);
 $color__winter: rgb(225, 229, 234);
 $color__marble: rgb(243, 246, 249);
+
+/* Breakpoints */
+$breakpoints: (
+        'phone': 320px,
+        'tablet': 768px,
+        'desktop': 1024px
+) !default;
