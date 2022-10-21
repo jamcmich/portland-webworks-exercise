@@ -1,0 +1,107 @@
+@use "sass:map";
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+
+  h2 {
+    color: $color__navy-peony;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+
+    &.__header-style-2 {
+      &::after {
+        margin-top: 10px;
+      }
+    }
+
+    a, a:link, a:visited {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    button {
+      display: none;
+    }
+
+    @media screen and (max-width: map.get($breakpoints, "desktop")) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-shrink: 1;
+
+      height: 50px;
+      padding-left: 20px;
+
+      border-bottom: 1px solid $color__mist;
+      background-color: white;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    @media screen and (max-width: map.get($breakpoints, "desktop")) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: map.get($breakpoints, "desktop")) {
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 50px;
+      height: 100%;
+      padding: 0;
+
+      border: none;
+      background-color: $color__dover-straits;
+      cursor: pointer;
+    }
+  }
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 0;
+  list-style-type: none;
+
+  li {
+    width: 100%;
+
+    .item, .item:link, .item:visited {
+      display: inline-block;
+      width: 100%;
+      padding: 5px 20px;
+
+      color: $color__carbon;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media screen and (max-width: map.get($breakpoints, "desktop")) {
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 1;
+
+    padding: 20px 0;
+  }
+}

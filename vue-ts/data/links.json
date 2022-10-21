@@ -1,0 +1,82 @@
+{
+  "links": [
+    {
+      "id": 1,
+      "heading": {
+        "title": "Data & Research",
+        "url": "https://rfa.sc.gov/data-research"
+      },
+      "items": [
+        {
+          "title": "Education",
+          "url": "https://rfa.sc.gov/data-research/education"
+        },
+        {
+          "title": "Healthcare",
+          "url": "https://rfa.sc.gov/data-research/healthcare"
+        },
+        {
+          "title": "Local Government",
+          "url": "https://rfa.sc.gov/data-research/local-government"
+        },
+        {
+          "title": "Population & Demographics",
+          "url": "https://rfa.sc.gov/data-research/population-demographics/census-state-data-center"
+        },
+        {
+          "title": "Presentations",
+          "url": "https://rfa.sc.gov/data-research/presentations"
+        },
+        {
+          "title": "State Finances & Economy",
+          "url": "https://rfa.sc.gov/data-research/state-finances"
+        },
+        {
+          "title": "Inflation Adjustments for Legal Proceedings",
+          "url": "https://rfa.sc.gov/page/data-research/inflation-adjustments-legal-proceedings"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "heading": {
+        "title": "Geography & Mapping",
+        "url": "https://rfa.sc.gov/mapping"
+      },
+      "items": [
+        {
+          "title": "Analytic Mapping Services",
+          "url": "https://rfa.sc.gov/data-services/mapping"
+        },
+        {
+          "title": "County Boundary Program",
+          "url": "https://rfa.sc.gov/programs-services/geodetic/county"
+        },
+        {
+          "title": "Jurisdictional Mapping",
+          "url": "https://rfa.sc.gov/programs-services/precinct-demographics/jurisdictional-mapping"
+        },
+        {
+          "title": "NC/SC Boundary",
+          "url": "https://rfa.sc.gov/programs-services/geodetic/NC-SC-Boundary"
+        },
+        {
+          "title": "SC Real Time Network (RTN)",
+          "url": "https://rfa.sc.gov/programs-services/geodetic/rtnstatus"
+        },
+        {
+          "title": "Statewide Aerial Imagery",
+          "url": "https://rfa.sc.gov/programs-services/geodetic/statewide-aerial-imagery"
+        },
+        {
+          "title": "Transportation Network Carrier Maps",
+          "url": "https://rfa.sc.gov/mapping/tcn"
+        },
+        {
+          "title": "LocateMe",
+          "url": "https://rfa.sc.gov/mapping/locate-me"
+        }
+      ]
+    }
+  ]
+}
