@@ -8,7 +8,7 @@
 
     <SearchForm v-if="showSearch"
                 v-bind:showIcon="false"
-                v-on:click.stop
+                v-on:click.stop=""
                 customClass="search-extended"
                 buttonClass="__stroke" />
   </div>
