@@ -1,27 +1,31 @@
-$color__dark-blue: rgb(20, 43, 71);
-$color__navy-peony: rgb(27, 58, 97);
-$color__frank-blue: rgb(34, 80, 137);
-$color__dover-straits: rgb(48, 104, 173);
-$color__kolibri-blue: rgb(0, 72, 120);
-$color__ocean: rgb(0, 86, 144);
-$color__ocean-blue: rgb(0, 116, 193);
-$color__faded-lilac: rgb(147, 164, 189);
-$color__river-blue: rgb(53, 176, 203);
+$colors: (
+        "dark-blue": #142B47,
+        "navy-peony": #1B3A61,
+        "frank-blue": #225089,
+        "dover-straits": #3068AD,
+        "kolibri-blue": #004878,
+        "ocean": #005690,
+        "ocean-blue": #0074C1,
+        "faded-lilac": #93A4BD,
+        "river-blue": #35B0CB,
+        "blue-gray": #415A7B,
+        "muddy-brown": #8C6910,
+        "woolen": #D2B859,
+        "dover-white": #F0EBDD,
+        "crystal": #F7F4ED,
+        "red": #E9261D,
+        "black": #000000,
+        "carbon": #333333,
+        "seared-grey": #495057,
+        "slate": #666666,
+        "silver": #757575,
+        "grey": #C3C3C3,
+        "mist": #CCCCCC,
+        "winter": #E1E5EA,
+        "marble": #F3F6F9,
+) !default;
 
-$color__blue-gray: rgb(65, 90, 123);
-
-$color__muddy-brown: rgb(140, 105, 16);
-$color__woolen: rgb(210, 184, 89);
-$color__dover-white: rgb(240, 235, 221);
-$color__crystal: rgb(247, 244, 237);
-$color__red: rgb(233, 38, 29);
-
-$color__black: rgb(0, 0, 0);
-$color__carbon: rgb(51, 51, 51);
-$color__seared-grey: rgb(73, 80, 87);
-$color__slate: rgb(102, 102, 102);
-$color__silver: rgb(117, 117, 117);
-$color__grey: rgb(195, 195, 195);
-$color__mist: rgb(204, 204, 204);
-$color__winter: rgb(225, 229, 234);
-$color__marble: rgb(243, 246, 249);
+@function getColorWithAlpha($color, $alpha: 1.0) {
+  $color: rgba(map-get($colors, $color), $alpha);
+  @return $color;
+}

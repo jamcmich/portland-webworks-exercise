@@ -1,6 +1,6 @@
 <template>
   <div class="events">
-    <h3 class="__header-style-2">News and Press Releases</h3>
+    <h3 class="__header-style-2">Upcoming Events</h3>
 
     <div class="card" v-for="event in events" :key="event.id">
       <div class="date">

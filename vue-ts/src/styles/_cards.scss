@@ -3,7 +3,7 @@
 
   &:hover {
     cursor: pointer;
-    border: 2px solid $color__dover-straits;
+    border: 2px solid map-get($colors, "dover-straits");
 
     a {
       text-decoration: underline !important;

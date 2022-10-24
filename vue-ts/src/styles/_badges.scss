@@ -5,7 +5,7 @@
   border-radius: 2px;
 
   &.__red {
-    background-color: $color__red;
+    background-color: map-get($colors, "red");
     padding: 4px 8px;
   }
 }

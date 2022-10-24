@@ -2,7 +2,7 @@
   max-width: 600px;
 
   h2 {
-    color: $color__navy-peony;
+    color: map-get($colors, "navy-peony");
     margin-bottom: 50px;
   }
 
@@ -14,7 +14,7 @@
     gap: 15px;
 
     p {
-      color: $color__carbon;
+      color: map-get($colors, "carbon");
     }
   }
 }

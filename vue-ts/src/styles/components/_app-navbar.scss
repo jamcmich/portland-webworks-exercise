@@ -10,7 +10,7 @@
   width: 100%;
 
   background-color: white;
-  border-bottom: 8px solid $color__navy-peony;
+  border-bottom: 8px solid map-get($colors, "navy-peony");
 
   .top {
     z-index: 1;
@@ -62,7 +62,7 @@
         }
 
         a {
-          color: $color__navy-peony;
+          color: map-get($colors, "navy-peony");
           font-size: 14px;
           text-decoration: none;
 
@@ -100,7 +100,7 @@
           text-align: left;
 
           p {
-            color: $color__navy-peony;
+            color: map-get($colors, "navy-peony");
           }
 
           p:nth-child(1) {
@@ -165,7 +165,7 @@
       height: 100%;
       padding: 40px 50px;
 
-      background-color: $color__marble;
+      background-color: map-get($colors, "marble");
 
       ul {
         display: flex;
@@ -181,14 +181,14 @@
           align-items: center;
           width: 100%;
           height: 50px;
-          border-bottom: 1px solid $color__mist;
+          border-bottom: 1px solid map-get($colors, "mist");
 
           &:last-of-type {
             border-bottom: transparent;
           }
 
           a {
-            color: $color__carbon;
+            color: map-get($colors, "carbon");
             font-size: 15px;
             font-weight: 700;
             text-align: center;
@@ -254,7 +254,7 @@
           flex: auto;
           gap: 0;
           width: 100%;
-          background-color: $color__crystal;
+          background-color: map-get($colors, "crystal");
         }
       }
 
@@ -278,7 +278,7 @@
       &.extended {
         width: 100%;
         max-height: fit-content;
-        background-color: $color__marble;
+        background-color: map-get($colors, "marble");
       }
     }
 

@@ -39,7 +39,7 @@
   justify-content: center;
   align-items: center;
 
-  background-color: rgb(225, 228, 235);
+  background-color: map-get($colors, "winter");
 
   .flex-container {
     gap: 40px;
@@ -77,7 +77,7 @@
 
     h3 {
       width: 100%;
-      color: $color__navy-peony;
+      color: map-get($colors, "navy-peony");
     }
   }
 }
@@ -96,7 +96,7 @@
     gap: 40px;
 
     h3 {
-      color: $color__navy-peony;
+      color: map-get($colors, "navy-peony");
     }
   }
 }
@@ -139,7 +139,7 @@
 
       .icon-background {
         padding: 6px;
-        background-color: rgba(0, 116, 193, 0.25);
+        background-color: getColorWithAlpha("ocean-blue", 0.25);
         border-radius: 100%;
       }
     }

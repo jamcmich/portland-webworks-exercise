@@ -6,7 +6,7 @@
   width: 74px;
 
   border: none;
-  background-color: $color__dover-straits;
+  background-color: map-get($colors, "dover-straits");
   cursor: pointer;
 
   span {

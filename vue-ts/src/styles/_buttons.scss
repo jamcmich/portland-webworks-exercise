@@ -14,33 +14,33 @@
   /* Stroke Button States */
   &.__stroke {
     color: white;
-    background-color: $color__ocean-blue;
+    background-color: map-get($colors, "ocean-blue");
     border: 2px solid white;
 
     transition: background-color 0.1s ease;
 
     &:hover {
-      background-color: $color__ocean;
+      background-color: map-get($colors, "ocean");
     }
 
     &:active {
-      background-color: $color__kolibri-blue;
+      background-color: map-get($colors, "kolibri-blue");
     }
   }
 
   /* Solid Button States */
   &.__solid {
     color: white;
-    background-color: $color__ocean-blue;
+    background-color: map-get($colors, "ocean-blue");
 
     transition: background-color 0.1s ease;
 
     &:hover {
-      background-color: $color__ocean;
+      background-color: map-get($colors, "ocean");
     }
 
     &:active {
-      background-color: $color__kolibri-blue;
+      background-color: map-get($colors, "kolibri-blue");
     }
   }
 }

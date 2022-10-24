@@ -6,7 +6,7 @@ footer {
   height: 370px;
   padding: 40px 100px;
 
-  background-color: $color__navy-peony;
+  background-color: map-get($colors, "navy-peony");
 
   .column {
     display: flex;
@@ -23,7 +23,7 @@ footer {
     }
 
     h4 {
-      color: $color__faded-lilac;
+      color: map-get($colors, "faded-lilac");
       font-size: 14px;
       text-transform: uppercase;
       letter-spacing: 1px;

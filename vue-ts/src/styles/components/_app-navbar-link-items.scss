@@ -13,7 +13,7 @@
     height: 50px;
 
     h2 {
-      color: $color__navy-peony;
+      color: map-get($colors, "navy-peony");
       font-size: 16px;
       text-transform: uppercase;
       letter-spacing: 0.75px;
@@ -42,7 +42,7 @@
         height: 50px;
         padding-left: 20px;
 
-        border-bottom: 1px solid $color__mist;
+        border-bottom: 1px solid map-get($colors, "mist");
         background-color: white;
 
         &::after {
@@ -74,7 +74,7 @@
         padding: 0;
 
         border: none;
-        background-color: $color__dover-straits;
+        background-color: map-get($colors, "dover-straits");
         cursor: pointer;
       }
     }
@@ -95,7 +95,7 @@
         display: inline-block;
         padding: 6px 0;
 
-        color: $color__carbon;
+        color: map-get($colors, "carbon");
         text-decoration: none;
 
         &:hover {

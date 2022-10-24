@@ -17,7 +17,7 @@ h3 {
     padding: 20px;
 
     border-radius: 2px;
-    box-shadow: 0 1px 4px 0 $color__grey;
+    box-shadow: 0 1px 4px 0 map-get($colors, "grey");
 
     a {
       text-decoration: none;
@@ -28,7 +28,7 @@ h3 {
     }
 
     span {
-      color: $color__slate;
+      color: map-get($colors, "slate");
     }
   }
 }

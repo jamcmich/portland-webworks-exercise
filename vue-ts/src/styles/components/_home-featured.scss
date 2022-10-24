@@ -10,7 +10,7 @@
 
   text-decoration: none;
   background-color: white;
-  box-shadow: rgb(195, 195, 195) 0 1px 4px 0;
+  box-shadow: map-get($colors, "grey") 0 1px 4px 0;
 
   img {
     width: 125px;
@@ -22,7 +22,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 16px;
-    color: $color__navy-peony;
+    color: map-get($colors, "navy-peony");
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;

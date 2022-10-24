@@ -21,7 +21,7 @@
 
     padding: 40px 0;
 
-    border-bottom: 1px solid $color__grey;
+    border-bottom: 1px solid map-get($colors, "grey");
 
     .date {
       display: flex;
@@ -29,7 +29,7 @@
       justify-content: center;
       align-items: center;
 
-      background-color: $color__muddy-brown;
+      background-color: map-get($colors, "muddy-brown");
 
       padding: 4px 16px;
 
@@ -64,14 +64,14 @@
 
       p {
         &.__text {
-          color: $color__carbon;
+          color: map-get($colors, "carbon");
         }
 
         &.agenda {
           justify-content: flex-start;
 
           width: 100%;
-          background-color: $color__marble;
+          background-color: map-get($colors, "marble");
           padding: 16px;
         }
       }
