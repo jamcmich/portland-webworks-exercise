@@ -20,10 +20,10 @@
 import { defineComponent } from "vue";
 import { Icon } from "@iconify/vue";
 
-import json from "../../data/services.json";
+import json from "../../../data/services.json";
 
 export default defineComponent({
-  name: "HomeServices",
+  name: "SectionServices",
   components: {
     Icon,
   },
@@ -36,5 +36,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/components/_home-services";
+@import "../../styles/components/home-services";
 </style>

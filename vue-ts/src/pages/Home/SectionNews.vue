@@ -13,10 +13,10 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
-import json from "../../data/news.json";
+import json from "../../../data/news.json";
 
 export default defineComponent({
-  name: "HomeNews",
+  name: "SectionNews",
   data() {
     return {
       news: json.news,
@@ -26,5 +26,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/components/_home-news";
+@import "../../styles/components/home-news";
 </style>

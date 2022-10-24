@@ -3,37 +3,37 @@
     <p class="__header-style-4">Providing insightful research, analysis, and resources to facilitate informed
                                 policy decisions and administration of services</p>
 
-    <SearchForm v-bind:showIcon="true" />
+    <FormSearch v-bind:showIcon="true" />
   </section>
 
   <section class="featured-section">
     <div class="flex-container">
-      <HomeFeatured />
+      <SectionFeatured />
     </div>
   </section>
 
   <section class="dashboard-section">
     <div class="flex-container">
-      <HomeDashboard />
+      <SectionDashboard />
     </div>
   </section>
 
   <section class="services-section">
     <div class="flex-container">
-      <HomeServices />
+      <SectionServices />
     </div>
   </section>
 
   <section class="updates-section">
     <div class="flex-container">
-      <HomeUpdates />
-      <HomeEvents />
+      <SectionUpdates />
+      <SectionEvents />
     </div>
   </section>
 
   <section class="news-section">
     <div class="flex-container">
-      <HomeNews />
+      <SectionNews />
     </div>
   </section>
 
@@ -52,25 +52,25 @@
 <script lang="ts">
 import { Icon } from "@iconify/vue";
 
-import SearchForm from "../components/forms/SearchForm.vue";
-import HomeFeatured from "../components/HomeFeatured.vue";
-import HomeDashboard from "../components/HomeDashboard.vue";
-import HomeServices from "../components/HomeServices.vue";
-import HomeUpdates from "../components/HomeUpdates.vue";
-import HomeEvents from "../components/HomeEvents.vue";
-import HomeNews from "../components/HomeNews.vue";
+import FormSearch from "../../components/Forms/FormSearch.vue";
+import SectionFeatured from "./SectionFeatured.vue";
+import SectionDashboard from "./SectionDashboard.vue";
+import SectionServices from "./SectionServices.vue";
+import SectionUpdates from "./SectionUpdates.vue";
+import SectionEvents from "./SectionEvents.vue";
+import SectionNews from "./SectionNews.vue";
 
 export default {
   name: "Home",
   components: {
     Icon,
-    SearchForm,
-    HomeFeatured,
-    HomeDashboard,
-    HomeServices,
-    HomeUpdates,
-    HomeEvents,
-    HomeNews,
+    FormSearch,
+    SectionFeatured,
+    SectionDashboard,
+    SectionServices,
+    SectionUpdates,
+    SectionEvents,
+    SectionNews,
   },
   methods: {
     handleReturnTop() {
@@ -81,5 +81,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/pages/home-page";
+@import "../../styles/pages/home-page";
 </style>

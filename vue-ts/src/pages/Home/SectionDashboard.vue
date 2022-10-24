@@ -37,10 +37,10 @@
 
 <script lang="ts">
 export default {
-  name: "HomeDashboard",
+  name: "SectionDashboard",
 };
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/components/_home-dashboard";
+@import "../../styles/components/home-dashboard";
 </style>

@@ -13,7 +13,7 @@ import { defineComponent } from "vue";
 import { Icon } from "@iconify/vue";
 
 export default defineComponent({
-  name: "SearchForm",
+  name: "FormSearch",
   props: {
     showIcon: Boolean,
     customClass: String,
@@ -26,5 +26,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../../styles/components/forms/_search-form";
+@import "../../styles/components/forms/search-form";
 </style>

@@ -8,10 +8,10 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
-import json from "../../data/featured.json";
+import json from "../../../data/featured.json";
 
 export default defineComponent({
-  name: "HomeFeatured",
+  name: "SectionFeatured",
   data() {
     return {
       featured: json.featured,
@@ -21,5 +21,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/components/_home-featured";
+@import "../../styles/components/home-featured";
 </style>

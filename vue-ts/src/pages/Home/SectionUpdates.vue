@@ -18,10 +18,10 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
-import json from "../../data/updates.json";
+import json from "../../../data/updates.json";
 
 export default defineComponent({
-  name: "HomeUpdates",
+  name: "SectionUpdates",
   data() {
     return {
       updates: json.updates,
@@ -31,5 +31,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/components/_home-updates";
+@import "../../styles/components/home-updates";
 </style>

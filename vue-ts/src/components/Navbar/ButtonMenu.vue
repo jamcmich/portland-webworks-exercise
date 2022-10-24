@@ -12,7 +12,7 @@ import { defineComponent } from "vue";
 import { Icon } from "@iconify/vue";
 
 export default defineComponent({
-  name: "AppNavbarMenu",
+  name: "ButtonMenu",
   components: {
     Icon,
   },
@@ -31,5 +31,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/components/_app-navbar-menu";
+@import "../../styles/components/app-navbar-menu";
 </style>

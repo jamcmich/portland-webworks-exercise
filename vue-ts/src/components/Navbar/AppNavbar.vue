@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="top" :class="{ shrink: scrollPosition > 0 }">
-      <AppNavbarMenu v-on:handleShowMenu="getShowMenu" />
+      <ButtonMenu v-on:handleShowMenu="getShowMenu" />
 
       <div class="right">
         <a class="site-details-container" href="https://jamcmich.github.io/portland-webworks-exercise/">
@@ -36,7 +36,7 @@
           </li>
         </ul>
 
-        <AppNavbarSearch />
+        <ButtonSearch />
       </div>
     </div>
 
@@ -69,7 +69,7 @@
       <div class="right">
         <div class="column">
           <template v-for="link in links" :key="link.id">
-            <AppNavbarLinkItems :link="link" />
+            <ListLinks :link="link" />
           </template>
         </div>
       </div>
@@ -80,19 +80,19 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { Icon } from "@iconify/vue";
-import json from "../../data/links.json";
+import json from "../../../data/links.json";
 
-import AppNavbarMenu from "./AppNavbarMenu.vue";
-import AppNavbarSearch from "./AppNavbarSearch.vue";
-import AppNavbarLinkItems from "./AppNavbarLinkItems.vue";
+import ButtonMenu from "./ButtonMenu.vue";
+import ButtonSearch from "./ButtonSearch.vue";
+import ListLinks from "./ListLinks.vue";
 
 export default defineComponent({
-  name: "Navbar",
+  name: "AppNavbar",
   components: {
     Icon,
-    AppNavbarMenu,
-    AppNavbarSearch,
-    AppNavbarLinkItems,
+    ButtonMenu,
+    ButtonSearch,
+    ListLinks,
   },
   data() {
     return {
@@ -119,5 +119,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/components/_app-navbar";
+@import "../../styles/components/app-navbar";
 </style>

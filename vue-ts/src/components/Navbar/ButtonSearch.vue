@@ -6,7 +6,7 @@
           width="32"
           :color="!showSearch ? 'rgb(0, 116, 193)' : 'white'" />
 
-    <SearchForm v-if="showSearch"
+    <FormSearch v-if="showSearch"
                 v-bind:showIcon="false"
                 v-on:click.stop=""
                 customClass="search-extended"
@@ -18,13 +18,13 @@
 import { defineComponent } from "vue";
 import { Icon } from "@iconify/vue";
 
-import SearchForm from "./forms/SearchForm.vue";
+import FormSearch from "../Forms/FormSearch.vue";
 
 export default defineComponent({
-  name: "AppNavbarSearch",
+  name: "ButtonSearch",
   components: {
     Icon,
-    SearchForm,
+    FormSearch,
   },
   data() {
     return {
@@ -35,5 +35,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/components/_app-navbar-search";
+@import "../../styles/components/app-navbar-search";
 </style>
