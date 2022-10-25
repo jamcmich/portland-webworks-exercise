@@ -36,11 +36,13 @@
 </template>
 
 <script lang="ts">
-export default {
-  name: "SectionDashboard",
-};
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  name: "PageHomeSectionDashboard",
+});
 </script>
 
 <style lang="scss" scoped>
-@import "../../styles/components/home-dashboard";
+@import "@/styles/_page-home-section-dashboard.scss";
 </style>

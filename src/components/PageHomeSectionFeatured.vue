@@ -8,7 +8,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
-import json from "../../../data/featured.json";
+import json from "../data/featured.json";
 
 export default defineComponent({
   name: "SectionFeatured",
@@ -21,5 +21,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../../styles/components/home-featured";
+@import "@/styles/_page-home-section-featured.scss";
 </style>

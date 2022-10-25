@@ -8,32 +8,32 @@
 
   <section class="featured-section">
     <div class="flex-container">
-      <SectionFeatured />
+      <PageHomeSectionFeatured />
     </div>
   </section>
 
   <section class="dashboard-section">
     <div class="flex-container">
-      <SectionDashboard />
+      <PageHomeSectionDashboard />
     </div>
   </section>
 
   <section class="services-section">
     <div class="flex-container">
-      <SectionServices />
+      <PageHomeSectionServices />
     </div>
   </section>
 
   <section class="updates-section">
     <div class="flex-container">
-      <SectionUpdates />
-      <SectionEvents />
+      <PageHomeSectionUpdates />
+      <PageHomeSectionEvents />
     </div>
   </section>
 
   <section class="news-section">
     <div class="flex-container">
-      <SectionNews />
+      <PageHomeSectionNews />
     </div>
   </section>
 
@@ -50,36 +50,37 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from "vue";
 import { Icon } from "@iconify/vue";
 
-import FormSearch from "../../components/Forms/FormSearch.vue";
-import SectionFeatured from "./SectionFeatured.vue";
-import SectionDashboard from "./SectionDashboard.vue";
-import SectionServices from "./SectionServices.vue";
-import SectionUpdates from "./SectionUpdates.vue";
-import SectionEvents from "./SectionEvents.vue";
-import SectionNews from "./SectionNews.vue";
+import FormSearch from "@/components/FormSearch.vue";
+import PageHomeSectionFeatured from "@/components/PageHomeSectionFeatured.vue";
+import PageHomeSectionDashboard from "@/components/PageHomeSectionDashboard.vue";
+import PageHomeSectionServices from "@/components/PageHomeSectionServices.vue";
+import PageHomeSectionUpdates from "@/components/PageHomeSectionUpdates.vue";
+import PageHomeSectionEvents from "@/components/PageHomeSectionEvents.vue";
+import PageHomeSectionNews from "@/components/PageHomeSectionNews.vue";
 
-export default {
-  name: "Home",
+export default defineComponent({
+  name: "PageHome",
   components: {
     Icon,
     FormSearch,
-    SectionFeatured,
-    SectionDashboard,
-    SectionServices,
-    SectionUpdates,
-    SectionEvents,
-    SectionNews,
+    PageHomeSectionFeatured,
+    PageHomeSectionDashboard,
+    PageHomeSectionServices,
+    PageHomeSectionUpdates,
+    PageHomeSectionEvents,
+    PageHomeSectionNews,
   },
   methods: {
     handleReturnTop() {
       window.scrollTo({top: 0, behavior: "smooth"});
     },
   },
-};
+});
 </script>
 
 <style lang="scss">
-@import "../../styles/pages/home-page";
+@import "@/styles/_page-home.scss";
 </style>

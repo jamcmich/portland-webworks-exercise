@@ -5,9 +5,9 @@
 </template>
 
 <script lang="ts">
-import AppNavbar from "./components/Navbar/AppNavbar.vue";
-import PageHome from "./pages/Home/PageHome.vue";
-import AppFooter from "./components/Footer/AppFooter.vue";
+import AppNavbar from "@/components/AppNavbar.vue";
+import PageHome from "@/components/PageHome.vue";
+import AppFooter from "@/components/AppFooter.vue";
 
 export default {
   name: "App",

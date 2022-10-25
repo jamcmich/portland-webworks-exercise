@@ -26,5 +26,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../../styles/components/forms/search-form";
+@import "@/styles/_form-search.scss";
 </style>

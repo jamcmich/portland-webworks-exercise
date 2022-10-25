@@ -54,5 +54,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../../styles/components/app-footer";
+@import "@/styles/_app-footer.scss";
 </style>

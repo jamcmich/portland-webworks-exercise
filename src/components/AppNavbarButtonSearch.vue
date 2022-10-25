@@ -18,10 +18,10 @@
 import { defineComponent } from "vue";
 import { Icon } from "@iconify/vue";
 
-import FormSearch from "../Forms/FormSearch.vue";
+import FormSearch from "@/components/FormSearch.vue";
 
 export default defineComponent({
-  name: "ButtonSearch",
+  name: "AppNavbarButtonSearch",
   components: {
     Icon,
     FormSearch,
@@ -35,5 +35,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../../styles/components/app-navbar-search";
+@import "@/styles/_app-navbar-button-search.scss";
 </style>

@@ -29,7 +29,7 @@ import { defineComponent } from "vue";
 import { Icon } from "@iconify/vue";
 
 export default defineComponent({
-  name: "ListLinks",
+  name: "AppNavbarListLinks",
   props: {
     link: Object,
   },
@@ -50,5 +50,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "../../styles/components/app-navbar-link-items";
+@import "@/styles/_app-navbar-list-links.scss";
 </style>
