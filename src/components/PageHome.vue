@@ -1,22 +1,14 @@
 <template>
   <section class="hero">
-    <p class="__header-style-4">Providing insightful research, analysis, and resources to facilitate informed
-                                policy decisions and administration of services</p>
+    <h4 class="__header-style-4">Providing insightful research, analysis, and resources to facilitate informed
+                                 policy decisions and administration of services</h4>
 
     <FormSearch v-bind:showIcon="true" />
   </section>
 
-  <section class="featured-section">
-    <div class="flex-container">
-      <PageHomeSectionFeatured />
-    </div>
-  </section>
+  <PageHomeSectionFeatured />
+  <PageHomeSectionDashboard />
 
-  <section class="dashboard-section">
-    <div class="flex-container">
-      <PageHomeSectionDashboard />
-    </div>
-  </section>
 
   <section class="services-section">
     <div class="flex-container">

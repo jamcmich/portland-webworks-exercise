@@ -1,0 +1,19 @@
+@mixin flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 40px 350px;
+}
+
+// TODO: Make flex mixins
+@mixin flex-row {
+
+}
+
+@mixin flex-column {
+
+}
