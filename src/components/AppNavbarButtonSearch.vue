@@ -8,8 +8,7 @@
     <FormSearch v-if="showSearch"
                 v-bind:showIcon="false"
                 v-on:click.stop=""
-                customClass="search-extended"
-                buttonClass="__stroke" />
+                customClass="search-extended" />
   </button>
 </template>
 

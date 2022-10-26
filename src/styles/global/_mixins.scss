@@ -21,40 +21,75 @@
 }
 
 @mixin button(
-  $type: stroke,
-  $borderWidth: 2px,
-) {
-  @if $type == solid {
+  $flexDirection: row,
+  $gap: 0,
+  $width: auto,
+  $height: auto,
+  $margin: 0,
+  $padding: 12px 24px,
 
+  $type: solid,
+  $borderWidth: 2px,
+  $borderColor: map-get($colors, "ocean-blue"),
+) {
+  @include flex-container(
+          $flexDirection: $flexDirection,
+          $gap: $gap,
+          $width: $width,
+          $height: $height,
+          $margin: $margin,
+          $padding: $padding,
+  );
+
+  @if $type == solid {
+    color: white;
+    background-color: map-get($colors, "ocean-blue");
+
+    &:hover {
+      border-color: map-get($colors, "ocean");
+      background-color: map-get($colors, "ocean");
+    }
+
+    &:active {
+      border-color: map-get($colors, "kolibri-blue");
+      background-color: map-get($colors, "kolibri-blue");
+    }
   }
 
   @if $type == stroke {
     color: map-get($colors, "ocean-blue");
     background-color: white;
-    border-width: $borderWidth;
-    border-color: map-get($colors, "ocean-blue");
 
     &:hover {
       color: white;
       background-color: map-get($colors, "ocean");
-
-      svg {
-        * {
-          fill: white;
-        }
-      }
     }
 
     &:active {
+      color: white;
       background-color: map-get($colors, "kolibri-blue");
     }
   }
 
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  align-self: stretch;
+
+  border-width: $borderWidth;
+  border-color: $borderColor;
   border-style: solid;
-  border-radius: 2px;
-  transition: color 0.1s ease, background-color 0.1s ease;
+
+  transition: color 0.1s ease, background-color 0.1s ease, border-color 0.1s ease;
 
   &:hover {
     cursor: pointer;
+  }
+
+  svg {
+    font-size: 24px;
   }
 }

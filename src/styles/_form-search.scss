@@ -1,4 +1,4 @@
-#search-form {
+form#search {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -32,8 +32,11 @@
   }
 
   button {
-    height: 100%;
-    font-size: 14px;
+    @include button(
+            $padding: 0 24px,
+            $type: solid,
+            $gap: 8px,
+    );
   }
 
   &.search-extended {
@@ -61,11 +64,6 @@
     input {
       width: 100%;
       padding: 0 10px;
-    }
-
-    button {
-      font-size: 14px;
-      gap: 0;
     }
   }
 }

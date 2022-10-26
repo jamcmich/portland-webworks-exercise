@@ -1,9 +1,9 @@
 <template>
-  <form id="search-form" :class="customClass" action="">
+  <form id="search" :class="customClass" action="">
     <input class="__text" placeholder="Search rfa.sc.gov" />
-    <button class="__button __solid" :class="buttonClass" form="search-form" type="submit" value="submit">
+    <button form="search-form" type="submit" value="submit">
       Search
-      <Icon icon="mdi:magnify" width="24" v-if="showIcon" />
+      <Icon icon="mdi:magnify" v-if="showIcon" />
     </button>
   </form>
 </template>
@@ -17,7 +17,6 @@ export default defineComponent({
   props: {
     showIcon: Boolean,
     customClass: String,
-    buttonClass: String,
   },
   components: {
     Icon,

@@ -46,6 +46,8 @@ section#dashboard {
         text-decoration: none;
 
         button {
+          @include button($type: solid);
+
           width: 250px;
           text-transform: none;
         }

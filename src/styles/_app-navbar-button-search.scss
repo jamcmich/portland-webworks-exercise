@@ -1,14 +1,13 @@
 @use "sass:map";
 
 button#search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include button(
+          $type: stroke,
+          $borderWidth: 1px
+  );
 
-  width: 50px;
-  height: 50px;
-
-  @include button($type: stroke, $borderWidth: 1px);
+  margin: auto;
+  padding: 10px;
 
   &.extended {
     position: relative;

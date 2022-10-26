@@ -28,8 +28,8 @@
     <div class="right-column">
       <div class="image-container">
         <a href="https://rfa.sc.gov/data-research/population-demographics/census-state-data-center/decennial-census-data/decennial-0">
-          <button class="__button __solid">
-            Click here to view census dashboards
+          <button>
+            View Census Dashboards
           </button>
         </a>
       </div>

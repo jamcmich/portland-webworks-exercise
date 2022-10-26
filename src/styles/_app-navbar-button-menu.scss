@@ -1,13 +1,11 @@
 button#menu {
-  @include flex-container(
+  @include button(
           $flexDirection: column,
-          $justifyContent: center,
-          $alignItems: center,
           $gap: 0,
           $width: 74px,
           $height: auto,
-          $margin: 0,
-          $padding: 0,
+          $padding: 0 10px,
+          $type: solid,
   );
 
   span {
