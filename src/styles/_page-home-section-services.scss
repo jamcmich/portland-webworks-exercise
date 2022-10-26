@@ -1,10 +1,12 @@
-.services {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+section#services {
+  @include flex-container(column);
+  align-items: stretch;
 
-  width: 100%;
-
+  h3 {
+    width: 100%;
+    color: map-get($colors, "navy-peony");
+  }
+  
   .column {
     display: flex;
     flex-direction: column;

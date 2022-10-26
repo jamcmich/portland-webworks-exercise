@@ -1,0 +1,24 @@
+{
+  "pages": [
+    {
+      "id": 1,
+      "title": "Home",
+      "href": "https://jamcmich.github.io/portland-webworks-exercise/"
+    },
+    {
+      "id": 2,
+      "title": "About Us",
+      "href": "https://rfa.sc.gov/about"
+    },
+    {
+      "id": 3,
+      "title": "Events",
+      "href": "https://rfa.sc.gov/calendar"
+    },
+    {
+      "id": 4,
+      "title": "Boards & Committees",
+      "href": "https://rfa.sc.gov/boards-committees"
+    }
+  ]
+}

@@ -1,34 +1,36 @@
-h3 {
-  width: 100%;
-}
 
-.cards-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 40px;
+section#news {
+  @include flex-container(column);
+  align-items: stretch;
 
-  .card {
+  .cards-container {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    flex: 1 1;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
 
-    padding: 20px;
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1 1;
 
-    border-radius: 2px;
-    box-shadow: 0 1px 4px 0 map-get($colors, "grey");
+      padding: 20px;
 
-    a {
-      text-decoration: none;
+      border-radius: 2px;
+      box-shadow: 0 1px 4px 0 map-get($colors, "grey");
 
-      &:hover {
-        text-decoration: underline;
+      a {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
-    }
 
-    span {
-      color: map-get($colors, "slate");
+      span {
+        color: map-get($colors, "slate");
+      }
     }
   }
 }

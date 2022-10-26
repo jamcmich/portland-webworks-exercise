@@ -1,0 +1,20 @@
+div#scroll-top {
+  @include flex-container();
+  justify-content: flex-end;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    background-color: transparent;
+    border: none;
+
+    .icon-background {
+      padding: 6px;
+      background-color: getColorWithAlpha("ocean-blue", 0.25);
+      border-radius: 100%;
+    }
+  }
+}

@@ -1,10 +1,10 @@
 <template>
-  <nav class="navbar">
+  <nav id="navbar">
     <div class="top" :class="{ shrink: scrollPosition > 0 }">
       <AppNavbarButtonMenu v-on:handleShowMenu="getShowMenu" />
 
       <div class="right">
-        <a class="site-details-container" href="https://jamcmich.github.io/portland-webworks-exercise/">
+        <a class="site-details-container" href="https://rfa.sc.gov/">
           <img src="/assets/scrfao-logo.png" alt="South Carolina Revenue and Fiscal Affairs Office" />
 
           <div class="site-details">
@@ -14,24 +14,9 @@
         </a>
 
         <ul>
-          <li>
-            <a class="__link-style-2" href="https://jamcmich.github.io/portland-webworks-exercise/">
-              Home
-            </a>
-          </li>
-          <li>
-            <a class="__link-style-2" href="https://rfa.sc.gov/about">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a class="__link-style-2" href="https://rfa.sc.gov/calendar">
-              Events
-            </a>
-          </li>
-          <li>
-            <a class="__link-style-2" href="https://rfa.sc.gov/boards-committees">
-              Boards & Committees
+          <li v-for="page in pages" :key="page.id">
+            <a class="__link-style-2" :href="page.href">
+              {{ page.title }}
             </a>
           </li>
         </ul>
@@ -43,24 +28,9 @@
     <div class="bottom" :class="{ extended: showMenu }">
       <div class="left">
         <ul>
-          <li>
-            <a class="__link-style-2" href="https://jamcmich.github.io/portland-webworks-exercise/">
-              Home
-            </a>
-          </li>
-          <li>
-            <a class="__link-style-2" href="https://rfa.sc.gov/about">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a class="__link-style-2" href="https://rfa.sc.gov/calendar">
-              Events
-            </a>
-          </li>
-          <li>
-            <a class="__link-style-2" href="https://rfa.sc.gov/boards-committees">
-              Boards & Committees
+          <li v-for="page in pages" :key="page.id">
+            <a class="__link-style-2" :href="page.href">
+              {{ page.title }}
             </a>
           </li>
         </ul>
@@ -80,7 +50,8 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { Icon } from "@iconify/vue";
-import json from "../data/links.json";
+import pagesData from "../data/pages.json";
+import linksData from "../data/links.json";
 
 import AppNavbarButtonMenu from "@/components/AppNavbarButtonMenu.vue";
 import AppNavbarButtonSearch from "@/components/AppNavbarButtonSearch.vue";
@@ -96,7 +67,8 @@ export default defineComponent({
   },
   data() {
     return {
-      links: json.links,
+      pages: pagesData.pages,
+      links: linksData.links,
       scrollPosition: 0,
       showMenu: false,
     };

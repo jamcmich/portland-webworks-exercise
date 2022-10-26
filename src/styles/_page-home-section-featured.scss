@@ -1,6 +1,6 @@
 section#featured {
   @include flex-container;
-  gap: 40px;
+
   background-color: map-get($colors, "winter");
 
   .card {

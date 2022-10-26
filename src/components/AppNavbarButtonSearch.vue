@@ -1,17 +1,16 @@
 <template>
-  <div class="search-container"
-       :class="{ extended: showSearch }"
-       v-on:click="showSearch = !showSearch">
+  <button id="search"
+          :class="{ extended: showSearch }"
+          v-on:click="showSearch = !showSearch">
     <Icon icon="mdi:magnify"
-          width="32"
-          :color="!showSearch ? 'rgb(0, 116, 193)' : 'white'" />
+          width="32" />
 
     <FormSearch v-if="showSearch"
                 v-bind:showIcon="false"
                 v-on:click.stop=""
                 customClass="search-extended"
                 buttonClass="__stroke" />
-  </div>
+  </button>
 </template>
 
 <script lang="ts">

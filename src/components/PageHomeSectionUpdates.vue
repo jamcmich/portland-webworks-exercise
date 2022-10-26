@@ -1,5 +1,5 @@
 <template>
-  <div class="updates">
+  <section id="updates">
     <h3 class="__header-style-2">Recent Updates</h3>
 
     <ul>
@@ -12,7 +12,7 @@
         </p>
       </li>
     </ul>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">

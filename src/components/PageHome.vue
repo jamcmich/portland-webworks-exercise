@@ -2,43 +2,20 @@
   <section class="hero">
     <h4 class="__header-style-4">Providing insightful research, analysis, and resources to facilitate informed
                                  policy decisions and administration of services</h4>
-
     <FormSearch v-bind:showIcon="true" />
   </section>
 
   <PageHomeSectionFeatured />
   <PageHomeSectionDashboard />
+  <PageHomeSectionServices />
 
-
-  <section class="services-section">
-    <div class="flex-container">
-      <PageHomeSectionServices />
-    </div>
-  </section>
-
-  <section class="updates-section">
-    <div class="flex-container">
-      <PageHomeSectionUpdates />
-      <PageHomeSectionEvents />
-    </div>
-  </section>
-
-  <section class="news-section">
-    <div class="flex-container">
-      <PageHomeSectionNews />
-    </div>
-  </section>
-
-  <div class="top-return">
-    <div class="flex-container">
-      <a class="__link-style-2" v-on:click="handleReturnTop">
-        Back to Top
-        <span class="icon-background">
-          <Icon icon="mdi:chevron-up" width="28" color="rgb(0, 116, 193)" />
-        </span>
-      </a>
-    </div>
+  <div class="row">
+    <PageHomeSectionUpdates />
+    <PageHomeSectionEvents />
   </div>
+
+  <PageHomeSectionNews />
+  <AppScrollTop />
 </template>
 
 <script lang="ts">
@@ -52,6 +29,7 @@ import PageHomeSectionServices from "@/components/PageHomeSectionServices.vue";
 import PageHomeSectionUpdates from "@/components/PageHomeSectionUpdates.vue";
 import PageHomeSectionEvents from "@/components/PageHomeSectionEvents.vue";
 import PageHomeSectionNews from "@/components/PageHomeSectionNews.vue";
+import AppScrollTop from "./AppScrollTop.vue";
 
 export default defineComponent({
   name: "PageHome",
@@ -64,11 +42,7 @@ export default defineComponent({
     PageHomeSectionUpdates,
     PageHomeSectionEvents,
     PageHomeSectionNews,
-  },
-  methods: {
-    handleReturnTop() {
-      window.scrollTo({top: 0, behavior: "smooth"});
-    },
+    AppScrollTop,
   },
 });
 </script>

@@ -1,13 +1,14 @@
-.menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 74px;
-
-  border: none;
-  background-color: map-get($colors, "dover-straits");
-  cursor: pointer;
+button#menu {
+  @include flex-container(
+          $flexDirection: column,
+          $justifyContent: center,
+          $alignItems: center,
+          $gap: 0,
+          $width: 74px,
+          $height: auto,
+          $margin: 0,
+          $padding: 0,
+  );
 
   span {
     width: max-content;

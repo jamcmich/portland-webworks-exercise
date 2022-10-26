@@ -1,5 +1,5 @@
 <template>
-  <div class="services">
+  <section id="services">
     <h3 class="__header-style-3">Popular Services and Links</h3>
 
     <div class="column">
@@ -13,7 +13,7 @@
               color="rgb(117, 117, 117)" />
       </p>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">

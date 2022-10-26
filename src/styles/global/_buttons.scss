@@ -1,26 +1,35 @@
-/* global Button Styles */
+/* Global Button Styles */
 
 .__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
+  @include flex-container(
+          $justifyContent: center,
+          $alignItems: center,
+          $gap: 8px,
+          $width: auto,
+          $height: auto,
+          $margin: 0,
+          $padding: 12px 26px,
+  );
 
-  padding: 12px 26px;
   border: none;
-
   cursor: pointer;
 
   /* Stroke Button States */
   &.__stroke {
     color: white;
-    background-color: map-get($colors, "ocean-blue");
-    border: 2px solid white;
+    background-color: white;
+    border: 2px solid map-get($colors, "ocean-blue");
 
     transition: background-color 0.1s ease;
 
     &:hover {
       background-color: map-get($colors, "ocean");
+
+      svg {
+        * {
+          fill: white;
+        }
+      }
     }
 
     &:active {

@@ -1,9 +1,14 @@
 <template>
-  <button class="menu" v-on:click="emitShowMenu">
-    <Icon v-if="!showMenu" icon="mdi:menu" width="48" color="white" />
-    <Icon v-if="showMenu" icon="mdi:close" width="48" color="white" />
-    <span v-if="!showMenu" class="__text">MENU</span>
-    <span v-if="showMenu" class="__text">CLOSE</span>
+  <button id="menu" class="__button __solid" v-on:click="emitShowMenu">
+    <template v-if="!showMenu">
+      <Icon icon="mdi:menu" width="48" color="white" />
+      <span class="__text">MENU</span>
+    </template>
+
+    <template v-else>
+      <Icon icon="mdi:close" width="48" color="white" />
+      <span class="__text">CLOSE</span>
+    </template>
   </button>
 </template>
 
