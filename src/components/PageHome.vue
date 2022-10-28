@@ -1,10 +1,5 @@
 <template>
-  <section class="hero">
-    <h4 class="__header-style-4">Providing insightful research, analysis, and resources to facilitate informed
-                                 policy decisions and administration of services</h4>
-    <FormSearch v-bind:showIcon="true" />
-  </section>
-
+  <PageHomeSectionHero />
   <PageHomeSectionFeatured />
   <PageHomeSectionDashboard />
   <PageHomeSectionServices />
@@ -22,7 +17,7 @@
 import { defineComponent } from "vue";
 import { Icon } from "@iconify/vue";
 
-import FormSearch from "@/components/FormSearch.vue";
+import PageHomeSectionHero from "@/components/PageHomeSectionHero.vue";
 import PageHomeSectionFeatured from "@/components/PageHomeSectionFeatured.vue";
 import PageHomeSectionDashboard from "@/components/PageHomeSectionDashboard.vue";
 import PageHomeSectionServices from "@/components/PageHomeSectionServices.vue";
@@ -35,7 +30,7 @@ export default defineComponent({
   name: "PageHome",
   components: {
     Icon,
-    FormSearch,
+    PageHomeSectionHero,
     PageHomeSectionFeatured,
     PageHomeSectionDashboard,
     PageHomeSectionServices,

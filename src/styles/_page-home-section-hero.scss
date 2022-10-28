@@ -1,0 +1,25 @@
+section#hero {
+  @include flex-container(
+          $flexDirection: column,
+          $gap: 45px,
+          $height: 400px,
+  );
+
+  background-image: url("/assets/images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h4 {
+    width: 100%;
+    max-width: 725px;
+
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    text-transform: none;
+
+    @media screen and (max-width: map-get($breakpoints, "desktop")) {
+      font-size: 24px;
+    }
+  }
+}

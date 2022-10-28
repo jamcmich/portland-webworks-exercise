@@ -1,9 +1,11 @@
 <template>
   <section id="featured">
-    <a class="__card card" v-for="item in featured" :key="item.id" :href="item.link">
-      <img :src="`https://jamcmich.github.io/portland-webworks-exercise${item.img}`" :alt="item.alt" />
-      <p>{{ item.title }}</p>
-    </a>
+    <div class="container">
+      <a class="__card card" v-for="item in featured" :key="item.id" :href="item.link">
+        <img :src="`https://jamcmich.github.io/portland-webworks-exercise${item.img}`" :alt="item.alt" />
+        <p>{{ item.title }}</p>
+      </a>
+    </div>
   </section>
 </template>
 

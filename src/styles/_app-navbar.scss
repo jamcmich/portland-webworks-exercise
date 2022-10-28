@@ -10,7 +10,7 @@ nav#navbar {
           $padding: 0,
   );
 
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
 
@@ -62,7 +62,7 @@ nav#navbar {
         list-style-type: none;
         text-transform: uppercase;
 
-        @media screen and (max-width: 1140px) {
+        @media screen and (max-width: 1160px) {
           display: none;
         }
 

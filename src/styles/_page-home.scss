@@ -2,49 +2,8 @@ h3 {
   color: map-get($colors, "navy-peony");
 }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 45px;
-
-  height: 378px;
-  margin-top: 90px;
-
-  background-image: url("/assets/images/hero.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  h4 {
-    width: 100%;
-    max-width: 725px;
-
-    color: white;
-    font-weight: 400;
-    text-align: center;
-    text-transform: none;
-  }
-}
-
 .row {
   @include flex-container();
   justify-content: space-between;
   align-items: flex-start;
-}
-
-.news-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 40px 0;
-
-  .flex-container {
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 40px;
-
-    width: 100%;
-  }
 }
