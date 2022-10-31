@@ -1,13 +1,13 @@
 <template>
   <button id="menu" v-on:click="emitShowMenu">
     <template v-if="!showMenu">
-      <Icon icon="mdi:menu" width="48" color="white" />
-      <span class="__text">MENU</span>
+      <Icon icon="mdi:menu" color="white" />
+      <span class="__text">menu</span>
     </template>
 
     <template v-else>
-      <Icon icon="mdi:close" width="48" color="white" />
-      <span class="__text">CLOSE</span>
+      <Icon icon="mdi:close" color="white" />
+      <span class="__text">close</span>
     </template>
   </button>
 </template>

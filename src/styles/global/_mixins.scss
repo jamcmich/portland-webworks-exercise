@@ -1,4 +1,5 @@
 @mixin flex-container(
+  $display: flex,
   $flexDirection: row,
   $justifyContent: center,
   $alignItems: center,
@@ -8,7 +9,7 @@
   $margin: auto,
   $padding: 40px,
 ) {
-  display: flex;
+  display: $display;
   flex-direction: $flexDirection;
   justify-content: $justifyContent;
   align-items: $alignItems;
@@ -18,6 +19,10 @@
   height: $height;
   margin: $margin;
   padding: $padding;
+
+  @media screen and (max-width: map-get($breakpoints, "phone")) {
+    padding: 20px;
+  }
 }
 
 @mixin button(

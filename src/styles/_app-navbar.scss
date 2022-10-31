@@ -122,21 +122,53 @@ nav#navbar {
           }
 
           /* .site-details */
-          @media screen and (max-width: map.get($breakpoints, "tablet")) {
+          @media screen and (max-width: map-get($breakpoints, "desktop")) {
             p:nth-child(1) {
               font-size: 16px;
+            }
+          }
+
+          @media screen and (max-width: map-get($breakpoints, "tablet")) {
+            p:nth-child(1) {
+              font-size: 14px;
+            }
+
+            p:nth-child(2) {
+              font-size: 12px;
+            }
+          }
+
+          @media screen and (max-width: map-get($breakpoints, "phone")) {
+            p:nth-child(1) {
+              font-size: 12px;
             }
 
             p:nth-child(2) {
               display: none;
             }
           }
+        }
 
-          /* .site-details */
-          @media screen and (max-width: map.get($breakpoints, "phone")) {
-            p:nth-child(1) {
-              font-size: 12px;
-            }
+        /* .site-details-container */
+        @media screen and (max-width: map-get($breakpoints, "tablet")) {
+          gap: 16px;
+
+          margin: 0;
+          padding: 8px;
+
+          img {
+            max-width: 60px;
+          }
+        }
+
+        @media screen and (max-width: map-get($breakpoints, "phone")) {
+          gap: 16px;
+
+          margin: 0;
+          padding: 8px;
+
+          img {
+            max-width: 50px;
           }
         }
       }
@@ -151,9 +183,28 @@ nav#navbar {
         }
       }
 
-      @media screen and (max-width: map.get($breakpoints, "desktop")) {
+      /* .right */
+      @media screen and (max-width: map-get($breakpoints, "desktop")) {
         margin-right: 0;
       }
+
+      @media screen and (max-width: map-get($breakpoints, "tablet")) {
+        margin: 0 8px;
+      }
+
+      @media screen and (max-width: map-get($breakpoints, "phone")) {
+        margin: 0;
+      }
+    }
+
+    /* .top */
+    @media screen and (max-width: map-get($breakpoints, "tablet")) {
+      flex-direction: row-reverse;
+      max-height: 80px;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "phone")) {
+      max-height: 80px;
     }
   }
 
@@ -310,5 +361,9 @@ nav#navbar {
 
       }
     }
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "phone")) {
+    padding: 0;
   }
 }

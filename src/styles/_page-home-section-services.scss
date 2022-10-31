@@ -1,36 +1,108 @@
 section#services {
-  @include flex-container(column);
+  @include flex-container(
+          $flexDirection: column,
+          $padding: 0,
+  );
   align-items: stretch;
 
-  h3 {
-    width: 100%;
-    color: map-get($colors, "navy-peony");
+  .container {
+    @include flex-container(
+            $flexDirection: column,
+    );
+
+    max-width: 1200px;
+    align-items: stretch;
+
+    h3 {
+      color: map-get($colors, "navy-peony");
+    }
+
+    .column {
+      @include flex-container(
+              $flexDirection: row,
+              $gap: 0,
+              $padding: 0,
+              $justifyContent: space-between,
+      );
+
+      flex-wrap: wrap;
+
+      .item {
+        @include flex-container(
+                $gap: 0,
+                $width: 30%,
+                $height: 100px,
+                $margin: 0,
+                $padding: 0,
+                $justifyContent: flex-start,
+                $alignItems: flex-start,
+        );
+
+        flex: 0 32%;
+
+        .flex-reset {
+          display: inline;
+
+          a {
+            span {
+              margin-right: 8px;
+            }
+
+            svg {
+              display: inline;
+              vertical-align: bottom;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
   }
-  
-  .column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 20px;
-    column-gap: 20px;
 
-    width: 100%;
-    max-height: 200px;
+  @media screen and (max-width: map-get($breakpoints, "tablet")) {
+    .container {
+      .column {
+        flex-direction: column;
 
-    .item {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex: 0 32%;
-      gap: 8px;
+        .item {
+          width: 100%;
+          height: auto;
+          flex: auto;
 
-      width: 30%;
-      min-height: 50px;
+          background-color: map-get($colors, "marble");
+          border-bottom: 1px solid map-get($colors, "mist");
+          border-radius: 2px;
 
-      svg {
-        flex-shrink: 0;
+          &:last-child {
+            border-bottom: none;
+          }
+
+          .flex-reset {
+            flex-grow: 1;
+
+            a {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: 8px;
+              padding: 20px;
+
+              text-decoration: none;
+
+              &:active {
+                text-decoration: underline;
+              }
+
+              span {
+                margin: 0;
+              }
+
+              svg {
+                flex-shrink: 0;
+              }
+            }
+          }
+        }
       }
     }
   }

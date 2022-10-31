@@ -3,7 +3,7 @@ h3 {
 }
 
 .row {
-  @include flex-container();
+  @include flex-container;
   justify-content: space-between;
   align-items: flex-start;
 }

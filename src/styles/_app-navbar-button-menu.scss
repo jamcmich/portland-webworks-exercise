@@ -1,22 +1,49 @@
 button#menu {
-  @include button(
-          $flexDirection: column,
-          $gap: 0,
-          $width: 74px,
-          $height: auto,
-          $padding: 0 10px,
-          $type: solid,
-  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 72px;
+  margin: 0;
+  padding: 0 0 8px 0;
+
+  color: white;
+  border: none;
+  background-color: map-get($colors, "ocean-blue");
+
+  &:hover {
+    border-color: map-get($colors, "ocean");
+    background-color: map-get($colors, "ocean");
+  }
+
+  &:active {
+    border-color: map-get($colors, "kolibri-blue");
+    background-color: map-get($colors, "kolibri-blue");
+  }
+
+  svg {
+    width: 48px;
+    height: fit-content;
+  }
 
   span {
-    width: max-content;
-    margin-bottom: 8px;
-    margin-left: 1px;
-
     color: white;
     font-size: 10px;
+    line-height: normal;
     letter-spacing: 2.5px;
-    line-height: 10px;
-    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "phone")) {
+    min-width: 64px;
+
+    svg {
+      width: 40px;
+    }
+
+    span {
+      letter-spacing: 0.5px;
+    }
   }
 }

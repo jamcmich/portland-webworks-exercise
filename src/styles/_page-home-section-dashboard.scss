@@ -1,55 +1,62 @@
 section#dashboard {
-  @include flex-container;
+  @include flex-container(
+          $padding: 0,
+  );
 
-  .left-column {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 50px;
+  .container {
+    @include flex-container;
+    max-width: 1200px;
 
-    h2 {
-      color: map-get($colors, "navy-peony");
-    }
-
-    .text-container {
+    .left-column {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 15px;
+      width: 100%;
+      gap: 50px;
 
-      p {
-        color: map-get($colors, "carbon");
+      h2 {
+        color: map-get($colors, "navy-peony");
+      }
+
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 15px;
+
+        p {
+          color: map-get($colors, "carbon");
+        }
       }
     }
-  }
 
-  .right-column {
-    display: flex;
-    align-self: stretch;
-    width: 100%;
-
-    .image-container {
+    .right-column {
       display: flex;
-      justify-content: center;
-      align-items: center;
-
+      align-self: stretch;
       width: 100%;
-      height: 450px;
 
-      background-image: url("/assets/images/census-preview.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+      .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-      a {
-        text-decoration: none;
+        width: 100%;
+        height: 450px;
 
-        button {
-          @include button($type: solid);
+        background-image: url("/assets/images/census-preview.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
 
-          width: 250px;
-          text-transform: none;
+        a {
+          text-decoration: none;
+
+          button {
+            @include button($type: solid);
+
+            width: 250px;
+            text-transform: none;
+          }
         }
       }
     }
