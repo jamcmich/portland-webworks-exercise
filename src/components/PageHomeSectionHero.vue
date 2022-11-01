@@ -1,7 +1,7 @@
 <template>
-  <section id="hero">
-    <h4 class="__header-style-4">Providing insightful research, analysis, and resources to facilitate informed
-                                 policy decisions and administration of services</h4>
+  <section class="hero__section hero__section--flex">
+    <h1 class="hero__header">Providing insightful research, analysis, and resources to facilitate
+                             informed policy decisions and administration of services</h1>
     <FormSearch v-bind:showIcon="true" />
   </section>
 </template>

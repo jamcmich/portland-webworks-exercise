@@ -1,10 +1,11 @@
 /* Import global Styles */
 
 @import "_reset";
+@import "_breakpoints";
 @import "_colors";
 @import "_typography";
 @import "_mixins";
-@import "_breakpoints";
+@import "_sections.scss";
 @import "_buttons";
 @import "_badges";
 @import "_cards";

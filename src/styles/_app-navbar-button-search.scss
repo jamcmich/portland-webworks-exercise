@@ -1,10 +1,7 @@
 @use "sass:map";
 
 button#search {
-  @include button(
-          $type: stroke,
-          $borderWidth: 1px
-  );
+  @extend %button-solid;
 
   margin: auto;
   padding: 10px;

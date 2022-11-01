@@ -1,13 +1,26 @@
-form#search {
-  @include flex-container(
-          $gap: 10px,
-          $height: auto,
-          $margin: 0,
-          $padding: 0,
-  );
+.search {
+  width: 100%;
+  height: 48px;
 
-  &:focus-within {
-    input {
+  &--flex {
+    display: flex;
+    flex-flow: row;
+    place-content: center;
+    gap: 8px;
+  }
+
+  input {
+    flex: 1 1 auto;
+
+    height: 48px;
+    padding: 0 16px;
+
+    &::placeholder {
+      color: map-get($colors, "silver");
+      opacity: 1;
+    }
+
+    &:focus-within {
       outline: none;
       border: 2px solid transparent;
       border-radius: 2px;
@@ -15,29 +28,8 @@ form#search {
     }
   }
 
-  input {
-    width: 100%;
-    max-width: 500px;
-    height: 48px;
-
-    padding: 0 16px;
-
-    transition: box-shadow 0.1s ease;
-
-    &::placeholder {
-      color: map-get($colors, "silver");
-      opacity: 1;
-    }
-  }
-
-  button {
-    @include button(
-            $padding: 0 24px,
-            $type: solid,
-            $gap: 8px,
-    );
-
-    flex-shrink: 0;
+  .search__button {
+    @extend %button-solid;
   }
 
   &.search-extended {
@@ -68,12 +60,9 @@ form#search {
     }
   }
 
-  @media screen and (max-width: map-get($breakpoints, "phone")) {
+  @media screen and (max-width: map-get($breakpoints, "mobile")) {
+    height: auto;
     flex-direction: column;
-
-    input {
-      max-width: 100%;
-    }
 
     button {
       padding: 12px 24px;

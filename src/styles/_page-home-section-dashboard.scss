@@ -52,7 +52,7 @@ section#dashboard {
           text-decoration: none;
 
           button {
-            @include button($type: solid);
+            @extend %button-solid;
 
             width: 250px;
             text-transform: none;
