@@ -41,12 +41,6 @@
     width: 24px;
     height: fit-content;
   }
-
-  @media screen and (max-width: map-get($breakpoints, "tablet")) {
-    svg {
-      display: none;
-    }
-  }
 }
 
 %button-stroke {

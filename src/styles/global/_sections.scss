@@ -1,7 +1,7 @@
-%section {
-  padding: 80px 40px;
+%section-flex {
+  padding: 40px;
 
   @media screen and (max-width: map-get($breakpoints, "mobile")) {
-    padding: 40px 20px;
+    padding: 40px 0;
   }
 }

@@ -64,15 +64,16 @@
   font-size: 1.75rem;
   text-transform: uppercase;
 
-  @media screen and (max-width: map-get($breakpoints, "laptop")) {
+  //@media screen and (max-width: map-get($breakpoints, "laptop")) {
+  //  font-size: 1.5rem;
+  //}
+
+  @media screen and (max-width: map-get($breakpoints, "tablet")) {
     font-size: 1.5rem;
   }
 
-  @media screen and (max-width: map-get($breakpoints, "tablet")) {
-    font-size: 1.313rem;
-  }
-
   @media screen and (max-width: map-get($breakpoints, "mobile")) {
+    font-size: 1.25rem;
   }
 }
 

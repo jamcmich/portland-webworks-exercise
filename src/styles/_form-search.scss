@@ -9,7 +9,7 @@
     gap: 8px;
   }
 
-  .search__input {
+  &__input {
     @extend %typography-text;
 
     flex: 1 1 auto;
@@ -30,7 +30,7 @@
     }
   }
 
-  .search__button {
+  &__button {
     @extend %button-solid;
   }
 
@@ -59,14 +59,26 @@
       }
     }
   }
+}
 
-  @media screen and (max-width: map-get($breakpoints, "mobile")) {
+@media screen and (max-width: map-get($breakpoints, "tablet")) {
+  .search {
     height: auto;
-    flex-direction: column;
+    flex-flow: row nowrap;
 
-    .search__button {
+    &__button {
       padding: 12px 24px;
       flex-shrink: 1;
+    }
+  }
+}
+
+@media screen and (max-width: map-get($breakpoints, "mobile")) {
+  .search {
+    flex-flow: column nowrap;
+
+    &__icon {
+      display: none;
     }
   }
 }

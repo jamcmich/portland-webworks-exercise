@@ -3,22 +3,25 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @extend %section;
+  padding: 80px;
 
   &--flex {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row;
     place-content: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
-  }
 
-  & > * {
-    flex: 1 1 auto;
     max-width: 725px;
-    margin: 0 auto;
   }
 
-  .hero__header {
+  &__header {
     @extend %header-style-4;
 
     color: white;
@@ -27,17 +30,22 @@
     text-transform: none;
   }
 
-  .hero__form {
+  &__form {
     max-width: 650px;
   }
+}
 
-  @media screen and (max-width: map-get($breakpoints, "tablet")) {
-    max-width: 100%;
+@media screen and (max-width: map-get($breakpoints, "tablet")) {
+  .hero {
+    padding: 80px 40px;
   }
+}
 
-  @media screen and (max-width: map-get($breakpoints, "mobile")) {
-    .hero__form {
-      flex-flow: column nowrap;
+@media screen and (max-width: map-get($breakpoints, "mobile")) {
+  .hero {
+    padding: 40px;
+
+    &__content {
     }
   }
 }
