@@ -1,48 +1,100 @@
-section#featured {
-  @include flex-container(
-          $padding: 0,
-  );
+.featured {
+  padding: 40px;
 
   background-color: map-get($colors, "winter");
 
-  .container {
-    @include flex-container;
-    max-width: 1200px;
+  &--flex {
+    display: flex;
+    flex-flow: row;
+    place-content: center;
+  }
 
-    .card {
-      @include flex-container(
-              $flexDirection: column,
-              $gap: 30px,
-              $width: 250px,
-              $height: 250px,
-              $margin: 0,
-              $padding: 40px,
-      );
-
-      text-decoration: none;
-      background-color: white;
-      box-shadow: map-get($colors, "grey") 0 1px 4px 0;
-
-      img {
-        width: 70%;
-      }
-
-      p {
-        max-width: 200px;
-
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
-        font-size: 16px;
-        color: map-get($colors, "navy-peony");
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        text-align: center;
+  .featured {
+    &__cards {
+      &--grid {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
       }
     }
 
-    /* container */
-    @media screen and (max-width: map-get($breakpoints, "desktop")) {
-      flex-wrap: wrap;
+    &__card {
+      @extend %card-highlight-on-hover;
+      @extend %card-box-shadow;
+
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      width: 250px;
+      height: 250px;
+      padding: 40px;
+
+      text-decoration: none;
+      background-color: white;
+    }
+
+    &__img {
+      height: 100%;
+    }
+
+    &__title {
+      max-width: 200px;
+
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      color: map-get($colors, "navy-peony");
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "desktop")) {
+    .featured {
+      &__cards {
+        &--grid {
+          grid-template-rows: repeat(2, 1fr);
+          grid-template-columns: repeat(2, 1fr);
+          gap: 20px;
+        }
+      }
+
+      &__card {
+        gap: 40px;
+        width: auto;
+      }
+
+      &__title {
+        max-width: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "tablet")) {
+    .featured {
+      &__cards {
+        &--grid {
+          grid-template-rows: repeat(4, 1fr);
+          grid-template-columns: repeat(1, 1fr);
+          gap: 10px;
+
+          width: 100%;
+        }
+      }
+
+      &__card {
+        flex-flow: row;
+        place-content: flex-start;
+        gap: 40px;
+
+        height: 80px;
+        padding: 20px 40px;
+      }
     }
   }
 }

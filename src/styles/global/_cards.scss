@@ -1,4 +1,4 @@
-.__card {
+%card-highlight-on-hover {
   border: 2px solid transparent;
 
   &:hover {
@@ -9,4 +9,8 @@
       text-decoration: underline !important;
     }
   }
+}
+
+%card-box-shadow {
+  box-shadow: map-get($colors, "grey") 0 1px 4px 0;
 }

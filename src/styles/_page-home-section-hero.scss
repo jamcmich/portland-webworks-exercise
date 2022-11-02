@@ -1,4 +1,4 @@
-.hero__section {
+.hero {
   background-image: url("/assets/images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,7 +18,7 @@
     margin: 0 auto;
   }
 
-  h1 {
+  .hero__header {
     @extend %header-style-4;
 
     color: white;
@@ -27,7 +27,7 @@
     text-transform: none;
   }
 
-  form {
+  .hero__form {
     max-width: 650px;
   }
 
@@ -36,7 +36,7 @@
   }
 
   @media screen and (max-width: map-get($breakpoints, "mobile")) {
-    form {
+    .hero__form {
       flex-flow: column nowrap;
     }
   }

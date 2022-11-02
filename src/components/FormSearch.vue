@@ -1,9 +1,9 @@
 <template>
   <form id="search" class="search search--flex" :class="customClass" action="">
-    <input class="__text" placeholder="Search rfa.sc.gov" />
+    <input class="search__input" placeholder="Search rfa.sc.gov" />
     <button class="search__button search__button--solid" form="search" type="submit" value="submit">
-      <span>Search</span>
-      <Icon icon="mdi:magnify" v-if="showIcon" />
+      <span class="search__span">Search</span>
+      <Icon class="search__icon" icon="mdi:magnify" v-if="showIcon" />
     </button>
   </form>
 </template>

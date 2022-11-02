@@ -1,9 +1,15 @@
-// TODO: Change font sizes to REM units
 /* Text Styles */
 .__text {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 22px;
+}
+
+%typography-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
   line-height: 22px;
 }
 
@@ -67,7 +73,6 @@
   }
 
   @media screen and (max-width: map-get($breakpoints, "mobile")) {
-    font-size: 1.125rem;
   }
 }
 

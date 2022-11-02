@@ -1,8 +1,8 @@
 <template>
-  <section class="hero__section hero__section--flex">
+  <section class="hero hero--flex">
     <h1 class="hero__header">Providing insightful research, analysis, and resources to facilitate
                              informed policy decisions and administration of services</h1>
-    <FormSearch v-bind:showIcon="true" />
+    <FormSearch class="hero__form" v-bind:showIcon="true" />
   </section>
 </template>
 
