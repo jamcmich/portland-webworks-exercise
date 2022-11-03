@@ -11,6 +11,23 @@
   }
 }
 
+@mixin card-highlight-on-hover {
+  border: 2px solid transparent;
+
+  &:hover {
+    cursor: pointer;
+    border: 2px solid map-get($colors, "dover-straits");
+
+    a {
+      text-decoration: underline !important;
+    }
+  }
+}
+
 %card-box-shadow {
+  box-shadow: map-get($colors, "grey") 0 1px 4px 0;
+}
+
+@mixin card-box-shadow {
   box-shadow: map-get($colors, "grey") 0 1px 4px 0;
 }

@@ -1,22 +1,18 @@
 <template>
-  <section id="services">
-    <div class="container">
-      <h3 class="__header-style-3">Popular Services and Links</h3>
+  <section class="services services--flex">
+    <div class="services__column">
+      <h1 class="services__header">Popular Services and Links</h1>
 
-      <div class="column">
-        <div class="item" v-for="service in services" :key="service.id">
-          <div class="flex-reset">
-            <a class="__link-style-1" :href="service.link">
-              <span>{{ service.title }}</span>
-              <Icon v-if="!service.link.includes('https://rfa.sc.gov/')"
-                    icon="mdi:open-in-new"
-                    color="rgb(117, 117, 117)" />
-              <Icon v-if="service.link.includes('.pdf')"
-                    icon="mdi:file-document-outline"
-                    color="rgb(117, 117, 117)" />
-            </a>
-          </div>
-        </div>
+      <div class="services__items services__items--grid">
+        <template v-for="service in services" :key="service.id">
+          <a class="services__item" :href="service.link">
+            <span>{{ service.title }}</span>
+            <Icon v-if="!service.link.includes('https://rfa.sc.gov/')"
+                  icon="mdi:open-in-new" />
+            <Icon v-if="service.link.includes('.pdf')"
+                  icon="mdi:file-document-outline" />
+          </a>
+        </template>
       </div>
     </div>
   </section>
