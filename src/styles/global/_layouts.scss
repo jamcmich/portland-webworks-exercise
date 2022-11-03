@@ -1,0 +1,24 @@
+%flex-section {
+  padding: 40px;
+
+  @media screen and (max-width: map-get($breakpoints, "mobile")) {
+    padding: 40px 0;
+  }
+}
+
+%flex-column {
+  display: flex;
+  flex-flow: column;
+  flex: 1 1;
+  gap: 40px;
+
+  h1 {
+    @extend %header-style-2;
+    color: map-get($colors, "navy-peony");
+  }
+
+  p {
+    @extend %text-style-1;
+    color: map-get($colors, "carbon");
+  }
+}
