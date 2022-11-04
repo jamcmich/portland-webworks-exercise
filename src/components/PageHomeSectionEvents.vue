@@ -1,61 +1,69 @@
 <template>
-  <section id="events">
-    <h3 class="__header-style-2">Upcoming Events</h3>
+  <section class="events events--flex">
+    <h1 class="events__header">Upcoming Events</h1>
 
-    <div class="card" v-for="event in events" :key="event.id">
-      <div class="date">
-        <span>{{ event.date.month }}</span>
-        <span>{{ event.date.day }}</span>
-        <span>{{ event.date.year }}</span>
-      </div>
-
-      <div class="details">
-        <div class="group">
-          <span v-if="event.status" class="__h4 __badge __red">{{ event.status }}</span>
-          <h2 class="__h2">{{ event.title }}</h2>
+    <div class="events__items events__items--grid">
+      <div class="events__item events__item--grid" v-for="event in events" :key="event.id">
+        <div class="events__column events__column--grid">
+          <span>{{ event.date.month }}</span>
+          <span>{{ event.date.day }}</span>
+          <span>{{ event.date.year }}</span>
         </div>
 
-        <p class="__text" v-if="event.description">
-          {{ event.description }}
-        </p>
+        <div class="events__column events__column--grid">
+          <div class="events__headings">
+            <span v-if="event.status">{{ event.status }}</span>
+            <h2>{{ event.title }}</h2>
+          </div>
 
-        <div class="group">
-          <p class="item" v-if="event.info.location">
-            <Icon icon="mdi:map-marker-outline" width="24" color="rgb(140, 105, 16)" />
-            <span class="__text">{{ event.info.location }}</span>
+          <p v-if="event.description">
+            {{ event.description }}
           </p>
 
-          <p class="item" v-if="event.info.time">
-            <Icon icon="mdi:clock-outline" width="24" color="rgb(140, 105, 16)" />
-            <span class="__text">{{ event.info.time }}</span>
-          </p>
+          <div class="events__details">
+            <div class="events__details-location" v-if="event.info.location">
+              <p class="events__details-text">
+                <Icon icon="mdi:map-marker-outline" />
+                <span class="__text">{{ event.info.location }}</span>
+              </p>
+            </div>
 
-          <p class="item" v-if="event.links.phone">
-            <Icon icon="mdi:phone" width="24" color="rgb(140, 105, 16)" />
-            <a class="__link-style-2" :href="`tel:${event.links.phone}`">
-              {{ event.links.phone }}
-            </a>
-          </p>
+            <div class="events__details-time" v-if="event.info.time">
+              <p class="events__details-text">
+                <Icon icon="mdi:clock-outline" />
+                <span class="__text">{{ event.info.time }}</span>
+              </p>
+            </div>
 
-          <p class="item" v-if="event.links.video">
-            <Icon icon="mdi:laptop-account" width="24" color="rgb(140, 105, 16)" />
-            <a class="__link-style-2"
-               :href="event.links.video"
-               target="_blank">
-              {{ event.links.video }}
-            </a>
-          </p>
+            <p class="events__details-phone" v-if="event.links.phone">
+              <a class="events__link" :href="`tel:${event.links.phone}`">
+                <Icon icon="mdi:phone" />
+                <span>{{ event.links.phone }}</span>
+              </a>
+            </p>
+
+            <p class="events__details-video" v-if="event.links.video">
+              <a class="events__link"
+                 :href="event.links.video"
+                 target="_blank">
+                <Icon icon="mdi:laptop-account" />
+                <span>{{ event.links.video }}</span>
+              </a>
+            </p>
+          </div>
+
+          <template v-for="attachment in event.attachments" :key="attachment.id">
+            <p class="events__details-agenda" v-if="attachment.name">
+              <a class="events__link"
+                 :href="attachment.file"
+                 title="BEA Agenda - 10-18-22_0.pdf"
+                 target="_blank">
+                <Icon icon="mdi:format-list-bulleted" color="rgba(51, 51, 51, 0.5)" />
+                {{ attachment.name }}
+              </a>
+            </p>
+          </template>
         </div>
-
-        <template v-for="attachment in event.attachments" :key="attachment.id">
-          <p class="item agenda" v-if="attachment.name">
-            <Icon icon="mdi:format-list-bulleted" width="24" color="rgba(51, 51, 51, 0.5)" />
-            <a class="__link-style-1"
-               :href="attachment.file"
-               title="BEA Agenda - 10-18-22_0.pdf"
-               target="_blank">{{ attachment.name }}</a>
-          </p>
-        </template>
       </div>
     </div>
   </section>

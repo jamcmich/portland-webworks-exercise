@@ -4,7 +4,7 @@
   <PageHomeSectionDashboard />
   <PageHomeSectionServices />
 
-  <div class="row">
+  <div class="home__updates-and-events home__updates-and-events--flex">
     <PageHomeSectionUpdates />
     <PageHomeSectionEvents />
   </div>

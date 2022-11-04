@@ -1,16 +1,18 @@
 <template>
-  <section id="updates">
-    <h3 class="__header-style-2">Recent Updates</h3>
+  <section class="updates updates--flex">
+    <h1 class="updates__header">Recent Updates</h1>
 
-    <ul>
-      <li v-for="update in updates" :key="update.id">
-        <a class="__link-style-1" :href="update.link">
-          {{ update.title }}
-        </a>
-        <p>
-          <span>Updated:</span> {{ update.date }}
-        </p>
-      </li>
+    <ul class="updates__items">
+      <template v-for="update in updates" :key="update.id">
+        <li class="updates__item">
+          <a :href="update.link">
+            {{ update.title }}
+          </a>
+          <p>
+            <span>Updated:</span> {{ update.date }}
+          </p>
+        </li>
+      </template>
     </ul>
   </section>
 </template>

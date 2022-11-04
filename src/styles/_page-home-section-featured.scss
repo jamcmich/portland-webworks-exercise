@@ -1,5 +1,6 @@
 .featured {
-  padding: 40px;
+  @extend %flex-section;
+  max-width: none;
 
   background-color: map-get($colors, "winter");
 

@@ -3,7 +3,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  padding: 80px;
+  @extend %flex-section;
+  max-width: none;
+  padding: {
+    top: 80px;
+    bottom: 80px;
+  };
 
   &--flex {
     display: flex;
@@ -34,17 +39,11 @@
   }
 }
 
-@media screen and (max-width: map-get($breakpoints, "tablet")) {
-  .hero {
-    padding: 80px 40px;
-  }
-}
-
 @media screen and (max-width: map-get($breakpoints, "mobile")) {
   .hero {
-    padding: 40px;
-
-    &__content {
-    }
+    padding: {
+      top: 40px;
+      bottom: 40px;
+    };
   }
 }

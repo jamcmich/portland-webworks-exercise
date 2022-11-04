@@ -1,9 +1,17 @@
-h3 {
-  color: map-get($colors, "navy-peony");
+.home__updates-and-events {
+  @extend %flex-section;
+  place-content: space-between;
+  gap: 40px;
+
+  &--flex {
+    display: flex;
+    flex-flow: row;
+    place-content: space-between;
+  }
 }
 
-.row {
-  @include flex-container;
-  justify-content: space-between;
-  align-items: flex-start;
+@media screen and (max-width: map-get($breakpoints, "laptop")) {
+  .home__updates-and-events {
+    flex-flow: column;
+  }
 }
