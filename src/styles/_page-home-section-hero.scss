@@ -1,5 +1,5 @@
 .hero {
-  @extend %layout-flex-section;
+  @extend %section-layout;
 
   background-image: url("/assets/images/hero.jpg");
   background-repeat: no-repeat;
@@ -11,35 +11,26 @@
     bottom: 80px;
   };
 
-  &--flex {
-    display: flex;
-    place-content: center;
-  }
-
-  &__container {
-    @extend %layout-flex-container;
+  &__content {
+    @extend %content-layout;
 
     max-width: 725px;
   }
 
-  &__header {
-    font-family: $font-family-slab;
-    font-size: $font-size-2xl;
-    font-weight: $font-weight-regular;
-    color: map-get($colors, "white");
-    text-align: center;
-  }
-
-  &__form {
-    max-width: 650px;
-  }
-}
-
-@media screen and (max-width: map-get($breakpoints, "mobile")) {
-  .hero {
+  @media screen and (max-width: map-get($breakpoints, "mobile")) {
     padding: {
       top: 40px;
       bottom: 40px;
     };
+  }
+}
+
+.content {
+  &__header {
+    @extend %hero-header;
+  }
+
+  &__form {
+    max-width: 650px;
   }
 }

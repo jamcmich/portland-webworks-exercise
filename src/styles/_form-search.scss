@@ -10,7 +10,7 @@
   }
 
   &__input {
-    @extend %text-paragraph-preset-1;
+    @extend %paragraph-text;
 
     flex: 1 1 auto;
 

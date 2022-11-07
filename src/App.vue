@@ -27,6 +27,5 @@ export default {
   align-items: center;
   width: 100%;
   height: auto;
-  font-size: 16px;
 }
 </style>

@@ -1,34 +1,54 @@
+/*** Variables ***/
 /* Font Families */
-$font-family-sans: 'Open Sans', sans-serif;
-$font-family-slab: 'Roboto Slab', serif;
-$font-family-condensed: 'Roboto Condensed', sans-serif;
+$font-family-open-sans: 'Open Sans', sans-serif;
+$font-family-roboto-slab: 'Roboto Slab', serif;
+$font-family-roboto-condensed: 'Roboto Condensed', sans-serif;
 
 /* Font Sizes */
-$font-size-xs: 13px;
-$font-size-sm: 14px;
-$font-size-md: 16px;
-$font-size-lg: 18px;
-$font-size-xl: 24px;
-$font-size-2xl: 28px;
-$font-size-3xl: 30px;
-$font-size-4xl: 42px;
-$font-size-5xl: 54px;
+:root {
+  @media screen and (max-width: map-get($breakpoints, "desktop")) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "laptop")) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "tablet")) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "mobile")) {
+    font-size: 14px;
+  }
+}
+
+$font-size-13px: 0.813rem; /* 13px */
+$font-size-14px: 0.875rem; /* 14px */
+$font-size-16px: 1rem; /* 16px */
+$font-size-18px: 1.125rem; /* 18px */
+$font-size-24px: 1.5rem; /* 24px */
+$font-size-28px: 1.75rem; /* 28px */
+$font-size-30px: 1.875rem; /* 30px */
+$font-size-42px: 2.625rem; /* 42px */
+$font-size-54px: 3.375rem; /* 54px */
 
 /* Font Weights */
-$font-weight-light: 300;
-$font-weight-regular: 400;
-$font-weight-semi-bold: 600;
-$font-weight-bold: 700;
+$font-weight-300: 300; /* light */
+$font-weight-400: 400; /* regular */
+$font-weight-600: 600; /* semi-bold */
+$font-weight-700: 700; /* bold */
 
 /* Line Heights */
-$line-height: 22px;
+$line-height-22px: 22px;
 
 /* Letter Spacings */
-$letter-spacing-sm: 0.5px;
-$letter-spacing-md: 1px;
+$letter-spacing-0_5px: 0.031rem; /* 0.5px */
+$letter-spacing-1px: 0.063; /* 1px */
 
-/* Text Decorations */
-%text-decoration--underline-brown {
+/*** Text Decorations ***/
+/* Underlines */
+%underline-brown {
   &::after {
     display: block;
     content: "";
@@ -39,7 +59,7 @@ $letter-spacing-md: 1px;
   }
 }
 
-%text-decoration--underline-blue {
+%underline-blue {
   &::after {
     display: block;
     content: "";
@@ -50,7 +70,7 @@ $letter-spacing-md: 1px;
   }
 }
 
-%text-effect--add-underline-on-hover {
+%add-underline-on-hover {
   text-decoration: none;
 
   &:hover {
@@ -59,7 +79,7 @@ $letter-spacing-md: 1px;
   }
 }
 
-%text-effect--remove-underline-on-hover {
+%remove-underline-on-hover {
   text-decoration: underline;
 
   &:hover {
@@ -68,139 +88,158 @@ $letter-spacing-md: 1px;
   }
 }
 
-/* Text Styles */
-p, %text-paragraph-preset-1 {
-  font-family: $font-family-sans;
-  font-size: $font-size-md;
-  font-weight: $font-weight-regular;
-  line-height: $line-height;
+/*** Element Styles ***/
+/* Paragraphs */
+p, %paragraph-text {
+  font-family: $font-family-open-sans;
+  font-size: $font-size-16px;
+  font-weight: $font-weight-400;
+  line-height: $line-height-22px;
   color: map-get($colors, "carbon");
 }
 
-%text-header-preset-1 {
-  font-family: $font-family-sans;
-  font-size: $font-size-4xl;
-  font-weight: $font-weight-bold;
-  color: map-get($colors, "navy-peony");
-}
+%paragraph-link {
+  @extend %remove-underline-on-hover;
 
-%text-header-preset-1--sm {
-  @extend %text-header-preset-1;
-
-  font-size: $font-size-lg;
-  color: map-get($colors, "black");
-
-  letter-spacing: $letter-spacing-md;
-  text-transform: uppercase;
-}
-
-%text-header-preset-2 {
-  @extend %text-decoration--underline-brown;
-
-  font-family: $font-family-sans;
-  font-size: $font-size-3xl;
-  font-weight: $font-weight-bold;
-  color: map-get($colors, "navy-peony");
-}
-
-%text-header-preset-2--sm {
-  @extend %text-header-preset-2;
-
-  font-family: $font-family-sans;
-  font-size: $font-size-lg;
-  font-weight: $font-weight-bold;
-  color: map-get($colors, "black");
-}
-
-%text-header-preset-3 {
-  @extend %text-header-preset-2;
-  text-transform: uppercase;
-  color: map-get($colors, "navy-peony");
-}
-
-%text-header-preset-3--sm {
-  @extend %text-header-preset-3;
-
-  font-family: $font-family-condensed;
-  font-size: $font-size-md;
-  font-weight: $font-weight-regular;
-  color: map-get($colors, "black");
-
-  letter-spacing: $letter-spacing-md;
-}
-
-%text-header-preset-4 {
-  font-family: $font-family-slab;
-  font-size: $font-size-2xl;
-  font-weight: $font-weight-bold;
-  color: map-get($colors, "muddy-brown");
-
-  text-transform: uppercase;
-}
-
-%text-header-preset-4--sm {
-  font-family: $font-family-sans;
-  font-size: $font-size-xs;
-  font-weight: $font-weight-regular;
-  color: map-get($colors, "black");
-}
-
-%text-header-preset-5 {
-  font-family: $font-family-sans;
-  font-size: $font-size-xl;
-  font-weight: $font-weight-semi-bold;
-  color: map-get($colors, "black");
-}
-
-%text-header-preset-5--sm {
-  @extend %text-header-preset-5;
-
-  font-weight: $font-weight-regular;
-  font-size: $font-size-xs;
-  color: map-get($colors, "black");
-
-  letter-spacing: $letter-spacing-sm;
-  text-transform: uppercase;
-}
-
-%text-link-preset-1 {
-  @extend %text-effect--add-underline-on-hover;
-
-  font-family: $font-family-sans;
-  font-size: $font-size-xl;
+  font-family: $font-family-open-sans;
+  font-size: $font-size-16px;
+  font-weight: $font-weight-400;
   color: map-get($colors, "ocean-blue");
 }
 
-%text-link-preset-2 {
-  @extend %text-effect--remove-underline-on-hover;
+/* Headers */
+h1, %section-header {
+  @extend %underline-brown;
 
-  font-family: $font-family-sans;
-  font-size: $font-size-lg;
-  font-weight: $font-weight-semi-bold;
+  font-family: $font-family-open-sans;
+  font-size: $font-size-30px;
+  font-weight: $font-weight-700;
+  color: map-get($colors, "navy-peony");
+}
+
+%section-header--small {
+  @extend %section-header;
+
+  font-size: $font-size-18px;
+  color: map-get($colors, "black");
+
+  letter-spacing: $letter-spacing-1px;
+  text-transform: uppercase;
+}
+
+%hero-header {
+  font-family: $font-family-roboto-slab;
+  font-size: $font-size-28px;
+  font-weight: $font-weight-400;
+  color: map-get($colors, "white");
+  text-align: center;
+}
+
+/* Cards */
+%card-title {
+  font-family: $font-family-open-sans;
+  font-size: $font-size-16px;
+  font-weight: $font-weight-700;
+  color: map-get($colors, "navy-peony");
+}
+
+%card-title--uppercase {
+  @extend %card-title;
+  text-transform: uppercase;
+}
+
+%card-link-title {
+  @extend %add-underline-on-hover;
+
+  font-family: $font-family-open-sans;
+  font-size: $font-size-24px;
   color: map-get($colors, "ocean-blue");
 }
 
-%text-link-preset-2--sm {
-  @extend %text-link-preset-2;
-
-  font-size: $font-size-md;
-  font-weight: $font-weight-regular;
-  color: map-get($colors, "ocean-blue");
-}
-
-%text-button {
-  font-family: $font-family-sans;
-  font-size: $font-size-sm;
-  font-weight: $font-weight-semi-bold;
+/* Buttons */
+%button-text {
+  font-family: $font-family-open-sans;
+  font-size: $font-size-14px;
+  font-weight: $font-weight-600;
   color: map-get($colors, "white");
 
-  letter-spacing: $letter-spacing-md;
+  letter-spacing: $letter-spacing-1px;
   text-transform: uppercase;
 }
 
-%text-badge {
-  font-family: $font-family-sans;
-  font-size: $font-size-sm;
-  font-weight: $font-weight-semi-bold;
+/* Badges */
+%badge-text {
+  font-family: $font-family-open-sans;
+  font-size: $font-size-14px;
+  font-weight: $font-weight-600;
   color: map-get($colors, "white");
 }
+
+// %text-header-preset-2 {
+//   @extend %text-decoration--static-underline-brown;
+//
+//   font-family: $font-family-open-sans;
+//   font-size: $font-size-30px;
+//   font-weight: $font-weight-700;
+//   color: map-get($colors, "navy-peony");
+// }
+//
+// %text-header-preset-2--sm {
+//   @extend %text-header-preset-2;
+//
+//   font-family: $font-family-open-sans;
+//   font-size: $font-size-18px;
+//   font-weight: $font-weight-700;
+//   color: map-get($colors, "black");
+// }
+//
+// %text-header-preset-3 {
+//   @extend %text-header-preset-2;
+//   text-transform: uppercase;
+//   color: map-get($colors, "navy-peony");
+// }
+//
+// %text-header-preset-3--sm {
+//   @extend %text-header-preset-3;
+//
+//   font-family: $font-family-condensed;
+//   font-size: $font-size-16px;
+//   font-weight: $font-weight-400;
+//   color: map-get($colors, "black");
+//
+//   letter-spacing: $letter-spacing-1px;
+// }
+//
+// %text-header-preset-4 {
+//   font-family: $font-family-roboto-slab;
+//   font-size: $font-size-2xl;
+//   font-weight: $font-weight-700;
+//   color: map-get($colors, "muddy-brown");
+//
+//   text-transform: uppercase;
+// }
+//
+// %text-header-preset-4--sm {
+//   font-family: $font-family-open-sans;
+//   font-size: $font-size-13px;
+//   font-weight: $font-weight-400;
+//   color: map-get($colors, "black");
+// }
+//
+// %text-header-preset-5 {
+//   font-family: $font-family-open-sans;
+//   font-size: $font-size-24px;
+//   font-weight: $font-weight-600;
+//   color: map-get($colors, "black");
+// }
+//
+// %text-header-preset-5--sm {
+//   @extend %text-header-preset-5;
+//
+//   font-weight: $font-weight-400;
+//   font-size: $font-size-13px;
+//   color: map-get($colors, "black");
+//
+//   letter-spacing: $letter-spacing-0\.5px;
+//   text-transform: uppercase;
+// }

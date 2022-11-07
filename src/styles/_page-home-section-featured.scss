@@ -1,96 +1,81 @@
 .featured {
+  @extend %section-layout;
+
   max-width: none;
   background-color: map-get($colors, "winter");
 
-  &--flex {
-    @extend %layout-flex-section;
-  }
+  &__content {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
 
-  &__container {
-    &--grid {
-      display: grid;
-      grid-template-rows: repeat(1, 1fr);
-      grid-template-columns: repeat(4, 1fr);
-      gap: 40px;
+    @media screen and (max-width: map-get($breakpoints, "desktop")) {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "tablet")) {
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+
+      flex: 1 1 auto;
     }
   }
+}
 
-  &__card {
-    @extend %card-element;
 
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.card {
+  @extend %card-element;
 
-    width: 250px;
-    height: 250px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 
-    text-decoration: none;
-    background-color: white;
-  }
+  width: 250px;
+  height: 250px;
+
+  text-decoration: none;
+  background-color: white;
 
   &__img {
     height: 60%;
   }
 
   &__title {
-    @extend %text-header-preset-1;
+    @extend %card-title;
 
     max-width: 200px;
 
-    font-size: $font-size-md;
-    letter-spacing: $letter-spacing-md;
+    font-size: $font-size-16px;
+    letter-spacing: $letter-spacing-1px;
     text-align: center;
     text-transform: uppercase;
   }
 
   @media screen and (max-width: map-get($breakpoints, "desktop")) {
-    .featured {
-      &__container {
-        &--grid {
-          grid-template-rows: repeat(2, 1fr);
-          grid-template-columns: repeat(2, 1fr);
-          gap: 20px;
-        }
-      }
+    gap: 40px;
+    width: auto;
 
-      &__card {
-        gap: 40px;
-        width: auto;
-      }
-
-      &__title {
-        max-width: none;
-      }
+    &__title {
+      max-width: none;
     }
   }
 
   @media screen and (max-width: map-get($breakpoints, "tablet")) {
-    .featured {
-      &__container {
-        &--grid {
-          grid-template-rows: repeat(4, 1fr);
-          grid-template-columns: repeat(1, 1fr);
-          gap: 10px;
+    flex-flow: row;
+    place-content: flex-start;
+    gap: 40px;
 
-          flex: 1 1 auto;
-        }
-      }
+    height: 80px;
+    padding: 20px 40px;
 
-      &__card {
-        flex-flow: row;
-        place-content: flex-start;
-        gap: 40px;
-
-        height: 80px;
-        padding: 20px 40px;
-      }
-
-      &__img {
-        height: 100%;
-      }
+    &__img {
+      height: 100%;
     }
   }
 }
