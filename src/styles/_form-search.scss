@@ -10,7 +10,7 @@
   }
 
   &__input {
-    @extend %text-style-1;
+    @extend %text-paragraph-preset-1;
 
     flex: 1 1 auto;
 
@@ -31,10 +31,10 @@
   }
 
   &__button {
-    @extend %button-solid;
+    @extend %button-element-solid;
   }
 
-  &.search-extended {
+  &--extended {
     position: absolute;
     bottom: -86px;
     right: -1px;

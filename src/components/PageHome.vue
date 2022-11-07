@@ -2,15 +2,15 @@
   <PageHomeSectionHero />
   <PageHomeSectionFeatured />
   <PageHomeSectionDashboard />
-  <PageHomeSectionServices />
+  <!--  <PageHomeSectionServices />-->
 
-  <div class="home__updates-and-events home__updates-and-events--flex">
-    <PageHomeSectionUpdates />
-    <PageHomeSectionEvents />
-  </div>
+  <!--  <div class="home__updates-and-events home__updates-and-events--flex">-->
+  <!--    <PageHomeSectionUpdates />-->
+  <!--    <PageHomeSectionEvents />-->
+  <!--  </div>-->
 
-  <PageHomeSectionNews />
-  <AppScrollTop />
+  <!--  <PageHomeSectionNews />-->
+  <!--  <AppScrollTop />-->
 </template>
 
 <script lang="ts">
@@ -33,11 +33,11 @@ export default defineComponent({
     PageHomeSectionHero,
     PageHomeSectionFeatured,
     PageHomeSectionDashboard,
-    PageHomeSectionServices,
-    PageHomeSectionUpdates,
-    PageHomeSectionEvents,
-    PageHomeSectionNews,
-    AppScrollTop,
+    // PageHomeSectionServices,
+    // PageHomeSectionUpdates,
+    // PageHomeSectionEvents,
+    // PageHomeSectionNews,
+    // AppScrollTop,
   },
 });
 </script>

@@ -72,9 +72,7 @@
     }
 
     &__item {
-      @include card-highlight-on-hover;
-      @include card-box-shadow;
-      padding: 20px;
+      @include card-element;
 
       a {
         text-decoration: none;

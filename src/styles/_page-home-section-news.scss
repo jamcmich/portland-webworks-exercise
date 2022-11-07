@@ -1,36 +1,39 @@
+.news {
+  &--flex {
+    @extend %flex-section;
+  }
 
-section#news {
-  @include flex-container(column);
-  align-items: stretch;
-
-  .cards-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 40px;
-
-    .card {
+  &__container {
+    &--flex {
       display: flex;
-      flex-direction: column;
-      gap: 8px;
-      flex: 1 1;
+      flex-flow: column;
+      place-content: center;
+      gap: 40px;
+    }
+  }
 
-      padding: 20px;
+  &__cards {
+    &--flex {
+      display: flex;
+      place-content: center;
+      gap: 40px;
+    }
+  }
 
-      border-radius: 2px;
-      box-shadow: 0 1px 4px 0 map-get($colors, "grey");
+  &__card {
+    @include card-element;
+    width: 50%;
 
-      a {
-        text-decoration: none;
+    a {
+      @extend %link-bold-no-underline;
+    }
 
-        &:hover {
-          text-decoration: underline;
-        }
-      }
+    span {
+      @extend %h4;
+    }
 
-      span {
-        color: map-get($colors, "slate");
-      }
+    span {
+      color: map-get($colors, "slate");
     }
   }
 }

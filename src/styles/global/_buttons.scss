@@ -1,4 +1,4 @@
-%button-solid {
+%button-element-solid {
   $color-static: map-get($colors, "ocean-blue");
   $color-hover: map-get($colors, "ocean");
   $color-active: map-get($colors, "kolibri-blue");
@@ -12,7 +12,7 @@
   height: 48px;
   padding: 12px 24px;
 
-  color: white;
+  color: map-get($colors, "white");
   border: 2px solid $color-static;
   border-radius: 2px;
   background-color: $color-static;
@@ -34,7 +34,7 @@
   }
 
   span {
-    @extend %button-text-style-1;
+    @extend %text-button;
   }
 
   svg {
@@ -43,8 +43,8 @@
   }
 }
 
-%button-stroke {
-  @extend %button-solid;
+%button-element-stroke {
+  @extend %button-element-solid;
 
   color: map-get($colors, "ocean-blue");
   background-color: white;

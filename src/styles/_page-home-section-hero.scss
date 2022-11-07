@@ -1,9 +1,10 @@
 .hero {
+  @extend %layout-flex-section;
+
   background-image: url("/assets/images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
-  @extend %flex-section;
   max-width: none;
   padding: {
     top: 80px;
@@ -15,23 +16,18 @@
     place-content: center;
   }
 
-  &__content {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+  &__container {
+    @extend %layout-flex-container;
 
     max-width: 725px;
   }
 
   &__header {
-    @extend %header-style-4;
-
-    color: white;
-    font-weight: 400;
+    font-family: $font-family-slab;
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-regular;
+    color: map-get($colors, "white");
     text-align: center;
-    text-transform: none;
   }
 
   &__form {

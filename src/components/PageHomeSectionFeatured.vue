@@ -1,6 +1,6 @@
 <template>
   <section class="featured featured--flex">
-    <div class="featured__cards featured__cards--grid">
+    <div class="featured__container featured__container--grid">
       <a class="featured__card" v-for="item in featured" :key="item.id" :href="item.link">
         <img class="featured__img"
              :src="`https://jamcmich.github.io/portland-webworks-exercise${item.img}`"

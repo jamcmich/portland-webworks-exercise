@@ -1,30 +1,34 @@
-/* Text Styles */
-.__text {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-}
+/* Font Families */
+$font-family-sans: 'Open Sans', sans-serif;
+$font-family-slab: 'Roboto Slab', serif;
+$font-family-condensed: 'Roboto Condensed', sans-serif;
 
-%text-style-1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 22px;
-}
+/* Font Sizes */
+$font-size-xs: 13px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 24px;
+$font-size-2xl: 28px;
+$font-size-3xl: 30px;
+$font-size-4xl: 42px;
+$font-size-5xl: 54px;
 
-/* Header Styles */
-.__header-style-1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 42px;
-}
+/* Font Weights */
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
 
-.__header-style-2 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
+/* Line Heights */
+$line-height: 22px;
 
+/* Letter Spacings */
+$letter-spacing-sm: 0.5px;
+$letter-spacing-md: 1px;
+
+/* Text Decorations */
+%text-decoration--underline-brown {
   &::after {
     display: block;
     content: "";
@@ -35,27 +39,7 @@
   }
 }
 
-%header-style-2 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-
-  &::after {
-    display: block;
-    content: "";
-    width: 50px;
-    height: 3px;
-    margin-top: 20px;
-    background-color: map-get($colors, "muddy-brown");
-  }
-}
-
-.__header-style-3 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  text-transform: uppercase;
-
+%text-decoration--underline-blue {
   &::after {
     display: block;
     content: "";
@@ -66,97 +50,17 @@
   }
 }
 
-.__header-style-4 {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
-  font-size: 28px;
-  text-transform: uppercase;
-}
-
-%header-style-4 {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
-  font-size: 1.75rem;
-  text-transform: uppercase;
-
-  @media screen and (max-width: map-get($breakpoints, "tablet")) {
-    font-size: 1.5rem;
-  }
-
-  @media screen and (max-width: map-get($breakpoints, "mobile")) {
-    font-size: 1.25rem;
-  }
-}
-
-.__header-style-5 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-}
-
-.__h1 {
-  font-family: 'Open Sans', sans-serif;;
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-
-.__h2 {
-  font-family: 'Open Sans', sans-serif;;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-%h2 {
-  font-family: 'Open Sans', sans-serif;;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.__h3 {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-%h4, .__h4 {
-  font-family: 'Open Sans', sans-serif;;
-  font-weight: 700;
-  font-size: 13px;
-}
-
-.__h5 {
-  font-family: 'Open Sans', sans-serif;;
-  font-weight: 400;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-}
-
-.__card-header {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 24px;
+%text-effect--add-underline-on-hover {
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
 
-%card-header-style-1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-/* Link Styles */
-%link-style-1, .__link-style-1, .__link-style-1:link, .__link-style-1:visited {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
+%text-effect--remove-underline-on-hover {
   text-decoration: underline;
-
-  color: map-get($colors, "ocean-blue");
 
   &:hover {
     text-decoration: none;
@@ -164,38 +68,139 @@
   }
 }
 
-%link-style-2, .__link-style-2, .__link-style-2:link, .__link-style-2:visited {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  text-decoration: underline;
-
-  color: map-get($colors, "ocean-blue");
-
-  &:hover {
-    text-decoration: none;
-    cursor: pointer;
-  }
+/* Text Styles */
+p, %text-paragraph-preset-1 {
+  font-family: $font-family-sans;
+  font-size: $font-size-md;
+  font-weight: $font-weight-regular;
+  line-height: $line-height;
+  color: map-get($colors, "carbon");
 }
 
-/* Stat Block */
-.__stat-block-title {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 54px;
+%text-header-preset-1 {
+  font-family: $font-family-sans;
+  font-size: $font-size-4xl;
+  font-weight: $font-weight-bold;
+  color: map-get($colors, "navy-peony");
 }
 
-%button-text-style-1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 1px;
+%text-header-preset-1--sm {
+  @extend %text-header-preset-1;
+
+  font-size: $font-size-lg;
+  color: map-get($colors, "black");
+
+  letter-spacing: $letter-spacing-md;
   text-transform: uppercase;
 }
 
-%badge-text-style-1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 0.875rem;
-  color: white;
+%text-header-preset-2 {
+  @extend %text-decoration--underline-brown;
+
+  font-family: $font-family-sans;
+  font-size: $font-size-3xl;
+  font-weight: $font-weight-bold;
+  color: map-get($colors, "navy-peony");
+}
+
+%text-header-preset-2--sm {
+  @extend %text-header-preset-2;
+
+  font-family: $font-family-sans;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+  color: map-get($colors, "black");
+}
+
+%text-header-preset-3 {
+  @extend %text-header-preset-2;
+  text-transform: uppercase;
+  color: map-get($colors, "navy-peony");
+}
+
+%text-header-preset-3--sm {
+  @extend %text-header-preset-3;
+
+  font-family: $font-family-condensed;
+  font-size: $font-size-md;
+  font-weight: $font-weight-regular;
+  color: map-get($colors, "black");
+
+  letter-spacing: $letter-spacing-md;
+}
+
+%text-header-preset-4 {
+  font-family: $font-family-slab;
+  font-size: $font-size-2xl;
+  font-weight: $font-weight-bold;
+  color: map-get($colors, "muddy-brown");
+
+  text-transform: uppercase;
+}
+
+%text-header-preset-4--sm {
+  font-family: $font-family-sans;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-regular;
+  color: map-get($colors, "black");
+}
+
+%text-header-preset-5 {
+  font-family: $font-family-sans;
+  font-size: $font-size-xl;
+  font-weight: $font-weight-semi-bold;
+  color: map-get($colors, "black");
+}
+
+%text-header-preset-5--sm {
+  @extend %text-header-preset-5;
+
+  font-weight: $font-weight-regular;
+  font-size: $font-size-xs;
+  color: map-get($colors, "black");
+
+  letter-spacing: $letter-spacing-sm;
+  text-transform: uppercase;
+}
+
+%text-link-preset-1 {
+  @extend %text-effect--add-underline-on-hover;
+
+  font-family: $font-family-sans;
+  font-size: $font-size-xl;
+  color: map-get($colors, "ocean-blue");
+}
+
+%text-link-preset-2 {
+  @extend %text-effect--remove-underline-on-hover;
+
+  font-family: $font-family-sans;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semi-bold;
+  color: map-get($colors, "ocean-blue");
+}
+
+%text-link-preset-2--sm {
+  @extend %text-link-preset-2;
+
+  font-size: $font-size-md;
+  font-weight: $font-weight-regular;
+  color: map-get($colors, "ocean-blue");
+}
+
+%text-button {
+  font-family: $font-family-sans;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semi-bold;
+  color: map-get($colors, "white");
+
+  letter-spacing: $letter-spacing-md;
+  text-transform: uppercase;
+}
+
+%text-badge {
+  font-family: $font-family-sans;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-semi-bold;
+  color: map-get($colors, "white");
 }

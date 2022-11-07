@@ -1,7 +1,7 @@
 @use "sass:map";
 
 button#search {
-  @extend %button-solid;
+  @extend %button-element-solid;
 
   margin: auto;
   padding: 10px;

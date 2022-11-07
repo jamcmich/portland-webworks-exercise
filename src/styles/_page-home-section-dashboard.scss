@@ -1,30 +1,44 @@
 .dashboard {
-  @extend %flex-section;
   padding-top: 80px;
 
   &--flex {
-    display: flex;
-    place-content: center;
+    @extend %layout-flex-section;
   }
 
-  &__content, &__column {
-    @extend %flex-column;
+  &__container, &__column {
+    &--flex {
+      @extend %layout-flex-container;
+    }
   }
 
-  &__content {
+  &__container {
     flex-flow: row;
   }
 
-  &__text-content {
-    display: flex;
-    flex-flow: column;
-    gap: 15px;
+  &__header {
+    @extend %text-header-preset-2;
+  }
+
+  &__text-container {
+    &--flex {
+      display: flex;
+      flex-flow: column;
+      gap: 15px;
+    }
+  }
+
+  &__text {
+    a {
+      @extend %text-link-preset-2--sm;
+    }
   }
 
   &__img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    &--flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     width: 100%;
     height: 450px;
@@ -40,7 +54,7 @@
   }
 
   &__button {
-    @extend %button-solid;
+    @extend %button-element-solid;
 
     width: 250px;
 
@@ -52,7 +66,7 @@
 
 @media screen and (max-width: map-get($breakpoints, "tablet")) {
   .dashboard {
-    &__content {
+    &__container {
       flex-flow: column;
     }
   }

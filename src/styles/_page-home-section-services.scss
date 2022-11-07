@@ -58,8 +58,7 @@
     }
 
     &__item {
-      @include card-highlight-on-hover;
-      @include card-box-shadow;
+      @include card-element;
 
       padding: 16px;
       text-decoration: none;

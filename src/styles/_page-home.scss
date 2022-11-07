@@ -1,12 +1,8 @@
 .home__updates-and-events {
-  @extend %flex-section;
-  place-content: space-between;
-  gap: 40px;
-
   &--flex {
-    display: flex;
-    flex-flow: row;
+    @extend %layout-flex-section;
     place-content: space-between;
+    gap: 40px;
   }
 }
 

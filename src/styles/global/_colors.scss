@@ -23,9 +23,11 @@ $colors: (
         "mist": #CCCCCC,
         "winter": #E1E5EA,
         "marble": #F3F6F9,
+        "white": #FFFFFF,
 ) !default;
 
 @function getColorWithAlpha($color, $alpha: 1.0) {
   $color: rgba(map-get($colors, $color), $alpha);
+  
   @return $color;
 }

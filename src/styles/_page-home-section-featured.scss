@@ -1,58 +1,54 @@
 .featured {
-  @extend %flex-section;
   max-width: none;
-
   background-color: map-get($colors, "winter");
 
   &--flex {
-    display: flex;
-    flex-flow: row;
-    place-content: center;
+    @extend %layout-flex-section;
   }
 
-  .featured {
-    &__cards {
-      &--grid {
-        display: grid;
-        grid-template-rows: repeat(1, 1fr);
-        grid-template-columns: repeat(4, 1fr);
-        gap: 40px;
-      }
+  &__container {
+    &--grid {
+      display: grid;
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
     }
+  }
 
-    &__card {
-      @extend %card-highlight-on-hover;
-      @extend %card-box-shadow;
+  &__card {
+    @extend %card-element;
 
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 
-      width: 250px;
-      height: 250px;
-      padding: 40px;
+    width: 250px;
+    height: 250px;
 
-      text-decoration: none;
-      background-color: white;
-    }
+    text-decoration: none;
+    background-color: white;
+  }
 
-    &__img {
-      height: 100%;
-    }
+  &__img {
+    height: 60%;
+  }
 
-    &__title {
-      @extend %card-header-style-1;
+  &__title {
+    @extend %text-header-preset-1;
 
-      max-width: 200px;
-      color: map-get($colors, "navy-peony");
-    }
+    max-width: 200px;
+
+    font-size: $font-size-md;
+    letter-spacing: $letter-spacing-md;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   @media screen and (max-width: map-get($breakpoints, "desktop")) {
     .featured {
-      &__cards {
+      &__container {
         &--grid {
           grid-template-rows: repeat(2, 1fr);
           grid-template-columns: repeat(2, 1fr);
@@ -73,7 +69,7 @@
 
   @media screen and (max-width: map-get($breakpoints, "tablet")) {
     .featured {
-      &__cards {
+      &__container {
         &--grid {
           grid-template-rows: repeat(4, 1fr);
           grid-template-columns: repeat(1, 1fr);
@@ -90,6 +86,10 @@
 
         height: 80px;
         padding: 20px 40px;
+      }
+
+      &__img {
+        height: 100%;
       }
     }
   }
