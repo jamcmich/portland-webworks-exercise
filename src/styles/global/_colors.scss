@@ -28,6 +28,6 @@ $colors: (
 
 @function getColorWithAlpha($color, $alpha: 1.0) {
   $color: rgba(map-get($colors, $color), $alpha);
-  
+
   @return $color;
 }

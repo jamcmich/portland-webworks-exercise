@@ -1,6 +1,4 @@
 .featured {
-  @extend %section-layout;
-
   max-width: none;
   background-color: map-get($colors, "winter");
 
@@ -28,7 +26,7 @@
 
 
 .card {
-  @extend %card-element;
+  @include card-element;
 
   display: flex;
   flex-flow: column;

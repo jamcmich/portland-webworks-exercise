@@ -1,31 +1,23 @@
 .events {
-  &--flex {
-    @extend %flex-column;
-  }
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
 
-  p.item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 8px;
+  max-width: 50%;
 
-    svg {
-      flex-shrink: 0;
-      align-self: stretch;
-    }
-  }
-
-  &__items {
-    &--grid {
-      display: grid;
-      grid-template-rows: auto;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 24px;
-    }
+  &__content {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
   }
 
   &__item {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: min-content repeat(2, auto);
+    gap: 32px;
+
     padding-bottom: 32px;
     border-bottom: 1px solid map-get($colors, "grey");
 
@@ -33,20 +25,21 @@
       border: none;
     }
 
-    &--grid {
-      display: grid;
-      grid-template-rows: auto;
-      grid-template-columns: min-content repeat(2, auto);
-      gap: 32px;
+    @media screen and (max-width: map-get($breakpoints, "mobile")) {
+      grid-template-columns: repeat(1, auto);
     }
   }
 
+  @media screen and (max-width: map-get($breakpoints, "laptop")) {
+    max-width: none;
+  }
+}
+
+.item {
   &__column {
-    &--grid {
-      display: grid;
-      grid-template-rows: auto;
-      grid-template-columns: repeat(1, 1fr);
-    }
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
 
     &:nth-child(1) {
       justify-items: center;
@@ -55,6 +48,7 @@
       height: min-content;
       padding: 8px 16px;
 
+      border-radius: 2px;
       background-color: map-get($colors, "muddy-brown");
 
       span {
@@ -72,88 +66,83 @@
       justify-items: start;
       gap: 16px;
     }
-  }
 
-  &__headings {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 8px;
-
-    span {
-      @extend %badge--red;
-    }
-
-    h2 {
-      @extend %h2;
+    @media screen and (max-width: map-get($breakpoints, "mobile")) {
+      &:nth-child(1) {
+        width: auto;
+      }
     }
   }
 
-  &__link {
-    display: flex;
-    flex-flow: row;
-    place-content: center;
-    gap: 8px;
-
-    @extend %link-style-2;
-
-    svg {
-      color: map-get($colors, "muddy-brown");
-      font-size: 24px;
-    }
+  &__badge {
+    @extend %badge--red;
   }
 
   &__details {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 16px;
+    &-links {
+      width: 100%;
+    }
 
-    max-width: 500px;
-
-    &-text {
+    &-text, &-links {
       display: flex;
-      flex-flow: row;
-      place-content: center;
-      gap: 8px;
+      flex-flow: column;
+      gap: 16px;
+
+      a, p {
+        display: flex;
+        gap: 8px;
+      }
+
+      a {
+        @extend %paragraph-link;
+        @include card-element--extra-small;
+
+        @media screen and (max-width: map-get($breakpoints, "tablet")) {
+          max-width: max-content;
+        }
+      }
 
       svg {
+        flex-shrink: 0;
+
+        font-size: $font-size-24px;
         color: map-get($colors, "muddy-brown");
-        font-size: 24px;
+      }
+
+      @media screen and (max-width: map-get($breakpoints, "laptop")) {
+        gap: 8px;
       }
     }
 
     &-agenda {
+      @extend %paragraph-link;
+
       width: 100%;
+      padding: 16px;
+
+      border-radius: 2px;
       background-color: map-get($colors, "marble");
 
-      a {
-        display: flex;
-        flex-flow: row;
-        place-content: center flex-start;
-        gap: 16px;
+      svg {
+        color: getColorWithAlpha("carbon", 0.5);
+      }
 
-        @extend %link-style-1;
-        padding: 16px;
+      @media screen and (max-width: map-get($breakpoints, "laptop")) {
+        max-width: 60%;
+      }
+
+      @media screen and (max-width: map-get($breakpoints, "tablet")) {
+        @include card-element--extra-small;
+        max-width: max-content;
       }
     }
   }
-}
 
-@media screen and (max-width: map-get($breakpoints, "mobile")) {
-  .events {
-    &__item {
-      &--grid {
-        grid-template-columns: repeat(1, auto);
-      }
-    }
-
-    &__column {
-      &:nth-child(1) {
-        width: auto;
-      }
+  &__details-links {
+    @media screen and (max-width: map-get($breakpoints, "tablet")) {
+      flex-flow: row;
+      flex-wrap: wrap;
+      width: 100%;
     }
   }
 }

@@ -1,9 +1,11 @@
 .updates {
-  &--flex {
-    @extend %flex-column;
-  }
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
 
-  &__items {
+  max-width: 50%;
+
+  &__list {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(1, 1fr);
@@ -11,11 +13,35 @@
     padding: 0;
 
     list-style-type: none;
+
+    @media screen and (max-width: map-get($breakpoints, "laptop")) {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: auto;
+      grid-auto-flow: column;
+      row-gap: 16px;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "tablet")) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-flow: row;
+      gap: 8px;
+
+      padding: 8px;
+      border-radius: 2px;
+      background-color: map-get($colors, "marble");
+    }
+
+    @media screen and (max-width: 660px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 8px;
+    }
   }
 
-  &__item {
+  &__list-item {
+    @include card-element--small;
+
     a {
-      @extend %link-style-1;
+      @extend %paragraph-link--large;
     }
 
     p {
@@ -35,48 +61,8 @@
       }
     }
   }
-}
 
-@media screen and (max-width: map-get($breakpoints, "laptop")) {
-  .updates {
-    &__items {
-      grid-template-rows: repeat(3, 1fr);
-      grid-template-columns: auto;
-      grid-auto-flow: column;
-      gap: 8px;
-    }
-  }
-}
-
-@media screen and (max-width: map-get($breakpoints, "tablet")) {
-  .updates {
-    &__items {
-      grid-template-columns: repeat(2, 1fr);
-      grid-auto-flow: row;
-      gap: 1rem;
-    }
-
-    &__item {
-      a {
-        font-size: 16px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: map-get($breakpoints, "mobile")) {
-  .updates {
-    &__items {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 8px;
-    }
-
-    &__item {
-      @include card-element;
-
-      a {
-        text-decoration: none;
-      }
-    }
+  @media screen and (max-width: map-get($breakpoints, "laptop")) {
+    max-width: none;
   }
 }

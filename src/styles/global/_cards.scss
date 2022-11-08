@@ -1,9 +1,10 @@
-%card-element {
+@mixin card-element {
   padding: 40px;
 
   border: 2px solid transparent;
   border-radius: 2px;
   box-shadow: map-get($colors, "grey") 0 1px 4px 0;
+  background-color: map-get($colors, "white");
 
   &:hover {
     border: 2px solid map-get($colors, "dover-straits");
@@ -12,5 +13,21 @@
     a {
       text-decoration: underline;
     }
+  }
+}
+
+@mixin card-element--small {
+  @media screen and (max-width: map-get($breakpoints, "tablet")) {
+    @include card-element;
+    padding: 16px;
+    text-decoration: none;
+  }
+}
+
+@mixin card-element--extra-small {
+  @media screen and (max-width: map-get($breakpoints, "tablet")) {
+    @include card-element;
+    padding: 8px;
+    text-decoration: none;
   }
 }

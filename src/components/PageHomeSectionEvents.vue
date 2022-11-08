@@ -1,72 +1,59 @@
 <template>
-  <section class="events events--flex">
-    <h1 class="events__header">Upcoming Events</h1>
+  <div class="events">
+    <h1>Upcoming Events</h1>
 
-    <div class="events__items events__items--grid">
-      <div class="events__item events__item--grid" v-for="event in events" :key="event.id">
-        <div class="events__column events__column--grid">
+    <div class="events__content">
+      <div class="events__item" v-for="event in events" :key="event.id">
+        <div class="item__column">
           <span>{{ event.date.month }}</span>
           <span>{{ event.date.day }}</span>
           <span>{{ event.date.year }}</span>
         </div>
 
-        <div class="events__column events__column--grid">
-          <div class="events__headings">
-            <span v-if="event.status">{{ event.status }}</span>
-            <h2>{{ event.title }}</h2>
-          </div>
+        <div class="item__column">
+          <span class="item__badge" v-if="event.status">{{ event.status }}</span>
+          <h2>{{ event.title }}</h2>
 
-          <p v-if="event.description">
-            {{ event.description }}
-          </p>
+          <p v-if="event.description">{{ event.description }}</p>
 
-          <div class="events__details">
-            <div class="events__details-location" v-if="event.info.location">
-              <p class="events__details-text">
-                <Icon icon="mdi:map-marker-outline" />
-                <span class="__text">{{ event.info.location }}</span>
-              </p>
-            </div>
-
-            <div class="events__details-time" v-if="event.info.time">
-              <p class="events__details-text">
-                <Icon icon="mdi:clock-outline" />
-                <span class="__text">{{ event.info.time }}</span>
-              </p>
-            </div>
-
-            <p class="events__details-phone" v-if="event.links.phone">
-              <a class="events__link" :href="`tel:${event.links.phone}`">
-                <Icon icon="mdi:phone" />
-                <span>{{ event.links.phone }}</span>
-              </a>
+          <div class="item__details-text">
+            <p v-if="event.info.location">
+              <Icon icon="mdi:map-marker-outline" />
+              <span>{{ event.info.location }}</span>
             </p>
 
-            <p class="events__details-video" v-if="event.links.video">
-              <a class="events__link"
-                 :href="event.links.video"
-                 target="_blank">
-                <Icon icon="mdi:laptop-account" />
-                <span>{{ event.links.video }}</span>
-              </a>
+            <p v-if="event.info.time">
+              <Icon icon="mdi:clock-outline" />
+              <span>{{ event.info.time }}</span>
             </p>
           </div>
 
-          <template v-for="attachment in event.attachments" :key="attachment.id">
-            <p class="events__details-agenda" v-if="attachment.name">
-              <a class="events__link"
+          <div class="item__details-links">
+            <a v-if="event.links.phone" :href="`tel:${event.links.phone}`">
+              <Icon icon="mdi:phone" />
+              <span>{{ event.links.phone }}</span>
+            </a>
+
+            <a v-if="event.links.video" :href="event.links.video" target="_blank">
+              <Icon icon="mdi:laptop-account" />
+              <span>Zoom Meeting</span>
+            </a>
+
+            <template v-for="attachment in event.attachments" :key="attachment.id">
+              <a class="item__details-agenda"
+                 v-if="attachment.name"
                  :href="attachment.file"
                  title="BEA Agenda - 10-18-22_0.pdf"
                  target="_blank">
-                <Icon icon="mdi:format-list-bulleted" color="rgba(51, 51, 51, 0.5)" />
+                <Icon icon="mdi:format-list-bulleted" />
                 {{ attachment.name }}
               </a>
-            </p>
-          </template>
+            </template>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script lang="ts">

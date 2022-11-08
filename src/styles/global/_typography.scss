@@ -43,8 +43,8 @@ $font-weight-700: 700; /* bold */
 $line-height-22px: 22px;
 
 /* Letter Spacings */
-$letter-spacing-0_5px: 0.031rem; /* 0.5px */
-$letter-spacing-1px: 0.063; /* 1px */
+$letter-spacing-0_5px: 0.5px;
+$letter-spacing-1px: 1px;
 
 /*** Text Decorations ***/
 /* Underlines */
@@ -107,6 +107,13 @@ p, %paragraph-text {
   color: map-get($colors, "ocean-blue");
 }
 
+%paragraph-link--large {
+  @extend %paragraph-link;
+
+  font-size: $font-size-18px;
+  font-weight: $font-weight-600;
+}
+
 /* Headers */
 h1, %section-header {
   @extend %underline-brown;
@@ -125,6 +132,19 @@ h1, %section-header {
 
   letter-spacing: $letter-spacing-1px;
   text-transform: uppercase;
+}
+
+%section-header--uppercase {
+  @extend %section-header;
+  @extend %underline-blue;
+  text-transform: uppercase;
+}
+
+h2, %section-header-2 {
+  font-family: $font-family-open-sans;
+  font-size: $font-size-18px;
+  font-weight: $font-weight-600;
+  color: map-get($colors, "carbon");
 }
 
 %hero-header {

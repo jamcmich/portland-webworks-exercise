@@ -1,16 +1,19 @@
 <template>
   <PageHomeSectionHero />
   <PageHomeSectionFeatured />
-  <PageHomeSectionDashboard />
-  <!--  <PageHomeSectionServices />-->
 
-  <!--  <div class="home__updates-and-events home__updates-and-events--flex">-->
-  <!--    <PageHomeSectionUpdates />-->
-  <!--    <PageHomeSectionEvents />-->
-  <!--  </div>-->
+  <div class="home__section-spacing">
+    <PageHomeSectionDashboard />
+    <PageHomeSectionServices />
 
-  <!--  <PageHomeSectionNews />-->
-  <!--  <AppScrollTop />-->
+    <section class="home__updates-and-events">
+      <PageHomeSectionUpdates />
+      <PageHomeSectionEvents />
+    </section>
+
+    <!--  <PageHomeSectionNews />-->
+    <!--  <AppScrollTop />-->
+  </div>
 </template>
 
 <script lang="ts">
@@ -33,9 +36,9 @@ export default defineComponent({
     PageHomeSectionHero,
     PageHomeSectionFeatured,
     PageHomeSectionDashboard,
-    // PageHomeSectionServices,
-    // PageHomeSectionUpdates,
-    // PageHomeSectionEvents,
+    PageHomeSectionServices,
+    PageHomeSectionUpdates,
+    PageHomeSectionEvents,
     // PageHomeSectionNews,
     // AppScrollTop,
   },

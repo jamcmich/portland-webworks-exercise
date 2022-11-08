@@ -1,7 +1,4 @@
 .dashboard {
-  @extend %layout-flex-section;
-  padding-top: 80px;
-
   &__content {
     @extend %content-layout;
     flex-flow: row;
@@ -9,10 +6,6 @@
     @media screen and (max-width: map-get($breakpoints, "tablet")) {
       flex-flow: column;
     }
-  }
-
-  @media screen and (max-width: map-get($breakpoints, "tablet")) {
-    padding-top: 40px;
   }
 }
 
