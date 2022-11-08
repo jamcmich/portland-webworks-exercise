@@ -2,12 +2,13 @@ section {
   display: flex;
   flex-flow: row;
   place-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px;
 
-  @media screen and (max-width: map-get($breakpoints, "mobile")) {
-    padding: 20px;
+  h1 {
+    @extend %section-header;
+  }
+
+  h2 {
+    @extend %section-header-2;
   }
 }
 

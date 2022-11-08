@@ -1,20 +1,49 @@
-div#scroll-top {
-  @include flex-container();
-  justify-content: flex-end;
+.scroll-top {
+  display: flex;
+  place-content: flex-end;
+  flex: 1 1 auto;
 
   a {
+    @extend %paragraph-link;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
 
     background-color: transparent;
     border: none;
 
-    .icon-background {
-      padding: 6px;
-      background-color: getColorWithAlpha("ocean-blue", 0.25);
-      border-radius: 100%;
+    @media screen and (max-width: map-get($breakpoints, "tablet")) {
+      @include add-underline-on-hover;
+
+      flex: 1;
+      justify-content: space-between;
+      padding: {
+        left: 20px;
+      }
     }
+  }
+
+  &__icon-background {
+    padding: 6px;
+    background-color: getColorWithAlpha("ocean-blue", 0.25);
+    border-radius: 100%;
+
+    svg {
+      font-size: 28px;
+      color: map-get($colors, "ocean-blue");
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "tablet")) {
+      border-radius: 2px;
+    }
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "tablet")) {
+    place-content: center;
+
+    border-radius: 2px;
+    background-color: getColorWithAlpha("ocean-blue", 0.1);
   }
 }

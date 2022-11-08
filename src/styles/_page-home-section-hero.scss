@@ -4,10 +4,7 @@
   background-size: cover;
 
   max-width: none;
-  padding: {
-    top: 80px;
-    bottom: 80px;
-  };
+  padding: 80px 40px;
 
   &__content {
     @extend %content-layout;
@@ -15,11 +12,12 @@
     max-width: 725px;
   }
 
+  @media screen and (max-width: map-get($breakpoints, "tablet")) {
+    padding: 50px 40px;
+  }
+
   @media screen and (max-width: map-get($breakpoints, "mobile")) {
-    padding: {
-      top: 40px;
-      bottom: 40px;
-    };
+    padding: 40px 30px;
   }
 }
 
@@ -30,5 +28,6 @@
 
   &__form {
     max-width: 650px;
+    margin: 0 auto;
   }
 }

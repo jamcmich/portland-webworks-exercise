@@ -34,10 +34,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
-  }
 
-  a {
-    text-decoration: none;
+    a {
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "mobile")) {
+      height: 300px;
+    }
   }
 
   button {

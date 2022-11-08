@@ -1,9 +1,9 @@
 <template>
-  <div id="scroll-top">
-    <a class="__link-style-2" v-on:click="handleReturnTop">
-      Back to Top
-      <span class="icon-background">
-          <Icon icon="mdi:chevron-up" width="28" color="rgb(0, 116, 193)" />
+  <div class="scroll-top">
+    <a v-on:click="handleReturnTop">
+      <span>Back to Top</span>
+      <span class="scroll-top__icon-background">
+          <Icon icon="mdi:chevron-up" />
         </span>
     </a>
   </div>

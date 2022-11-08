@@ -8,6 +8,8 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 
+    padding: 40px;
+
     @media screen and (max-width: map-get($breakpoints, "desktop")) {
       grid-template-rows: repeat(2, 1fr);
       grid-template-columns: repeat(2, 1fr);
@@ -20,6 +22,10 @@
       gap: 10px;
 
       flex: 1 1 auto;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "mobile")) {
+      padding: 30px;
     }
   }
 }
@@ -53,15 +59,15 @@
     letter-spacing: $letter-spacing-1px;
     text-align: center;
     text-transform: uppercase;
+
+    @media screen and (max-width: map-get($breakpoints, "mobile")) {
+      text-align: left;
+    }
   }
 
   @media screen and (max-width: map-get($breakpoints, "desktop")) {
     gap: 40px;
     width: auto;
-
-    &__title {
-      max-width: none;
-    }
   }
 
   @media screen and (max-width: map-get($breakpoints, "tablet")) {
@@ -74,6 +80,10 @@
 
     &__img {
       height: 100%;
+    }
+
+    &__title {
+      max-width: none;
     }
   }
 }

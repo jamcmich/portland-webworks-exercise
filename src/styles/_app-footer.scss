@@ -1,64 +1,80 @@
-footer {
+.footer {
   display: flex;
-  justify-content: center;
-  gap: 20%;
-
-  height: 370px;
-  padding: 40px 100px;
-
+  place-content: center;
   background-color: map-get($colors, "navy-peony");
 
-  .column {
+  &__content {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    place-content: space-between;
+    flex: 1 1 auto;
+    gap: 40px;
 
-    h1, a, p {
-      color: white;
+    max-width: 1200px;
+    padding: 60px 40px;
+
+    @media screen and (max-width: map-get($breakpoints, "tablet")) {
+      flex-flow: column;
+      padding: 50px 40px;
     }
 
-    h1 {
-      letter-spacing: 0.5px;
-      line-height: 20px;
+    @media screen and (max-width: map-get($breakpoints, "mobile")) {
+      padding: 40px 30px;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-flow: column;
+
+    * {
+      color: map-get($colors, "white");
     }
 
-    h4 {
-      color: map-get($colors, "faded-lilac");
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
+    &:nth-child(1) {
+      gap: 40px;
 
-    a {
-      text-decoration: none;
+      h1 {
+        @extend %footer-header;
+      }
 
-      &:hover {
-        text-decoration: underline;
+      img {
+        max-width: 135px;
       }
     }
 
-    img {
-      width: 135px;
-    }
-
-    ul {
-      display: flex;
-      flex-direction: column;
+    &:nth-child(2) {
       gap: 16px;
 
-      padding-left: 0;
-      list-style-type: none;
+      a {
+        @extend %footer-link;
+        width: max-content;
 
-      .item {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
+        &:nth-child(6) {
+          display: flex;
+          gap: 8px;
 
-        svg {
-          flex-shrink: 0;
+          svg {
+            font-size: 20px;
+            color: white;
+          }
         }
+
+        @media screen and (max-width: map-get($breakpoints, "tablet")) {
+          width: auto;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      gap: 16px;
+
+      h2 {
+        @extend %footer-header-2;
+      }
+
+      a {
+        @extend %paragraph-link;
+        color: map-get($colors, "white");
       }
     }
   }

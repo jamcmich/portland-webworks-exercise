@@ -1,9 +1,9 @@
 .updates {
   display: flex;
   flex-flow: column;
+  place-content: flex-start;
   gap: 40px;
-
-  max-width: 50%;
+  flex: 1;
 
   &__list {
     display: grid;
@@ -64,5 +64,6 @@
 
   @media screen and (max-width: map-get($breakpoints, "laptop")) {
     max-width: none;
+    flex: 1 1 auto;
   }
 }
