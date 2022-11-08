@@ -2,15 +2,11 @@
   <PageHomeSectionHero />
   <PageHomeSectionFeatured />
 
-  <div class="home__section-spacing">
+  <div class="home__sections">
     <PageHomeSectionDashboard />
     <PageHomeSectionServices />
-
-    <section class="home__updates-and-events">
-      <PageHomeSectionUpdates />
-      <PageHomeSectionEvents />
-    </section>
-
+    <PageHomeSectionUpdates />
+    <PageHomeSectionEvents />
     <!--  <PageHomeSectionNews />-->
     <!--  <AppScrollTop />-->
   </div>

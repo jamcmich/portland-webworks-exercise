@@ -92,7 +92,7 @@ $letter-spacing-1px: 1px;
 /* Paragraphs */
 p, %paragraph-text {
   font-family: $font-family-open-sans;
-  font-size: $font-size-16px;
+  font-size: 16px;
   font-weight: $font-weight-400;
   line-height: $line-height-22px;
   color: map-get($colors, "carbon");
@@ -102,7 +102,7 @@ p, %paragraph-text {
   @extend %remove-underline-on-hover;
 
   font-family: $font-family-open-sans;
-  font-size: $font-size-16px;
+  font-size: 16px;
   font-weight: $font-weight-400;
   color: map-get($colors, "ocean-blue");
 }
@@ -179,7 +179,7 @@ h2, %section-header-2 {
 /* Buttons */
 %button-text {
   font-family: $font-family-open-sans;
-  font-size: $font-size-14px;
+  font-size: 14px;
   font-weight: $font-weight-600;
   color: map-get($colors, "white");
 
@@ -190,76 +190,7 @@ h2, %section-header-2 {
 /* Badges */
 %badge-text {
   font-family: $font-family-open-sans;
-  font-size: $font-size-14px;
+  font-size: 14px;
   font-weight: $font-weight-600;
   color: map-get($colors, "white");
 }
-
-// %text-header-preset-2 {
-//   @extend %text-decoration--static-underline-brown;
-//
-//   font-family: $font-family-open-sans;
-//   font-size: $font-size-30px;
-//   font-weight: $font-weight-700;
-//   color: map-get($colors, "navy-peony");
-// }
-//
-// %text-header-preset-2--sm {
-//   @extend %text-header-preset-2;
-//
-//   font-family: $font-family-open-sans;
-//   font-size: $font-size-18px;
-//   font-weight: $font-weight-700;
-//   color: map-get($colors, "black");
-// }
-//
-// %text-header-preset-3 {
-//   @extend %text-header-preset-2;
-//   text-transform: uppercase;
-//   color: map-get($colors, "navy-peony");
-// }
-//
-// %text-header-preset-3--sm {
-//   @extend %text-header-preset-3;
-//
-//   font-family: $font-family-condensed;
-//   font-size: $font-size-16px;
-//   font-weight: $font-weight-400;
-//   color: map-get($colors, "black");
-//
-//   letter-spacing: $letter-spacing-1px;
-// }
-//
-// %text-header-preset-4 {
-//   font-family: $font-family-roboto-slab;
-//   font-size: $font-size-2xl;
-//   font-weight: $font-weight-700;
-//   color: map-get($colors, "muddy-brown");
-//
-//   text-transform: uppercase;
-// }
-//
-// %text-header-preset-4--sm {
-//   font-family: $font-family-open-sans;
-//   font-size: $font-size-13px;
-//   font-weight: $font-weight-400;
-//   color: map-get($colors, "black");
-// }
-//
-// %text-header-preset-5 {
-//   font-family: $font-family-open-sans;
-//   font-size: $font-size-24px;
-//   font-weight: $font-weight-600;
-//   color: map-get($colors, "black");
-// }
-//
-// %text-header-preset-5--sm {
-//   @extend %text-header-preset-5;
-//
-//   font-weight: $font-weight-400;
-//   font-size: $font-size-13px;
-//   color: map-get($colors, "black");
-//
-//   letter-spacing: $letter-spacing-0\.5px;
-//   text-transform: uppercase;
-// }

@@ -1,43 +1,21 @@
 .home {
-  &__section-spacing {
-    padding: {
-      top: 40px;
-      bottom: 40px;
-    }
+  &__sections {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    place-content: flex-start;
+    gap: 60px;
 
-    @media screen and (max-width: map-get($breakpoints, "desktop")) {
-      padding: {
-        top: 40px;
-        bottom: 40px;
-      }
-    }
-
-    @media screen and (max-width: map-get($breakpoints, "laptop")) {
-      padding: {
-        top: 20px;
-        bottom: 20px;
-      }
-    }
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
 
     @media screen and (max-width: map-get($breakpoints, "tablet")) {
-      padding: {
-        top: 0;
-        bottom: 0;
-      }
-    }
-  }
-
-  &__updates-and-events {
-    place-content: space-between;
-    gap: 40px;
-
-    @media screen and (max-width: map-get($breakpoints, "laptop")) {
-      flex-flow: column;
-      gap: 80px;
+      padding: 50px 40px;
     }
 
     @media screen and (max-width: map-get($breakpoints, "mobile")) {
-      gap: 40px;
+      padding: 40px 30px;
     }
   }
 }
