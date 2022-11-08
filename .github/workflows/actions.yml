@@ -27,7 +27,6 @@ jobs:
 
       - name: Build project
         run: |
-          cd ./vue-ts
           npm install
           npm run build
 
@@ -35,7 +34,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: production-files
-          path: ./vue-ts/dist
+          path: /dist
 
   deploy:
     name: Deploy
@@ -48,10 +47,10 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: production-files
-          path: ./vue-ts/dist
+          path: /dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./vue-ts/dist
+          publish_dir: /dist
