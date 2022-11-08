@@ -1,6 +1,7 @@
 .updates {
   display: flex;
   flex-flow: column;
+  place-content: flex-start;
   gap: 40px;
   flex: 1;
 

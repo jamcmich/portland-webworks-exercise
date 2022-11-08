@@ -1,5 +1,5 @@
 <template>
-  <div class="events">
+  <section class="events">
     <h1>Upcoming Events</h1>
 
     <div class="events__content">
@@ -53,7 +53,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">

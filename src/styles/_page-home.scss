@@ -1,7 +1,6 @@
 .home {
   &__sections {
     display: flex;
-    flex-flow: row;
     flex-wrap: wrap;
     place-content: flex-start;
     gap: 60px;

@@ -8,7 +8,7 @@
     <PageHomeSectionUpdates />
     <PageHomeSectionEvents />
     <PageHomeSectionNews />
-    <!--  <AppScrollTop />-->
+    <AppScrollTop />
   </div>
 </template>
 
@@ -36,7 +36,7 @@ export default defineComponent({
     PageHomeSectionUpdates,
     PageHomeSectionEvents,
     PageHomeSectionNews,
-    // AppScrollTop,
+    AppScrollTop,
   },
 });
 </script>

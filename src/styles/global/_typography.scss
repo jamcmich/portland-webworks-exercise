@@ -40,6 +40,7 @@ $font-weight-600: 600; /* semi-bold */
 $font-weight-700: 700; /* bold */
 
 /* Line Heights */
+$line-height-20px: 20px;
 $line-height-22px: 22px;
 
 /* Letter Spacings */
@@ -79,6 +80,15 @@ $letter-spacing-1px: 1px;
   }
 }
 
+@mixin add-underline-on-hover {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
 %remove-underline-on-hover {
   text-decoration: underline;
 
@@ -89,6 +99,12 @@ $letter-spacing-1px: 1px;
 }
 
 /*** Element Styles ***/
+a {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 /* Paragraphs */
 p, %paragraph-text {
   font-family: $font-family-open-sans;
@@ -115,7 +131,7 @@ p, %paragraph-text {
 }
 
 /* Headers */
-h1, %section-header {
+%section-header {
   @extend %underline-brown;
 
   font-family: $font-family-open-sans;
@@ -140,7 +156,7 @@ h1, %section-header {
   text-transform: uppercase;
 }
 
-h2, %section-header-2 {
+%section-header-2 {
   font-family: $font-family-open-sans;
   font-size: $font-size-18px;
   font-weight: $font-weight-600;
@@ -153,6 +169,35 @@ h2, %section-header-2 {
   font-weight: $font-weight-400;
   color: map-get($colors, "white");
   text-align: center;
+}
+
+%footer-header {
+  font-family: $font-family-open-sans;
+  font-size: 18px;
+  font-weight: $font-weight-700;
+
+  line-height: $line-height-20px;
+  letter-spacing: $letter-spacing-0_5px;
+}
+
+%footer-header-2 {
+  @extend %footer-header;
+
+  font-size: 16px;
+  color: map-get($colors, "faded-lilac");
+
+  line-height: normal;
+  letter-spacing: $letter-spacing-1px;
+  text-transform: uppercase;
+}
+
+%footer-link {
+  @extend %add-underline-on-hover;
+
+  font-family: $font-family-open-sans;
+  font-size: 16px;
+  font-weight: $font-weight-400;
+  color: map-get($colors, "white");
 }
 
 /* Cards */
