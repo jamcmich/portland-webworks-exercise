@@ -1,0 +1,32 @@
+@use "sass:map";
+
+button#search {
+  @extend %button-element-solid;
+
+  margin: auto;
+  padding: 10px;
+
+  &.extended {
+    position: relative;
+    color: white;
+    background-color: map-get($colors, "ocean-blue");
+  }
+
+  @media screen and (max-width: 1160px) {
+    margin: auto 0;
+  }
+
+  @media screen and (max-width: map.get($breakpoints, "desktop")) {
+    width: 100px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: map-get($colors, "marble");
+    border: 0 solid transparent;
+  }
+
+  @media screen and (max-width: map.get($breakpoints, "tablet")) {
+    display: none;
+  }
+}

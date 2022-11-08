@@ -1,0 +1,10 @@
+%badge {
+  @extend %badge-text;
+  border-radius: 2px;
+
+  &--red {
+    @extend %badge;
+    background-color: map-get($colors, "red");
+    padding: 4px 8px;
+  }
+}

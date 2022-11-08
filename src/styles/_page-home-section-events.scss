@@ -1,0 +1,148 @@
+.events {
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+
+  max-width: 50%;
+
+  &__content {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: min-content repeat(2, auto);
+    gap: 32px;
+
+    padding-bottom: 32px;
+    border-bottom: 1px solid map-get($colors, "grey");
+
+    &:last-child {
+      border: none;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "mobile")) {
+      grid-template-columns: repeat(1, auto);
+    }
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "laptop")) {
+    max-width: none;
+  }
+}
+
+.item {
+  &__column {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+
+    &:nth-child(1) {
+      justify-items: center;
+
+      width: min-content;
+      height: min-content;
+      padding: 8px 16px;
+
+      border-radius: 2px;
+      background-color: map-get($colors, "muddy-brown");
+
+      span {
+        color: white;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+      }
+
+      span:nth-child(2) {
+        font-size: 1.875rem;
+      }
+    }
+
+    &:nth-child(2) {
+      justify-items: start;
+      gap: 16px;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "mobile")) {
+      &:nth-child(1) {
+        width: auto;
+      }
+    }
+  }
+
+  &__badge {
+    @extend %badge--red;
+  }
+
+  &__details {
+    &-links {
+      width: 100%;
+    }
+
+    &-text, &-links {
+      display: flex;
+      flex-flow: column;
+      gap: 16px;
+
+      a, p {
+        display: flex;
+        gap: 8px;
+      }
+
+      a {
+        @extend %paragraph-link;
+        @include card-element--extra-small;
+
+        @media screen and (max-width: map-get($breakpoints, "tablet")) {
+          max-width: max-content;
+        }
+      }
+
+      svg {
+        flex-shrink: 0;
+
+        font-size: $font-size-24px;
+        color: map-get($colors, "muddy-brown");
+      }
+
+      @media screen and (max-width: map-get($breakpoints, "laptop")) {
+        gap: 8px;
+      }
+    }
+
+    &-agenda {
+      @extend %paragraph-link;
+
+      width: 100%;
+      padding: 16px;
+
+      border-radius: 2px;
+      background-color: map-get($colors, "marble");
+
+      svg {
+        color: getColorWithAlpha("carbon", 0.5);
+      }
+
+      @media screen and (max-width: map-get($breakpoints, "laptop")) {
+        max-width: 60%;
+      }
+
+      @media screen and (max-width: map-get($breakpoints, "tablet")) {
+        @include card-element--extra-small;
+        max-width: max-content;
+      }
+    }
+  }
+
+  &__details-links {
+    @media screen and (max-width: map-get($breakpoints, "tablet")) {
+      flex-flow: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+}

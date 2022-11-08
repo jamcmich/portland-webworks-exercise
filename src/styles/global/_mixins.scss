@@ -1,0 +1,26 @@
+@mixin flex-container(
+  $display: flex,
+  $flexDirection: row,
+  $justifyContent: center,
+  $alignItems: center,
+  $gap: 40px,
+  $width: 100%,
+  $height: 100%,
+  $margin: auto,
+  $padding: 40px,
+) {
+  display: $display;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  gap: $gap;
+
+  width: $width;
+  height: $height;
+  margin: $margin;
+  padding: $padding;
+
+  @media screen and (max-width: map-get($breakpoints, "phone")) {
+    padding: 20px;
+  }
+}

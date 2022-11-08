@@ -1,0 +1,51 @@
+.dashboard {
+  &__content {
+    @extend %content-layout;
+    flex-flow: row;
+
+    @media screen and (max-width: map-get($breakpoints, "tablet")) {
+      flex-flow: column;
+    }
+  }
+}
+
+.column {
+  @extend %content-layout;
+
+  &__text-content {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+
+    a {
+      @extend %paragraph-link;
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 450px;
+
+    background-image: url("/assets/images/census-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    @extend %button-element-solid;
+    width: 250px;
+
+    span {
+      text-transform: capitalize;
+    }
+  }
+}

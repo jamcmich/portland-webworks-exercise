@@ -1,0 +1,39 @@
+.news {
+  &--flex {
+    @extend %flex-section;
+  }
+
+  &__container {
+    &--flex {
+      display: flex;
+      flex-flow: column;
+      place-content: center;
+      gap: 40px;
+    }
+  }
+
+  &__cards {
+    &--flex {
+      display: flex;
+      place-content: center;
+      gap: 40px;
+    }
+  }
+
+  &__card {
+    @include card-element;
+    width: 50%;
+
+    a {
+      @extend %link-bold-no-underline;
+    }
+
+    span {
+      @extend %h4;
+    }
+
+    span {
+      color: map-get($colors, "slate");
+    }
+  }
+}

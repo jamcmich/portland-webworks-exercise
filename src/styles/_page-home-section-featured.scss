@@ -1,0 +1,79 @@
+.featured {
+  max-width: none;
+  background-color: map-get($colors, "winter");
+
+  &__content {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+
+    @media screen and (max-width: map-get($breakpoints, "desktop")) {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "tablet")) {
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+
+      flex: 1 1 auto;
+    }
+  }
+}
+
+
+.card {
+  @include card-element;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  width: 250px;
+  height: 250px;
+
+  text-decoration: none;
+  background-color: white;
+
+  &__img {
+    height: 60%;
+  }
+
+  &__title {
+    @extend %card-title;
+
+    max-width: 200px;
+
+    font-size: $font-size-16px;
+    letter-spacing: $letter-spacing-1px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "desktop")) {
+    gap: 40px;
+    width: auto;
+
+    &__title {
+      max-width: none;
+    }
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "tablet")) {
+    flex-flow: row;
+    place-content: flex-start;
+    gap: 40px;
+
+    height: 80px;
+    padding: 20px 40px;
+
+    &__img {
+      height: 100%;
+    }
+  }
+}

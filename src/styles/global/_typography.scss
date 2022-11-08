@@ -1,0 +1,265 @@
+/*** Variables ***/
+/* Font Families */
+$font-family-open-sans: 'Open Sans', sans-serif;
+$font-family-roboto-slab: 'Roboto Slab', serif;
+$font-family-roboto-condensed: 'Roboto Condensed', sans-serif;
+
+/* Font Sizes */
+:root {
+  @media screen and (max-width: map-get($breakpoints, "desktop")) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "laptop")) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "tablet")) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "mobile")) {
+    font-size: 14px;
+  }
+}
+
+$font-size-13px: 0.813rem; /* 13px */
+$font-size-14px: 0.875rem; /* 14px */
+$font-size-16px: 1rem; /* 16px */
+$font-size-18px: 1.125rem; /* 18px */
+$font-size-24px: 1.5rem; /* 24px */
+$font-size-28px: 1.75rem; /* 28px */
+$font-size-30px: 1.875rem; /* 30px */
+$font-size-42px: 2.625rem; /* 42px */
+$font-size-54px: 3.375rem; /* 54px */
+
+/* Font Weights */
+$font-weight-300: 300; /* light */
+$font-weight-400: 400; /* regular */
+$font-weight-600: 600; /* semi-bold */
+$font-weight-700: 700; /* bold */
+
+/* Line Heights */
+$line-height-22px: 22px;
+
+/* Letter Spacings */
+$letter-spacing-0_5px: 0.5px;
+$letter-spacing-1px: 1px;
+
+/*** Text Decorations ***/
+/* Underlines */
+%underline-brown {
+  &::after {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 3px;
+    margin-top: 20px;
+    background-color: map-get($colors, "muddy-brown");
+  }
+}
+
+%underline-blue {
+  &::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 10px;
+    margin-top: 20px;
+    background-color: map-get($colors, "navy-peony");
+  }
+}
+
+%add-underline-on-hover {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+%remove-underline-on-hover {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+/*** Element Styles ***/
+/* Paragraphs */
+p, %paragraph-text {
+  font-family: $font-family-open-sans;
+  font-size: $font-size-16px;
+  font-weight: $font-weight-400;
+  line-height: $line-height-22px;
+  color: map-get($colors, "carbon");
+}
+
+%paragraph-link {
+  @extend %remove-underline-on-hover;
+
+  font-family: $font-family-open-sans;
+  font-size: $font-size-16px;
+  font-weight: $font-weight-400;
+  color: map-get($colors, "ocean-blue");
+}
+
+%paragraph-link--large {
+  @extend %paragraph-link;
+
+  font-size: $font-size-18px;
+  font-weight: $font-weight-600;
+}
+
+/* Headers */
+h1, %section-header {
+  @extend %underline-brown;
+
+  font-family: $font-family-open-sans;
+  font-size: $font-size-30px;
+  font-weight: $font-weight-700;
+  color: map-get($colors, "navy-peony");
+}
+
+%section-header--small {
+  @extend %section-header;
+
+  font-size: $font-size-18px;
+  color: map-get($colors, "black");
+
+  letter-spacing: $letter-spacing-1px;
+  text-transform: uppercase;
+}
+
+%section-header--uppercase {
+  @extend %section-header;
+  @extend %underline-blue;
+  text-transform: uppercase;
+}
+
+h2, %section-header-2 {
+  font-family: $font-family-open-sans;
+  font-size: $font-size-18px;
+  font-weight: $font-weight-600;
+  color: map-get($colors, "carbon");
+}
+
+%hero-header {
+  font-family: $font-family-roboto-slab;
+  font-size: $font-size-28px;
+  font-weight: $font-weight-400;
+  color: map-get($colors, "white");
+  text-align: center;
+}
+
+/* Cards */
+%card-title {
+  font-family: $font-family-open-sans;
+  font-size: $font-size-16px;
+  font-weight: $font-weight-700;
+  color: map-get($colors, "navy-peony");
+}
+
+%card-title--uppercase {
+  @extend %card-title;
+  text-transform: uppercase;
+}
+
+%card-link-title {
+  @extend %add-underline-on-hover;
+
+  font-family: $font-family-open-sans;
+  font-size: $font-size-24px;
+  color: map-get($colors, "ocean-blue");
+}
+
+/* Buttons */
+%button-text {
+  font-family: $font-family-open-sans;
+  font-size: $font-size-14px;
+  font-weight: $font-weight-600;
+  color: map-get($colors, "white");
+
+  letter-spacing: $letter-spacing-1px;
+  text-transform: uppercase;
+}
+
+/* Badges */
+%badge-text {
+  font-family: $font-family-open-sans;
+  font-size: $font-size-14px;
+  font-weight: $font-weight-600;
+  color: map-get($colors, "white");
+}
+
+// %text-header-preset-2 {
+//   @extend %text-decoration--static-underline-brown;
+//
+//   font-family: $font-family-open-sans;
+//   font-size: $font-size-30px;
+//   font-weight: $font-weight-700;
+//   color: map-get($colors, "navy-peony");
+// }
+//
+// %text-header-preset-2--sm {
+//   @extend %text-header-preset-2;
+//
+//   font-family: $font-family-open-sans;
+//   font-size: $font-size-18px;
+//   font-weight: $font-weight-700;
+//   color: map-get($colors, "black");
+// }
+//
+// %text-header-preset-3 {
+//   @extend %text-header-preset-2;
+//   text-transform: uppercase;
+//   color: map-get($colors, "navy-peony");
+// }
+//
+// %text-header-preset-3--sm {
+//   @extend %text-header-preset-3;
+//
+//   font-family: $font-family-condensed;
+//   font-size: $font-size-16px;
+//   font-weight: $font-weight-400;
+//   color: map-get($colors, "black");
+//
+//   letter-spacing: $letter-spacing-1px;
+// }
+//
+// %text-header-preset-4 {
+//   font-family: $font-family-roboto-slab;
+//   font-size: $font-size-2xl;
+//   font-weight: $font-weight-700;
+//   color: map-get($colors, "muddy-brown");
+//
+//   text-transform: uppercase;
+// }
+//
+// %text-header-preset-4--sm {
+//   font-family: $font-family-open-sans;
+//   font-size: $font-size-13px;
+//   font-weight: $font-weight-400;
+//   color: map-get($colors, "black");
+// }
+//
+// %text-header-preset-5 {
+//   font-family: $font-family-open-sans;
+//   font-size: $font-size-24px;
+//   font-weight: $font-weight-600;
+//   color: map-get($colors, "black");
+// }
+//
+// %text-header-preset-5--sm {
+//   @extend %text-header-preset-5;
+//
+//   font-weight: $font-weight-400;
+//   font-size: $font-size-13px;
+//   color: map-get($colors, "black");
+//
+//   letter-spacing: $letter-spacing-0\.5px;
+//   text-transform: uppercase;
+// }

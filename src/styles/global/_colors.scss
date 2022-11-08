@@ -1,0 +1,33 @@
+$colors: (
+        "dark-blue": #142B47,
+        "navy-peony": #1B3A61,
+        "frank-blue": #225089,
+        "dover-straits": #3068AD,
+        "kolibri-blue": #004878,
+        "ocean": #005690,
+        "ocean-blue": #0074C1,
+        "faded-lilac": #93A4BD,
+        "river-blue": #35B0CB,
+        "blue-gray": #415A7B,
+        "muddy-brown": #8C6910,
+        "woolen": #D2B859,
+        "dover-white": #F0EBDD,
+        "crystal": #F7F4ED,
+        "red": #E9261D,
+        "black": #000000,
+        "carbon": #333333,
+        "seared-grey": #495057,
+        "slate": #666666,
+        "silver": #757575,
+        "grey": #C3C3C3,
+        "mist": #CCCCCC,
+        "winter": #E1E5EA,
+        "marble": #F3F6F9,
+        "white": #FFFFFF,
+) !default;
+
+@function getColorWithAlpha($color, $alpha: 1.0) {
+  $color: rgba(map-get($colors, $color), $alpha);
+
+  @return $color;
+}

@@ -1,0 +1,68 @@
+.updates {
+  display: flex;
+  flex-flow: column;
+  gap: 40px;
+
+  max-width: 50%;
+
+  &__list {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    padding: 0;
+
+    list-style-type: none;
+
+    @media screen and (max-width: map-get($breakpoints, "laptop")) {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: auto;
+      grid-auto-flow: column;
+      row-gap: 16px;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "tablet")) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-flow: row;
+      gap: 8px;
+
+      padding: 8px;
+      border-radius: 2px;
+      background-color: map-get($colors, "marble");
+    }
+
+    @media screen and (max-width: 660px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 8px;
+    }
+  }
+
+  &__list-item {
+    @include card-element--small;
+
+    a {
+      @extend %paragraph-link--large;
+    }
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: map-get($colors, "seared-grey");
+
+      margin-top: 6px;
+
+      span {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+
+        margin-right: 12px;
+      }
+    }
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "laptop")) {
+    max-width: none;
+  }
+}
