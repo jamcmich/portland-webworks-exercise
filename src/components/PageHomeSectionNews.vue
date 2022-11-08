@@ -1,11 +1,12 @@
 <template>
-  <section class="news news--flex">
-    <div class="news__container news__container--flex">
-      <h1 class="news__header">News and Press Releases</h1>
+  <section class="news">
+    <div class="news__content">
+      <h1>News and Press Releases</h1>
 
-      <div class="news__cards news__cards--flex">
-        <div class="news__card" v-for="item in news" :key="item.id">
-          <a :href="item.link"><h3 class="__card-header">{{ item.title }}</h3></a>
+      <div class="content__cards">
+        <div class="content__card" v-for="item in news" :key="item.id">
+          <h2><a :href="item.link">{{ item.title }}</a></h2>
+
           <span>{{ item.date }}</span>
           <p>{{ item.description }}</p>
         </div>

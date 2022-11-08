@@ -7,7 +7,7 @@
     <PageHomeSectionServices />
     <PageHomeSectionUpdates />
     <PageHomeSectionEvents />
-    <!--  <PageHomeSectionNews />-->
+    <PageHomeSectionNews />
     <!--  <AppScrollTop />-->
   </div>
 </template>
@@ -35,7 +35,7 @@ export default defineComponent({
     PageHomeSectionServices,
     PageHomeSectionUpdates,
     PageHomeSectionEvents,
-    // PageHomeSectionNews,
+    PageHomeSectionNews,
     // AppScrollTop,
   },
 });

@@ -1,39 +1,43 @@
 .news {
-  &--flex {
-    @extend %flex-section;
+  &__content {
+    @extend %content-layout;
   }
+}
 
-  &__container {
-    &--flex {
-      display: flex;
-      flex-flow: column;
-      place-content: center;
-      gap: 40px;
-    }
-  }
-
+.content {
   &__cards {
-    &--flex {
-      display: flex;
-      place-content: center;
-      gap: 40px;
+    display: flex;
+    flex-flow: row;
+    place-content: center;
+    gap: 40px;
+
+    @media screen and (max-width: map-get($breakpoints, "laptop")) {
+      flex-flow: column;
+      gap: 16px;
     }
   }
 
   &__card {
     @include card-element;
-    width: 50%;
+
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    gap: 16px;
 
     a {
-      @extend %link-bold-no-underline;
+      @extend %card-link-title;
     }
 
     span {
-      @extend %h4;
-    }
-
-    span {
+      font-family: $font-family-open-sans;
+      font-size: $font-size-13px;
+      font-weight: $font-weight-700;
       color: map-get($colors, "slate");
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "tablet")) {
+      padding: 20px;
     }
   }
 }
