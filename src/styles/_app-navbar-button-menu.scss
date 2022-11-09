@@ -1,4 +1,4 @@
-button#menu {
+.menu-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,6 +15,7 @@ button#menu {
   &:hover {
     border-color: map-get($colors, "ocean");
     background-color: map-get($colors, "ocean");
+    cursor: pointer;
   }
 
   &:active {
