@@ -80,7 +80,7 @@ $navbar-max-height-desktop: 120px;
 
       @media screen and (max-width: map-get($breakpoints, "tablet")) {
         flex-direction: column;
-        max-height: 750px;
+        max-height: 400px;
         overflow-y: scroll;
       }
     }
@@ -156,6 +156,13 @@ $navbar-max-height-desktop: 120px;
 
     img {
       height: 100%;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "tablet")) {
+      margin: {
+        left: 8px;
+        right: 8px;
+      }
     }
   }
 

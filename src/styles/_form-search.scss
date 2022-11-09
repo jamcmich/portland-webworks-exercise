@@ -30,6 +30,10 @@
 
   &__button {
     @extend %button-element--solid;
+
+    svg {
+      flex-shrink: 0;
+    }
   }
 
   &--extended {
@@ -59,10 +63,8 @@
       }
     }
   }
-}
 
-@media screen and (max-width: map-get($breakpoints, "tablet")) {
-  .search {
+  @media screen and (max-width: map-get($breakpoints, "tablet")) {
     height: auto;
     flex-flow: row nowrap;
 
@@ -71,10 +73,8 @@
       flex-shrink: 1;
     }
   }
-}
 
-@media screen and (max-width: map-get($breakpoints, "mobile")) {
-  .search {
+  @media screen and (max-width: map-get($breakpoints, "mobile")) {
     flex-flow: column nowrap;
 
     &__icon {
