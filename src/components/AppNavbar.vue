@@ -25,22 +25,20 @@
       </div>
     </div>
 
-    <div class="bottom" :class="{ extended: showMenu }">
-      <div class="left">
+    <div class="navbar__bottom" :class="{ 'navbar__bottom--extended': showMenu }">
+      <div class="bottom__left">
         <ul>
           <li v-for="page in pages" :key="page.id">
-            <a class="__link-style-2" :href="page.href">
+            <a :href="page.href">
               {{ page.title }}
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="right">
-        <div class="column">
-          <template v-for="link in links" :key="link.id">
-            <AppNavbarListLinks :link="link" />
-          </template>
+      <div class="bottom__right">
+        <div class="bottom__right-column">
+          <AppNavbarListLinks v-for="link in links" :key="link.id" :link="link" />
         </div>
       </div>
     </div>

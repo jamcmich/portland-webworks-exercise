@@ -13,7 +13,7 @@
 
   &:hover {
     border-color: transparent;
-    
+
     svg {
       color: map-get($colors, "white");
     }
@@ -44,6 +44,13 @@
 
     background-color: map-get($colors, "marble");
     border: 0 solid transparent;
+    border-radius: 0;
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "laptop")) {
+    &--extended {
+      background-color: map-get($colors, "ocean-blue");
+    }
   }
 
   @media screen and (max-width: map-get($breakpoints, "tablet")) {

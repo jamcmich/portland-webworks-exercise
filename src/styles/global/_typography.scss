@@ -106,33 +106,6 @@ a {
   }
 }
 
-/* Navbar */
-%navbar-header {
-  font-family: $font-family-roboto-slab;
-  font-size: $font-size-18px;
-  font-weight: $font-weight-500;
-  color: map-get($colors, "navy-peony");
-
-  letter-spacing: $letter-spacing-0_5px;
-  text-transform: uppercase;
-}
-
-%navbar-header-2 {
-  font-family: $font-family-roboto-condensed;
-  font-size: $font-size-16px;
-  font-weight: $font-weight-400;
-  color: getColorWithAlpha("navy-peony", 0.75);
-}
-
-%navbar-link {
-  @extend %add-underline-on-hover;
-
-  font-family: $font-family-open-sans;
-  font-size: 16px;
-  font-weight: $font-weight-400;
-  color: map-get($colors, "navy-peony");
-}
-
 /* Hero */
 %hero-header {
   font-family: $font-family-roboto-slab;
@@ -198,6 +171,62 @@ p, %paragraph-text {
   font-size: $font-size-18px;
   font-weight: $font-weight-600;
   color: map-get($colors, "carbon");
+}
+
+/* Navbar */
+%navbar-header {
+  font-family: $font-family-roboto-slab;
+  font-size: $font-size-18px;
+  font-weight: $font-weight-500;
+  color: map-get($colors, "navy-peony");
+
+  letter-spacing: $letter-spacing-0_5px;
+  text-transform: uppercase;
+}
+
+%navbar-header-2 {
+  font-family: $font-family-roboto-condensed;
+  font-size: $font-size-16px;
+  font-weight: $font-weight-400;
+  color: getColorWithAlpha("navy-peony", 0.75);
+}
+
+%navbar-link {
+  @extend %add-underline-on-hover;
+
+  font-family: $font-family-open-sans;
+  font-size: 14px;
+  font-weight: $font-weight-400;
+  color: map-get($colors, "navy-peony");
+}
+
+%navbar-link-2 {
+  @extend %navbar-link;
+
+  font-family: $font-family-open-sans;
+  font-size: 15px;
+  font-weight: $font-weight-700;
+  color: map-get($colors, "carbon");
+}
+
+%navbar-header-link {
+  @extend %section-header;
+  @extend %add-underline-on-hover;
+
+  font-size: $font-size-16px;
+
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+
+  &::after {
+    margin-top: 8px;
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "desktop")) {
+    &::after {
+      content: none;
+    }
+  }
 }
 
 /* Footer */
