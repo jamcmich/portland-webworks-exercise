@@ -1,48 +1,27 @@
-@use "sass:map";
+.navbar__list-links {
+  display: flex;
+  flex-flow: column;
+  place-content: flex-start;
+  gap: 16px;
+  flex: 0 1 30%;
 
-div#links {
-  @include flex-container(
-          $flexDirection: column,
-          $justifyContent: flex-start,
-          $alignItems: flex-start,
-          $gap: 10px,
-          $width: auto,
-          $height: auto,
-          $margin: 0,
-          $padding: 0
-  );
-  flex: 30%;
+  @media screen and (max-width: map-get($breakpoints, "desktop")) {
+    align-items: stretch;
+    gap: 0;
+    flex: 1 1 100%;
+  }
+}
 
-  .row {
-    @include flex-container(
-            $width: auto,
-            $height: auto,
-            $margin: 0,
-            $padding: 0
-    );
+.list-links {
+  &__header {
+    display: flex;
 
     h2 {
-      color: map-get($colors, "navy-peony");
-      font-size: 16px;
-      text-transform: uppercase;
-      letter-spacing: 0.75px;
-
-      &.__header-style-2 {
-        &::after {
-          margin-top: 10px;
-        }
+      a {
+        @extend %navbar-header-link;
       }
 
-      a, a:link, a:visited {
-        color: inherit;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-
-      @media screen and (max-width: map.get($breakpoints, "desktop")) {
+      @media screen and (max-width: map-get($breakpoints, "desktop")) {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -59,7 +38,7 @@ div#links {
         }
       }
 
-      @media screen and (max-width: map.get($breakpoints, "desktop")) {
+      @media screen and (max-width: map-get($breakpoints, "desktop")) {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -69,10 +48,15 @@ div#links {
 
     button {
       display: none;
+
+      svg {
+        font-size: 32px;
+        color: map-get($colors, "white");
+      }
     }
 
     /* .row */
-    @media screen and (max-width: map.get($breakpoints, "desktop")) {
+    @media screen and (max-width: map-get($breakpoints, "desktop")) {
       gap: 0;
 
       button {
@@ -89,7 +73,7 @@ div#links {
     }
   }
 
-  ul {
+  &__items {
     max-height: fit-content;
     padding: 0;
     list-style-type: none;
@@ -100,32 +84,15 @@ div#links {
     li {
       width: fit-content;
 
-      a.item, a.item:link, a.item:visited {
-        display: inline-block;
-        padding: 6px 0;
-
-        color: map-get($colors, "carbon");
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-
-        /* a */
-        @media screen and (max-width: map.get($breakpoints, "desktop")) {
-          width: 100%;
-        }
-      }
-
       /* li */
-      @media screen and (max-width: map.get($breakpoints, "desktop")) {
+      @media screen and (max-width: map-get($breakpoints, "desktop")) {
         width: 100%;
         padding: 0 20px;
       }
     }
 
     /* ul */
-    @media screen and (max-width: map.get($breakpoints, "desktop")) {
+    @media screen and (max-width: map-get($breakpoints, "desktop")) {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -139,10 +106,22 @@ div#links {
     }
   }
 
-  /* div#links */
-  @media screen and (max-width: map.get($breakpoints, "desktop")) {
-    align-items: stretch;
-    gap: 0;
-    flex: 100%;
+  &__item {
+    @extend %paragraph-link;
+
+    display: inline-block;
+    padding: 5px 0;
+
+    color: map-get($colors, "carbon");
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    /* a */
+    @media screen and (max-width: map-get($breakpoints, "desktop")) {
+      width: 100%;
+    }
   }
 }

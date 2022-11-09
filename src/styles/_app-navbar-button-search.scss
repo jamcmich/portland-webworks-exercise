@@ -1,22 +1,42 @@
-@use "sass:map";
-
-button#search {
-  @extend %button-element-solid;
+.search-button {
+  @extend %button-element--solid;
 
   margin: auto;
   padding: 10px;
 
-  &.extended {
+  background-color: map-get($colors, "white");
+
+  svg {
+    color: map-get($colors, "dover-straits");
+    transition: color 0.1s ease;
+  }
+
+  &:hover {
+    border-color: transparent;
+
+    svg {
+      color: map-get($colors, "white");
+    }
+  }
+
+  &--extended {
     position: relative;
-    color: white;
     background-color: map-get($colors, "ocean-blue");
+
+    svg {
+      color: white;
+    }
+
+    &:hover {
+      background-color: map-get($colors, "ocean-blue");
+    }
   }
 
   @media screen and (max-width: 1160px) {
     margin: auto 0;
   }
 
-  @media screen and (max-width: map.get($breakpoints, "desktop")) {
+  @media screen and (max-width: map-get($breakpoints, "desktop")) {
     width: 100px;
     height: 100%;
     margin: 0;
@@ -24,9 +44,16 @@ button#search {
 
     background-color: map-get($colors, "marble");
     border: 0 solid transparent;
+    border-radius: 0;
   }
 
-  @media screen and (max-width: map.get($breakpoints, "tablet")) {
+  @media screen and (max-width: map-get($breakpoints, "laptop")) {
+    &--extended {
+      background-color: map-get($colors, "ocean-blue");
+    }
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "tablet")) {
     display: none;
   }
 }

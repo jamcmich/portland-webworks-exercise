@@ -36,6 +36,7 @@ $font-size-54px: 3.375rem; /* 54px */
 /* Font Weights */
 $font-weight-300: 300; /* light */
 $font-weight-400: 400; /* regular */
+$font-weight-500: 500; /* medium */
 $font-weight-600: 600; /* semi-bold */
 $font-weight-700: 700; /* bold */
 
@@ -105,6 +106,15 @@ a {
   }
 }
 
+/* Hero */
+%hero-header {
+  font-family: $font-family-roboto-slab;
+  font-size: $font-size-28px;
+  font-weight: $font-weight-400;
+  color: map-get($colors, "white");
+  text-align: center;
+}
+
 /* Paragraphs */
 p, %paragraph-text {
   font-family: $font-family-open-sans;
@@ -130,7 +140,7 @@ p, %paragraph-text {
   font-weight: $font-weight-600;
 }
 
-/* Headers */
+/* Sections */
 %section-header {
   @extend %underline-brown;
 
@@ -163,14 +173,63 @@ p, %paragraph-text {
   color: map-get($colors, "carbon");
 }
 
-%hero-header {
+/* Navbar */
+%navbar-header {
   font-family: $font-family-roboto-slab;
-  font-size: $font-size-28px;
-  font-weight: $font-weight-400;
-  color: map-get($colors, "white");
-  text-align: center;
+  font-size: $font-size-18px;
+  font-weight: $font-weight-500;
+  color: map-get($colors, "navy-peony");
+
+  letter-spacing: $letter-spacing-0_5px;
+  text-transform: uppercase;
 }
 
+%navbar-header-2 {
+  font-family: $font-family-roboto-condensed;
+  font-size: $font-size-16px;
+  font-weight: $font-weight-400;
+  color: getColorWithAlpha("navy-peony", 0.75);
+}
+
+%navbar-link {
+  @extend %add-underline-on-hover;
+
+  font-family: $font-family-open-sans;
+  font-size: 14px;
+  font-weight: $font-weight-400;
+  color: map-get($colors, "navy-peony");
+}
+
+%navbar-link-2 {
+  @extend %navbar-link;
+
+  font-family: $font-family-open-sans;
+  font-size: 15px;
+  font-weight: $font-weight-700;
+  color: map-get($colors, "carbon");
+}
+
+%navbar-header-link {
+  @extend %section-header;
+  @extend %add-underline-on-hover;
+
+  font-size: $font-size-16px;
+
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+
+  &::after {
+    margin-top: 8px;
+  }
+
+  @media screen and (max-width: map-get($breakpoints, "desktop")) {
+    &::after {
+      content: none;
+    }
+  }
+}
+
+/* Footer */
 %footer-header {
   font-family: $font-family-open-sans;
   font-size: 18px;

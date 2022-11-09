@@ -1,21 +1,21 @@
 <template>
-  <nav id="navbar">
-    <div class="top" :class="{ shrink: scrollPosition > 0 }">
+  <nav class="navbar">
+    <div class="navbar__top" :class="{ 'navbar__top--shrink': scrollPosition > 0 }">
       <AppNavbarButtonMenu v-on:handleShowMenu="getShowMenu" />
 
-      <div class="right">
-        <a class="site-details-container" href="https://rfa.sc.gov/">
+      <div class="top__contents">
+        <a class="top__details" href="https://rfa.sc.gov/">
           <img src="/assets/scrfao-logo.png" alt="South Carolina Revenue and Fiscal Affairs Office" />
 
-          <div class="site-details">
-            <p class="__header-style-4">South Carolina<br>Revenue and Fiscal Affairs Office</p>
-            <p class="__h3"><i>Transforming data into solutions for South Carolina</i></p>
+          <div class="top__headings">
+            <h1>South Carolina<br>Revenue and Fiscal Affairs Office</h1>
+            <h2><i>Transforming data into solutions for South Carolina</i></h2>
           </div>
         </a>
 
-        <ul>
+        <ul class="top__links">
           <li v-for="page in pages" :key="page.id">
-            <a class="__link-style-2" :href="page.href">
+            <a :href="page.href">
               {{ page.title }}
             </a>
           </li>
@@ -25,22 +25,20 @@
       </div>
     </div>
 
-    <div class="bottom" :class="{ extended: showMenu }">
-      <div class="left">
+    <div class="navbar__bottom" :class="{ 'navbar__bottom--extended': showMenu }">
+      <div class="bottom__left">
         <ul>
           <li v-for="page in pages" :key="page.id">
-            <a class="__link-style-2" :href="page.href">
+            <a :href="page.href">
               {{ page.title }}
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="right">
-        <div class="column">
-          <template v-for="link in links" :key="link.id">
-            <AppNavbarListLinks :link="link" />
-          </template>
+      <div class="bottom__right">
+        <div class="bottom__right-column">
+          <AppNavbarListLinks v-for="link in links" :key="link.id" :link="link" />
         </div>
       </div>
     </div>
