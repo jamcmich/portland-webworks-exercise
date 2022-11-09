@@ -1,13 +1,11 @@
-.search {
+.search-form {
+  display: flex;
+  flex-flow: row;
+  place-content: center;
+  gap: 8px;
+
   width: 100%;
   height: 48px;
-
-  &--flex {
-    display: flex;
-    flex-flow: row;
-    place-content: center;
-    gap: 8px;
-  }
 
   &__input {
     @extend %paragraph-text;
@@ -31,31 +29,33 @@
   }
 
   &__button {
-    @extend %button-element-solid;
+    @extend %button-element--solid;
   }
 
   &--extended {
     position: absolute;
-    bottom: -86px;
-    right: -1px;
+    bottom: 0;
+    right: 0;
 
-    justify-content: space-between;
+    align-items: center;
 
     width: 500px;
+    height: 90px;
     padding: 20px;
+
+    margin: {
+      bottom: -89px;
+      right: -2px;
+    }
 
     background-color: map-get($colors, "ocean-blue");
     cursor: default;
 
-    .search__input {
-      width: 100%;
-      padding: 0 10px;
+    button {
+      border-color: map-get($colors, "white");
 
-      &:focus-within {
-        outline: none;
-        border: 2px solid transparent;
-        border-radius: 2px;
-        box-shadow: 0 0 0 3px getColorWithAlpha("dover-straits", 0.5);
+      &:hover {
+        border-color: map-get($colors, "white");
       }
     }
   }

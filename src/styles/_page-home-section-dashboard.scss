@@ -45,7 +45,7 @@
   }
 
   button {
-    @extend %button-element-solid;
+    @extend %button-element--solid;
     width: 250px;
 
     span {
