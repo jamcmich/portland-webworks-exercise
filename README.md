@@ -24,3 +24,12 @@
 
 - Original: [https://rfa.sc.gov/](https://rfa.sc.gov/)
 - Re-creation: [https://jamcmich.github.io/portland-webworks-exercise/](https://jamcmich.github.io/portland-webworks-exercise/)
+
+<!-- Features -->
+
+<h3 id="features">✨ Features</h3>
+
+> Note: The re-created website has identical elements and styling to <a href="https://rfa.sc.gov/">the original</a> but includes minor stylistic differences and improvements.
+
+- Responsive styles for mobile, tablet, laptop, and desktop
+- 
