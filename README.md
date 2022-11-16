@@ -3,7 +3,7 @@
 <!-- Heading -->
 <section>
     <div align='center'>
-        <img src='assets/icons/scrfao-favicon.svg' alt='South Carolina Revenue and Fiscal Affairs Office logo' width='100' height='100' />
+        <img src='public/assets/icons/scrfao-favicon.svg' alt='South Carolina Revenue and Fiscal Affairs Office logo' width='100' height='100' />
         <h1>South Carolina Revenue and Fiscal Affairs Office Website</h1>
         <p>A visual re-creation of the South Carolina Revenue and Fiscal Affairs Office website.</p>
     </div>
