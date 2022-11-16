@@ -79,21 +79,19 @@
     list-style-type: none;
 
     overflow: hidden;
-    visibility: hidden;
+    visibility: inherit;
 
     transition: max-height 0.4s ease, padding 0.4s ease, visibility 0.4s ease;
 
     li {
       width: fit-content;
 
-      /* li */
       @media screen and (max-width: map-get($breakpoints, "desktop")) {
         width: 100%;
         padding: 0 20px;
       }
     }
 
-    /* ul */
     @media screen and (max-width: map-get($breakpoints, "desktop")) {
       display: flex;
       flex-direction: column;
@@ -101,11 +99,13 @@
       flex-shrink: 1;
       max-height: 0;
 
+      visibility: hidden;
+
       &--extended {
         max-height: 400px;
         padding: 20px 0;
 
-        visibility: initial;
+        visibility: visible;
       }
     }
   }
