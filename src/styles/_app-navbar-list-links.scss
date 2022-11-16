@@ -77,9 +77,11 @@
     max-height: fit-content;
     padding: 0;
     list-style-type: none;
-    overflow: hidden;
 
-    transition: max-height 0.4s ease, padding 0.4s ease;
+    overflow: hidden;
+    visibility: hidden;
+
+    transition: max-height 0.4s ease, padding 0.4s ease, visibility 0.4s ease;
 
     li {
       width: fit-content;
@@ -99,9 +101,11 @@
       flex-shrink: 1;
       max-height: 0;
 
-      &.extended {
+      &--extended {
         max-height: 400px;
         padding: 20px 0;
+
+        visibility: initial;
       }
     }
   }

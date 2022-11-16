@@ -4,7 +4,7 @@
       <AppNavbarButtonMenu v-on:handleShowMenu="getShowMenu" />
 
       <div class="top__contents">
-        <a class="top__details" href="https://rfa.sc.gov/">
+        <a class="top__details" href="https://jamcmich.github.io/portland-webworks-exercise/">
           <img src="/assets/scrfao-logo.png" alt="South Carolina Revenue and Fiscal Affairs Office" />
 
           <div class="top__headings">

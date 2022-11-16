@@ -3,9 +3,8 @@
     <div class="footer__content">
       <div class="footer__column">
         <h1>South Carolina<br>Revenue and Fiscal Affairs Office</h1>
-        <a href="/">
-          <img src="/assets/scrfao-logo-transparent.png"
-               alt="South Carolina Revenue and Fiscal Affairs Office logo" />
+        <a href="https://jamcmich.github.io/portland-webworks-exercise/">
+          <img src="/assets/scrfao-logo-transparent.png" alt="South Carolina Revenue and Fiscal Affairs Office logo" />
         </a>
       </div>
 

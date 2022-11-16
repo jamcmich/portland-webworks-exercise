@@ -10,7 +10,7 @@
       </button>
     </div>
 
-    <ul class="list-links__items" :class="toggleClass ? 'extended' : ''">
+    <ul class="list-links__items" :class="toggleClass ? 'list-links__items--extended' : ''">
       <li v-for="item in link?.items">
         <a class="list-links__item" :href="item?.url">{{ item?.title }}</a>
       </li>
