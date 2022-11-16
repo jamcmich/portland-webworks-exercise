@@ -72,7 +72,7 @@ $navbar-max-height-desktop: 120px;
 
     &--extended {
       max-height: 604px;
-      visibility: initial;
+      visibility: visible;
 
       @media screen and (max-width: map-get($breakpoints, "desktop")) {
         width: 100%;
