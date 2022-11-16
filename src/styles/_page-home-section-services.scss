@@ -1,5 +1,6 @@
 .services {
   flex-flow: column;
+  flex: 1 1 auto;
 
   &__content {
     @extend %content-layout;
