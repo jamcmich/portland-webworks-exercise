@@ -132,10 +132,6 @@ $navbar-max-height-desktop: 120px;
     list-style-type: none;
     text-transform: uppercase;
 
-    @media screen and (max-width: 1160px) {
-      display: none;
-    }
-
     a {
       color: map-get($colors, "navy-peony");
       text-decoration: none;
@@ -143,6 +139,10 @@ $navbar-max-height-desktop: 120px;
       &:hover {
         text-decoration: underline;
       }
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "desktop")) {
+      display: none;
     }
   }
 
@@ -158,6 +158,12 @@ $navbar-max-height-desktop: 120px;
 
     img {
       height: 100%;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "desktop")) {
+      margin: {
+        right: 20px;
+      }
     }
 
     @media screen and (max-width: map-get($breakpoints, "tablet")) {
@@ -212,12 +218,13 @@ $navbar-max-height-desktop: 120px;
 
       li {
         display: flex;
-        flex-wrap: wrap;
-        place-content: center;
-        flex: 1 1 auto;
+        justify-content: center;
+        align-items: center;
         align-self: stretch;
+        flex-shrink: 1;
 
         height: 50px;
+        padding: 10px;
         border-bottom: 1px solid map-get($colors, "mist");
 
         &:last-of-type {
@@ -231,8 +238,7 @@ $navbar-max-height-desktop: 120px;
             display: flex;
             justify-content: center;
             align-items: center;
-
-            width: 100%;
+            flex: 1 1 auto;
             height: 100%;
           }
 
@@ -276,6 +282,7 @@ $navbar-max-height-desktop: 120px;
       @media screen and (max-width: map-get($breakpoints, "desktop")) {
         gap: 0;
         background-color: map-get($colors, "crystal");
+
         overflow-y: scroll;
         overscroll-behavior: contain;
       }
