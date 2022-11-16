@@ -33,3 +33,4 @@
 
 - Responsive styles for mobile, tablet, laptop, and desktop
 - Vite.js for more efficient production and build environments
+- Automated CI/CD deployment and build jobs via GitHub Actions
