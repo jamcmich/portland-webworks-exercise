@@ -5,8 +5,8 @@
         <a :href="link?.heading?.url">{{ link?.heading?.title }}</a>
       </h2>
 
-      <button v-on:click="handleClick(link?.id)">
-        <Icon :icon="toggleClass ? 'mdi:chevron-up' : 'mdi:chevron-down'" />
+      <button v-on:click="handleClick(link?.id)" tabindex="-1">
+        <Icon :icon="toggleClass ? 'mdi:chevron-up' : 'mdi:chevron-down'" tabindex="0" />
       </button>
     </div>
 
