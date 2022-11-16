@@ -32,4 +32,4 @@
 > Note: The re-created website has identical elements and styling to <a href="https://rfa.sc.gov/">the original</a> but includes minor stylistic differences and improvements.
 
 - Responsive styles for mobile, tablet, laptop, and desktop
-- 
+- Vite.js for more efficient production and build environments
