@@ -32,5 +32,7 @@
 > Note: The re-created website has identical elements and styling to <a href="https://rfa.sc.gov/">the original</a> but includes minor stylistic differences and improvements.
 
 - Responsive styles for mobile, tablet, laptop, and desktop
-- Vite.js for more efficient production and build environments
-- Automated CI/CD deployment and build jobs via GitHub Actions
+- <a href="https://vitejs.dev/">Vite.js</a> for more flexible and efficient production and build environments
+- Automated CI/CD build and deployment jobs via <a href="https://github.com/features/actions">GitHub Actions</a>
+- <a href="https://sass-lang.com/">SASS stylesheets<a/> and <a href="https://getbem.com/">BEM class names</a>
+- TypeScript integration
