@@ -39,7 +39,7 @@
     
 <h3 id="technologies-used">🧰 Technologies Used</h3>
 
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![WebStorm](https://img.shields.io/badge/webstorm-143?style=for-the-badge&logo=webstorm&logoColor=white&color=black)
 
 - <a href="https://vitejs.dev/">Vite.js</a> for more flexible and efficient production and build environments
 - <a href="https://vuejs.org/guide/scaling-up/sfc.html">Vue.js single-file components</a> using the <a href="https://vuejs.org/guide/introduction.html#api-styles">Options API</a>
@@ -60,3 +60,5 @@
 
 <h4>Project Setup</h4>
 <p>Vite.js is my favorite tooling library for scaffolding frontend projects because of its lightweight and efficient features. My project is configured with Vue 3, SASS, TypeScript, and ESLint. Although TypeScript was unnecessary for the majority of development, I included it in case the project was expanded in the future.</p>
+
+<p>I decided to transition from Visual Studio Code to WebStorm for this project and ended up thoroughly enjoying the product, its features, and a more professional development experience. There were many instances where WebStorm made it simple and easy to refactor my entire project, manage npm installations, or setup Vue and ESLint integrations automatically. Needless to say, it's my go-to IDE now!</p>
