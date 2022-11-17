@@ -39,6 +39,8 @@
     
 <h3 id="technologies-used">🧰 Technologies Used</h3>
 
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+
 - <a href="https://vitejs.dev/">Vite.js</a> for more flexible and efficient production and build environments
 - <a href="https://vuejs.org/guide/scaling-up/sfc.html">Vue.js single-file components</a> using the <a href="https://vuejs.org/guide/introduction.html#api-styles">Options API</a>
 - Automated CI/CD build and deployment jobs via <a href="https://github.com/features/actions">GitHub Actions</a>
