@@ -46,3 +46,7 @@
 - Automated CI/CD build and deployment jobs via <a href="https://github.com/features/actions">GitHub Actions</a>
 - <a href="https://sass-lang.com/">SASS stylesheets<a/> and <a href="https://getbem.com/">BEM class names</a>
 - <a href="https://eslint.org/">ESLint</a> and <a href="https://www.typescriptlang.org/">TypeScript</a> integration
+
+<!-- Screenshots -->
+    
+<h3 id="screenshots">📷 Screenshots</h3>
