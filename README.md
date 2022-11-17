@@ -32,7 +32,7 @@
 > Note: The re-created website has identical elements and styling to <a href="https://rfa.sc.gov/">the original</a> but includes minor stylistic differences and improvements.
 
 - Reusable and scalable styles for buttons, typography, breakpoints, etc.
-- Responsive capabilities for mobile, tablet, laptop, and desktop
+- Responsive flex-box and grid elements for mobile, tablet, laptop, and desktop compatibility
 - Semantic HTML, Aria labels, and tabbable content to encourage accessibility
 
 <!-- Technologies Used -->
