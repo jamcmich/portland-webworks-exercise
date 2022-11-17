@@ -12,7 +12,7 @@
         <a href='#features'>Features</a> •
         <a href='#technologies-used'>Technologies Used</a> •
         <a href='#screenshots'>Screenshots</a> •
-        <a href='#problem-solving'>Problem Solving</a> •
+        <a href='#development-process'>Development Process</a> •
         <a href='#code-examples'>Code Examples</a> •
         <a href='#future-improvements'>Future Improvements</a>
     </p>
@@ -50,3 +50,13 @@
 <!-- Screenshots -->
     
 <h3 id="screenshots">📷 Screenshots</h3>
+
+<h4>Website Preview</h4>
+<img src="readme/website-preview.gif" alt="GIF of the website" />
+
+<!-- Development Process -->
+
+<h3 id="development-process">🛠️ Development Process</h3>
+
+<h4>Project Setup</h4>
+<p>Vite.js is my favorite tooling library for scaffolding frontend projects because of its lightweight and efficient features. My project is configured with Vue 3, SASS, TypeScript, and ESLint. Although TypeScript was unnecessary for the majority of development, I included it in case the project was expanded in the future.</p>
