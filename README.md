@@ -41,11 +41,13 @@
 
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![WebStorm](https://img.shields.io/badge/webstorm-143?style=for-the-badge&logo=webstorm&logoColor=white&color=black)
 
-- <a href="https://vitejs.dev/">Vite.js</a> for more flexible and efficient production and build environments
-- <a href="https://vuejs.org/guide/scaling-up/sfc.html">Vue.js single-file components</a> using the <a href="https://vuejs.org/guide/introduction.html#api-styles">Options API</a>
-- Automated CI/CD build and deployment jobs via <a href="https://github.com/features/actions">GitHub Actions</a>
-- <a href="https://sass-lang.com/">SASS stylesheets<a/> and <a href="https://getbem.com/">BEM class names</a>
-- <a href="https://eslint.org/">ESLint</a> and <a href="https://www.typescriptlang.org/">TypeScript</a> integration
+<ul>
+    <li><a href="https://vitejs.dev/">Vite.js</a> for more flexible and efficient production and build environments</li>
+    <li><a href="https://vuejs.org/guide/scaling-up/sfc.html">Vue.js single-file components</a> using the <a href="https://vuejs.org/guide/introduction.html#api-styles">Options API</a></li>
+    <li>Automated CI/CD build and deployment jobs via <a href="https://github.com/features/actions">GitHub Actions</a></li>
+    <li><a href="https://sass-lang.com/">SASS stylesheets<a/> and <a href="https://getbem.com/">BEM class names</a></li>
+    <li><a href="https://eslint.org/">ESLint</a> and <a href="https://www.typescriptlang.org/">TypeScript</a> integration</li>
+</ul>
 
 <!-- Screenshots -->
     
@@ -68,7 +70,10 @@
     
 <p>For iconography, I researched and tested a variety of popular icon solutions to use with Vue and eventually settled with <a href="https://icon-sets.iconify.design/">Iconify</a>. I was extremely impressed with how seamless the library integrated into my existing project and its included support for a variety of frameworks, customization options, and open source tools. Material icons were used throughout the page for consistency and I sourced the custom assets (logos, images, etc.) directly from the SCRFAO website.</p>
     
-<p>Even though this was a small scale project, I followed conventional methods for organizing SASS stylesheets as partials to future-proof the project and keep its file structure maintainable. Partials enable developers to split styles across different components and compile SASS more efficiently. The end result is partitioned code that remains lightweight and flexible.</p>
+<p>Even though this was a small scale project, I followed conventional methods for organizing SASS stylesheets as partials to future-proof the project and keep its file structure maintainable. Partials enable developers to split styles across different components and compile SASS more efficiently. The end result is partitioned code that remains lightweight and flexible. I also utilized <a href="https://getbem.com/">BEM methodologies</a> in tandem with SASS to create an organized, nested stylesheet structure. </p>
+    
+<h4>File Structure</h4>
+
     
 <!-- Development Process -->
 
