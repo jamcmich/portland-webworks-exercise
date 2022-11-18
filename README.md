@@ -64,8 +64,10 @@
 <p>I also decided to transition from Visual Studio Code to WebStorm for this project and ended up thoroughly enjoying the product, its features, and a more professional development experience. There were many instances where WebStorm made it simple and easy to refactor my entire project, manage npm installations, or setup Vue and ESLint integrations automatically. Needless to say, it's my go-to IDE now and I encourage other developers to give it a try!</p>
     
 <h4>Reusable Styles</h4>
-<p>My approach to building responsive websites leverages flexbox and grid layouts. While some developers prefer to use Tailwind, Bootstrap, or Vuetify to cover all of their styling necessities, I decided SASS would be a more suitable, lightweight solution for building a single-page application. Many of the sections, typography, layouts, buttons, and other components on the SCRFAO website follow a consistent design pattern which I referenced to create global variables, mixins, placeholders, and reusable SASS styles.</p>
-
+<p>My approach to building responsive websites leverages flexbox and grid layouts. While some developers prefer to use Tailwind, Bootstrap, or Vuetify to cover all of their styling necessities, I decided SASS would be a more suitable, lightweight solution for building a single-page application. Many of the sections, typography, layouts, buttons, and other components on the SCRFAO website follow a consistent design pattern which I referenced to create global variables, mixins, placeholders, and reusable styles.</p>
+    
+<p>For iconography, I researched and tested a variety of popular icon libraries to use with Vue and eventually settled with <a href"https://icon-sets.iconify.design/">Iconify</a>. I was extremely impressed with how seamless the library integrated into my existing project and its included support for a variety of frameworks, customization options, and open source tools.</p>
+    
 <!-- Development Process -->
 
 <h3 id="development-process">🛠️ Development Process</h3>
