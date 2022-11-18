@@ -32,7 +32,7 @@
 > Note: The re-created website has identical elements and styling to <a href="https://rfa.sc.gov/">the original</a> but includes minor stylistic differences and improvements.
 
 - Reusable and scalable styles for buttons, typography, breakpoints, etc.
-- Responsive flex-box and grid elements for mobile, tablet, laptop, and desktop compatibility
+- Responsive flexbox and grid elements for mobile, tablet, laptop, and desktop compatibility
 - Semantic HTML, Aria labels, and tabbable content to encourage accessibility
 
 <!-- Technologies Used -->
@@ -54,11 +54,18 @@
 <h4>Website Preview</h4>
 <img src="readme/website-preview.gif" alt="GIF of the website" />
 
+<!-- Project Configuration -->
+    
+<h3 id="project-configuration">⚙️ Project Configuration</h3>
+    
+<h4>Development Environment</h4>
+<p>Vite.js is my favorite tooling library for scaffolding frontend projects because of its lightweight and efficient features. My project is configured with Vue 3, SASS, TypeScript, and ESLint. Although TypeScript was unnecessary for the majority of development, I included it in case the project was expanded in the future.</p>
+
+<p>I also decided to transition from Visual Studio Code to WebStorm for this project and ended up thoroughly enjoying the product, its features, and a more professional development experience. There were many instances where WebStorm made it simple and easy to refactor my entire project, manage npm installations, or setup Vue and ESLint integrations automatically. Needless to say, it's my go-to IDE now and I encourage other developers to give it a try!</p>
+    
+<h4>Reusable Styles</h4>
+<p>My approach to building responsive websites leverages flexbox and grid layouts. While some developers prefer to use Tailwind, Bootstrap, or Vuetify to cover all of their styling necessities, I decided SASS would be a more suitable, lightweight solution for building a single-page application. Many of the sections, typography, layouts, buttons, and other components on the SCRFAO website follow a consistent design pattern which I referenced to create global variables, mixins, placeholders, and reusable SASS styles.</p>
+
 <!-- Development Process -->
 
 <h3 id="development-process">🛠️ Development Process</h3>
-
-<h4>Project Setup</h4>
-<p>Vite.js is my favorite tooling library for scaffolding frontend projects because of its lightweight and efficient features. My project is configured with Vue 3, SASS, TypeScript, and ESLint. Although TypeScript was unnecessary for the majority of development, I included it in case the project was expanded in the future.</p>
-
-<p>I decided to transition from Visual Studio Code to WebStorm for this project and ended up thoroughly enjoying the product, its features, and a more professional development experience. There were many instances where WebStorm made it simple and easy to refactor my entire project, manage npm installations, or setup Vue and ESLint integrations automatically. Needless to say, it's my go-to IDE now!</p>
