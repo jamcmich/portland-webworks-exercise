@@ -73,7 +73,7 @@
 <p>Even though this was a small scale project, I followed conventional methods for organizing SASS stylesheets as partials to future-proof the project and keep its file structure maintainable. Partials enable developers to split styles across different components and compile SASS more efficiently. The end result is partitioned code that remains lightweight and flexible. I also utilized <a href="https://getbem.com/">BEM methodologies</a> in tandem with SASS to create an organized, nested stylesheet structure. </p>
     
 <h4>File Structure</h4>
-<p>By convention Vue assets are served from the public folder and all paths are statically replaced in Vite's build script. From the Vite documentation: <blockquote>"... [assets] will be served at root path <code>/</code> during dev, and copied to the root of the dist directory as-is... You should always reference public assets using root absolute path - for example, public/icon.png should be referenced in source code as /icon.png."</blockquote></p>
+<p>By convention Vue assets are served from the public folder and all paths are statically replaced in Vite's build script. From the Vite documentation: <blockquote>"... [assets] will be served at root path <code>/</code> during dev, and copied to the root of the dist directory as-is... You should always reference <code>public</code> assets using root absolute path - for example, <code>public/icon.png</code> should be referenced in source code as <code>/icon.png</code>."</blockquote></p>
 
 <!-- Development Process -->
 
