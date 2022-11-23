@@ -9,8 +9,8 @@
     <a href='#demo'>Demo</a> •
     <a href='#features'>Features</a> •
     <a href='#technologies-used'>Technologies Used</a> •
+    <a href='#project-configuration'>Project Configuration</a> •
     <a href='#development-process'>Development Process</a> •
-    <a href='#code-examples'>Code Examples</a> •
     <a href='#future-improvements'>Future Improvements</a>
 </p>
 
@@ -77,7 +77,7 @@ use Tailwind, Bootstrap, or Vuetify to cover all of their styling necessities, I
 <p>By convention Vue assets are served from the <code>public</code> folder and all paths are statically 
 replaced in Vite's build script. From the Vite documentation: <blockquote>"... [assets] will be served at root path 
 <code>/</code> during dev, and copied to the root of the dist directory as-is... You should always reference 
-<code>public</code> assets using root absolute path - for example, <code>public/icon png</code> should be referenced 
+<code>public</code> assets using root absolute path - for example, <code>public/icon.png</code> should be referenced 
 in source code as <code>/icon.png</code>."</blockquote></p>
 
 <p>Vue components are organized in a flat hierarchy within the project's <code>src</code> folder. This is a 
@@ -93,62 +93,23 @@ misconstrued with the HTML
 <code>table</code> tag)</li>
 </ul>
 
-<p>Below is an example of the project's <b>component</b> structure:<pre><code>/project/src
-├─ components
-│  ├─ AppFooter.vue
-│  ├─ ...
-│  ├─ AppNavbar.vue
-│  ├─ AppNavbarButtonMenu.vue
-│  ├─ AppNavbarButtonSearch.vue
-│  ├─ AppNavbarListLinks.vue
-│  ├─ ...
-│  ├─ AppScrollTop.vue
-│  ├─ ...
-│  ├─ FormSearch.vue
-│  ├─ ...
-│  ├─ PageHome.vue
-│  ├─ PageHomeSectionDashboard.vue
-│  ├─ PageHomeSectionEvents.vue
-│  ├─ PageHomeSectionFeatured.vue
-│  ├─ PageHomeSectionHero.vue
-│  └─ ...
-├─ data
-│  └─ ...
-├─ styles
-│  └─ ...
-└─ ...</code></pre></p>
+<p>Below is an example of the project's <b>component</b> structure:</p>
+<img src="public/assets/readme/component-file-structure.png" />
 
 <p>Even though this was a small scale project, I followed conventional methods for organizing SASS stylesheets as partials to future-proof the project and keep its file structure maintainable. Partials enable developers to split styles across different components and compile SASS more efficiently. The end result is partitioned code that remains lightweight and flexible.</p>
 
-<p>Each partial is individually imported into its respective component:</p>
-
+<p>As shown in the example below, each partial is individually imported into its respective component...</p>
 <img src="public/assets/readme/partials-import-example.png">
 
-<p>Below is an example of the project's <b>stylesheet</b> 
-structure:<pre><code>/project/src
-├─ components
-│  └─ ...
-├─ data
-│  └─ ...
-├─ styles
-│  ├─ _app-footer.scss
-│  ├─ ...
-│  ├─ _app-navbar.scss
-│  ├─ _app-navbar-button-menu.scss
-│  ├─ _app-navbar-button-search.scss
-│  ├─ _app-navbar-list-links.scss
-│  ├─ ...
-│  ├─ _app-scroll-top.scss
-│  ├─ ...
-│  ├─ _form-search.scss
-│  ├─ ...
-│  ├─ _page-home.scss
-│  ├─ _page-home-section-dashboard.scss
-│  ├─ _page-home-section-events.scss
-│  ├─ _page-home-section-featured.scss
-│  ├─ _page-home-section-hero.scss
-│  └─ ...
-└─ ...</code></pre></p>
+<p>...and forms the resulting <b>stylesheet</b> 
+structure:</p>
+<img src="public/assets/readme/sass-file-structure.png">
+
+<p>You might notice the <code>global</code> folder which serves to organize reusable styles utilized across multiple 
+components. These stylesheets are imported into the <code>global.scss</code> file and passed as preprocessed options 
+via Vite's configuration file. This setup allows SASS methods to be used without needing to import them 
+individually and ensures intellisense is available when writing code.</p>
+<img src="public/assets/readme/vite-preprocessor-options.png" />
 
 <!-- Development Process -->
 
