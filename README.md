@@ -9,7 +9,7 @@ A single-page application simulating the South Carolina Revenue and Fiscal Affai
 - [Demo](#-demo)
 - [Features](#-features)
 - [Technologies Used](#-technologies-used)
-- [Project Configuration](#-project-configuration)
+- [Project Configuration](#%EF%B8%8F-project-configuration)
     - [Development Environment](#development-environment)
         - [Tech Stack](#tech-stack)
         - [Styling System](#styling-system)
