@@ -6,10 +6,10 @@
 
 A single-page application simulating the South Carolina Revenue and Fiscal Affairs Office website.
 
-- [Demo](#🔍-demo)
-- [Features](#✨-features)
-- [Technologies Used](#🧰-technologies-used)
-- [Project Configuration](#⚙️-project-configuration)
+- [Demo](#-demo)
+- [Features](#-features)
+- [Technologies Used](#-technologies-used)
+- [Project Configuration](#-project-configuration)
     - [Development Environment](#development-environment)
         - [Tech Stack](#tech-stack)
         - [Styling System](#styling-system)
