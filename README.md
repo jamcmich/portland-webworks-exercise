@@ -24,7 +24,6 @@ A single-page application simulating the South Carolina Revenue and Fiscal Affai
 
 - Original: [https://rfa.sc.gov/](https://rfa.sc.gov/)
 -
-
 Re-creation: [https://jamcmich.github.io/portland-webworks-exercise](https://jamcmich.github.io/portland-webworks-exercise/)
 
 <!-- Features -->
